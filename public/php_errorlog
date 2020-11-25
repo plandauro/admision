@@ -1,0 +1,560 @@
+[29-Jan-2018 12:30:43 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hash' not found in /home/unab5534/laravel/app/Http/Controllers/UserController.php on line 81
+[29-Jan-2018 12:51:49 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/unab5534/laravel/app/Http/Controllers/UserController.php on line 88
+[31-Jan-2018 15:38:50 America/Lima] PHP Fatal error:  Undefined class constant 'true' in /home/unab5534/laravel/app/Http/Controllers/UserController.php on line 95
+[02-Feb-2018 11:51:09 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:51:16 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:51:33 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:51:37 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:56:07 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:56:47 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:57:22 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 11:58:56 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 12:04:43 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 12:05:14 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 12:06:38 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[02-Feb-2018 12:06:53 America/Lima] PHP Fatal error:  Class 'App\Usuarios' not found in /home/unab5534/laravel/app/Http/Controllers/UsuariosController.php on line 50
+[06-Feb-2018 14:54:11 America/Lima] PHP Fatal error:  Call to a member function save() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 14:58:35 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 14:59:47 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 15:01:18 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 15:01:39 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 15:03:10 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 86
+[06-Feb-2018 15:05:30 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 84
+[06-Feb-2018 15:05:39 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 84
+[07-Feb-2018 16:30:12 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 22
+[07-Feb-2018 16:31:27 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 4
+[07-Feb-2018 16:31:59 America/Lima] PHP Parse error:  syntax error, unexpected '.', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 4
+[07-Feb-2018 16:40:09 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 789
+[07-Feb-2018 16:43:36 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:43:40 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:44:03 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:46:48 America/Lima] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 22
+[07-Feb-2018 16:49:20 America/Lima] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 22
+[07-Feb-2018 16:49:44 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:55:03 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:55:29 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:56:04 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[07-Feb-2018 16:57:17 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\PHPMailer() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[08-Feb-2018 09:04:04 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\PHPMailer() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[08-Feb-2018 09:06:27 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 790
+[08-Feb-2018 09:08:37 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(App\Http\Controllers\class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:780
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(780): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(App\\Htt...', '/home/unab5534/...', 780, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(780): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illumina in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 780
+[08-Feb-2018 09:08:37 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App\Http\Controllers\class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 780
+[08-Feb-2018 09:13:54 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 09:13:55 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 09:13:58 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 09:14:04 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 08:14:51 CST6CDT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) in /home/unab5534/laravel/config/app.php on line 165
+[08-Feb-2018 08:15:21 CST6CDT] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) in /home/unab5534/laravel/config/app.php on line 165
+[08-Feb-2018 09:16:03 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 09:16:24 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 09:16:25 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailer' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[08-Feb-2018 08:24:53 CST6CDT] PHP Parse error:  syntax error, unexpected ',' in /home/unab5534/laravel/config/mail.php on line 19
+[08-Feb-2018 08:25:24 CST6CDT] PHP Parse error:  syntax error, unexpected ',' in /home/unab5534/laravel/config/mail.php on line 59
+[08-Feb-2018 09:52:07 America/Lima] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 3
+[08-Feb-2018 09:52:15 America/Lima] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 3
+[08-Feb-2018 10:10:27 America/Lima] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 819
+[08-Feb-2018 10:14:22 America/Lima] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 819
+[08-Feb-2018 10:23:35 America/Lima] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 819
+[08-Feb-2018 10:26:10 America/Lima] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 819
+[08-Feb-2018 10:26:54 America/Lima] PHP Fatal error:  Class 'PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 789
+[08-Feb-2018 10:27:23 America/Lima] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 10:28:20 America/Lima] PHP Fatal error:  Class 'PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 791
+[08-Feb-2018 10:39:24 America/Lima] PHP Fatal error:  Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 792
+[08-Feb-2018 10:41:05 America/Lima] PHP Fatal error:  Class 'vendor\phpmailer\phpmailer\src\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 792
+[08-Feb-2018 10:42:08 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\vendor\phpmailer\phpmailer\src\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 792
+[08-Feb-2018 10:44:04 America/Lima] PHP Fatal error:  Class 'vendor\phpmailer\phpmailer\src\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 792
+[08-Feb-2018 10:45:11 America/Lima] PHP Fatal error:  Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 792
+[08-Feb-2018 12:52:30 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 83
+[08-Feb-2018 12:52:38 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 83
+[08-Feb-2018 12:53:21 America/Lima] PHP Fatal error:  Call to a member function delete() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 83
+[08-Feb-2018 12:56:14 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting '{' in /home/unab5534/laravel/routes/web.php on line 79
+[08-Feb-2018 12:56:17 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting '{' in /home/unab5534/laravel/routes/web.php on line 79
+[08-Feb-2018 12:56:20 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting '{' in /home/unab5534/laravel/routes/web.php on line 79
+[08-Feb-2018 12:56:45 America/Lima] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/unab5534/laravel/routes/web.php on line 94
+[08-Feb-2018 12:57:33 America/Lima] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 45
+[08-Feb-2018 16:07:37 America/Lima] PHP Fatal error:  Call to a member function save() on null in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 91
+[08-Feb-2018 16:09:13 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(App\Http\Controllers\class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(App\\Htt...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illumina in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:09:13 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App\Http\Controllers\class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:12:11 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illu in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:12:11 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:17:37 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illu in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:17:37 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:17:49 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illu in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:17:49 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:18:12 America/Lima] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:20:20 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/classphpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illum in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:20:20 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/classphpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:20:25 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/classphpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illum in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:20:25 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/classphpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:24:47 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\file_build_path() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 779
+[08-Feb-2018 16:25:21 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\file_build_path() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 779
+[08-Feb-2018 16:25:38 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\file_build_path() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 779
+[08-Feb-2018 16:25:54 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/classphpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illum in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:25:54 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/classphpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:27:22 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/classphpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illum in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:27:22 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/classphpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:38:59 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:39:02 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:39:13 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:39:14 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:39:15 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:39:15 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:41:41 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:41:41 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:41:44 America/Lima] PHP Parse error:  syntax error, unexpected '$ruta' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 781
+[08-Feb-2018 16:42:51 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 793
+[08-Feb-2018 16:44:26 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 793
+[08-Feb-2018 16:44:56 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 793
+[08-Feb-2018 16:45:07 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 793
+[08-Feb-2018 16:46:19 America/Lima] PHP Parse error:  syntax error, unexpected '$rutanueva' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 784
+[08-Feb-2018 16:46:42 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 795
+[08-Feb-2018 16:51:17 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once( App / Http / Controllers / classphpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once( A...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/sr in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:51:17 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required ' App / Http / Controllers / classphpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:51:57 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\PHPMailer' not found in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 795
+[08-Feb-2018 16:52:38 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(App/Http/Controllers/class.phpmailer.php): failed to open stream: No such file or directory' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php:778
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Ap...', '/home/unab5534/...', 778, Array)
+#1 /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php(778): App\Http\Controllers\PostulacionController::EnviarCorreo()
+#2 [internal function]: App\Http\Controllers\PostulacionController->EnviarCorreo()
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('EnviarCorreo', Array)
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/Illu in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:52:38 America/Lima] PHP Fatal error:  App\Http\Controllers\PostulacionController::EnviarCorreo(): Failed opening required 'App/Http/Controllers/class.phpmailer.php' (include_path='.:/usr/local/php56/pear') in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 778
+[08-Feb-2018 16:59:52 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Exception' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 4029
+[08-Feb-2018 17:00:28 America/Lima] PHP Parse error:  syntax error, unexpected '}' in /home/unab5534/laravel/app/Http/Controllers/email.php on line 4041
+[08-Feb-2018 17:01:17 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Exception' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 4029
+[09-Feb-2018 10:48:23 America/Lima] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 89
+[09-Feb-2018 11:03:47 America/Lima] PHP Fatal error:  Can't use function return value in write context in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 80
+[10-Feb-2018 07:29:10 America/Lima] PHP Parse error:  syntax error, unexpected 'function__construct' (T_STRING), expecting variable (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 15
+[13-Feb-2018 11:32:42 America/Lima] PHP Fatal error:  Class 'cccRoute' not found in /home/unab5534/laravel/routes/web.php on line 125
+[13-Feb-2018 11:32:51 America/Lima] PHP Fatal error:  Class 'cccRoute' not found in /home/unab5534/laravel/routes/web.php on line 125
+[13-Feb-2018 11:32:57 America/Lima] PHP Fatal error:  Class 'cccRoute' not found in /home/unab5534/laravel/routes/web.php on line 125
+[13-Feb-2018 11:32:58 America/Lima] PHP Fatal error:  Class 'cccRoute' not found in /home/unab5534/laravel/routes/web.php on line 125
+[13-Feb-2018 11:32:59 America/Lima] PHP Fatal error:  Class 'cccRoute' not found in /home/unab5534/laravel/routes/web.php on line 125
+[14-Feb-2018 10:32:12 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 823
+[14-Feb-2018 10:37:58 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 10:40:07 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 14:51:06 America/Lima] PHP Fatal error:  Call to undefined method Illuminate\Http\Response::json() in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[14-Feb-2018 15:20:12 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 833
+[14-Feb-2018 15:21:17 America/Lima] PHP Parse error:  syntax error, unexpected '/' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 833
+[14-Feb-2018 15:24:12 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 833
+[14-Feb-2018 15:24:47 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 833
+[14-Feb-2018 15:24:49 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 833
+[14-Feb-2018 15:45:58 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 15:51:57 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 15:52:58 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 15:55:01 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 15:57:54 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 16:04:21 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 16:05:00 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[14-Feb-2018 16:07:39 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:44:50 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:45:56 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:50:16 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:51:29 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:52:34 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:53:05 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 08:53:51 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[15-Feb-2018 09:13:31 America/Lima] PHP Parse error:  syntax error, unexpected '>' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 827
+[15-Feb-2018 09:16:59 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 846
+[15-Feb-2018 09:40:42 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[15-Feb-2018 11:06:06 America/Lima] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 886
+[15-Feb-2018 11:08:40 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 825
+[15-Feb-2018 11:17:49 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:17:57 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:18:09 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:18:45 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:36:26 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[15-Feb-2018 11:36:32 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[15-Feb-2018 11:36:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[15-Feb-2018 11:37:06 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:40:15 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 821
+[15-Feb-2018 11:40:22 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 11:42:52 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 826
+[15-Feb-2018 12:30:02 America/Lima] PHP Fatal error:  Cannot use try without catch or finally in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 901
+[15-Feb-2018 12:30:28 America/Lima] PHP Fatal error:  Cannot use try without catch or finally in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 856
+[15-Feb-2018 12:30:29 America/Lima] PHP Fatal error:  Cannot use try without catch or finally in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 856
+[16-Feb-2018 10:18:41 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 830
+[16-Feb-2018 10:21:28 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 832
+[16-Feb-2018 10:22:14 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 836
+[16-Feb-2018 10:22:40 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 852
+[16-Feb-2018 10:23:31 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 832
+[16-Feb-2018 11:05:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 854
+[16-Feb-2018 11:06:20 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:07:16 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:44 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 854
+[16-Feb-2018 11:09:49 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:56 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:57 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:57 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:57 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:57 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:59 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:59 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:59 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:59 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:09:59 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:01 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:14 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:25 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:10:37 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 859
+[16-Feb-2018 11:54:28 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 854
+[16-Feb-2018 11:57:39 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[16-Feb-2018 12:01:47 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 21:52:16 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 830
+[18-Feb-2018 21:52:35 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 830
+[18-Feb-2018 21:53:06 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 835
+[18-Feb-2018 21:58:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 835
+[18-Feb-2018 22:01:04 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 835
+[18-Feb-2018 22:14:27 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 898
+[18-Feb-2018 22:14:28 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 898
+[18-Feb-2018 22:14:29 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 898
+[18-Feb-2018 22:14:29 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 898
+[18-Feb-2018 22:14:29 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 898
+[18-Feb-2018 22:14:39 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:14:41 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:14:50 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:17:17 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:18:48 America/Lima] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\AulasPorExamen in /home/unab5534/laravel/app/Http/Controllers/TarifasController.php on line 36
+[18-Feb-2018 22:19:30 America/Lima] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\AulasPorExamen in /home/unab5534/laravel/app/Http/Controllers/TarifasController.php on line 36
+[18-Feb-2018 22:19:49 America/Lima] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\AulasPorExamen in /home/unab5534/laravel/app/Http/Controllers/TarifasController.php on line 36
+[18-Feb-2018 22:20:21 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:25:57 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:27:31 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:29:23 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:32:57 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:43:25 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:47:24 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:51:38 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:52:17 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:52:53 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[18-Feb-2018 22:53:12 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[20-Feb-2018 11:17:01 America/Lima] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 2
+[20-Feb-2018 11:17:17 America/Lima] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 2
+[20-Feb-2018 11:17:25 America/Lima] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 2
+[20-Feb-2018 11:29:18 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 170
+[20-Feb-2018 11:29:45 America/Lima] PHP Parse error:  syntax error, unexpected 'barcode' (T_STRING) in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 171
+[20-Feb-2018 11:33:25 America/Lima] PHP Fatal error:  Call to undefined function barcode() in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 172
+[20-Feb-2018 11:34:01 America/Lima] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 171
+[20-Feb-2018 11:35:15 America/Lima] PHP Parse error:  syntax error, unexpected 'App' (T_STRING), expecting \\ (T_NS_SEPARATOR) in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 171
+[20-Feb-2018 11:41:20 America/Lima] PHP Parse error:  syntax error, unexpected 'App' (T_STRING), expecting \\ (T_NS_SEPARATOR) in /home/unab5534/laravel/storage/framework/views/246950ce744d3e5aa1726d3aa0d0322d75d9cab4.php on line 173
+[21-Feb-2018 19:54:42 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 433
+[23-Feb-2018 09:22:31 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Proceso' not found in /home/unab5534/laravel/app/Http/Controllers/AulasPorExamen.php on line 34
+[23-Feb-2018 09:23:05 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\DB' not found in /home/unab5534/laravel/app/Http/Controllers/AulasPorExamen.php on line 36
+[23-Feb-2018 09:54:56 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/unab5534/laravel/app/Http/Controllers/AulasPorExamen.php on line 61
+[23-Feb-2018 10:06:30 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\where() in /home/unab5534/laravel/app/Http/Controllers/AulasPorExamen.php on line 60
+[23-Feb-2018 15:02:07 America/Lima] PHP Parse error:  syntax error, unexpected 'assa' (T_STRING), expecting ',' or ';' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 125
+[23-Feb-2018 16:32:02 America/Lima] PHP Parse error:  syntax error, unexpected '*' in /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php on line 32
+[26-Feb-2018 15:34:46 America/Lima] PHP Parse error:  syntax error, unexpected 'funtion' (T_STRING), expecting variable (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 106
+[26-Feb-2018 15:34:59 America/Lima] PHP Parse error:  syntax error, unexpected 'funtion' (T_STRING), expecting variable (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 106
+[27-Feb-2018 08:57:42 America/Lima] PHP Fatal error:  Call to a member function get_cellmap() on null in /home/unab5534/laravel/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php on line 37
+[27-Feb-2018 08:57:53 America/Lima] PHP Fatal error:  Call to a member function get_cellmap() on null in /home/unab5534/laravel/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php on line 37
+[27-Feb-2018 08:58:48 America/Lima] PHP Fatal error:  Call to a member function get_cellmap() on null in /home/unab5534/laravel/vendor/dompdf/dompdf/src/FrameReflower/TableCell.php on line 37
+[27-Feb-2018 10:44:12 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/cf0b32bb423016da93093cef49881220939d05f6.php on line 164
+[27-Feb-2018 10:46:02 America/Lima] PHP Fatal error:  Call to undefined method Barryvdh\DomPDF\PDF::with() in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 151
+[28-Feb-2018 09:59:17 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 153
+[28-Feb-2018 10:00:04 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 153
+[28-Feb-2018 12:07:51 America/Lima] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 268
+[01-Mar-2018 09:42:23 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 233
+[01-Mar-2018 09:45:35 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hojaidentificacion' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 261
+[01-Mar-2018 09:52:57 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hojaidentificacion' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 286
+[01-Mar-2018 09:53:15 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hojaidentificacion' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 286
+[02-Mar-2018 15:35:02 America/Lima] PHP Parse error:  syntax error, unexpected '$request' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php on line 32
+[05-Mar-2018 11:51:35 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 235
+[05-Mar-2018 11:52:14 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 235
+[05-Mar-2018 12:14:16 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:16:02 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:26:53 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:28:45 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:30:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:31:29 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:32:50 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 12:36:37 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 246
+[05-Mar-2018 12:37:46 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[05-Mar-2018 14:08:22 America/Lima] PHP Parse error:  syntax error, unexpected '","' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 289
+[05-Mar-2018 15:17:50 America/Lima] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/unab5534/laravel/storage/framework/views/a5e01aa5077fc42aac89519b68b7605b831db6bf.php on line 37
+[05-Mar-2018 15:19:42 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/a5e01aa5077fc42aac89519b68b7605b831db6bf.php on line 217
+[05-Mar-2018 15:47:49 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 238
+[06-Mar-2018 12:24:58 America/Lima] PHP Parse error:  syntax error, unexpected ''71093241'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/unab5534/laravel/app/Http/Controllers/PagosController.php on line 207
+[06-Mar-2018 15:03:21 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/storage/framework/views/a5e01aa5077fc42aac89519b68b7605b831db6bf.php on line 138
+[06-Mar-2018 15:03:37 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/storage/framework/views/a5e01aa5077fc42aac89519b68b7605b831db6bf.php on line 138
+[06-Mar-2018 15:04:06 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/storage/framework/views/a5e01aa5077fc42aac89519b68b7605b831db6bf.php on line 138
+[06-Mar-2018 15:39:02 America/Lima] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: id' in /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php:38
+Stack trace:
+#0 /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php(38): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/unab5534/...', 38, Array)
+#1 [internal function]: App\Http\Controllers\GenerarexaController->nextstep()
+#2 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(55): call_user_func_array(Array, Array)
+#3 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('nextstep', Array)
+#4 /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(190): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\GenerarexaController), 'nextstep')
+#5 /home/unab5534/laravel/vendor/laravel/framework/src/I in /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php on line 38
+[06-Mar-2018 15:39:02 America/Lima] PHP Fatal error:  Cannot access empty property in /home/unab5534/laravel/app/Http/Controllers/GenerarexaController.php on line 38
+[07-Mar-2018 11:52:13 America/Lima] PHP Parse error:  syntax error, unexpected 'ASISTIO' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 225
+[07-Mar-2018 11:52:36 America/Lima] PHP Parse error:  syntax error, unexpected 'ASISTIO' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 225
+[07-Mar-2018 14:28:38 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\get() in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 216
+[07-Mar-2018 14:28:46 America/Lima] PHP Fatal error:  Call to undefined function App\Http\Controllers\get() in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 216
+[07-Mar-2018 14:56:31 America/Lima] PHP Parse error:  syntax error, unexpected 'ASISTIO' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 216
+[07-Mar-2018 15:05:08 America/Lima] PHP Parse error:  syntax error, unexpected 'ASIS' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 216
+[07-Mar-2018 16:31:28 America/Lima] PHP Parse error:  syntax error, unexpected '' as resultado,'' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 213
+[07-Mar-2018 16:32:00 America/Lima] PHP Parse error:  syntax error, unexpected 'ASISTIO' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 215
+[08-Mar-2018 08:43:41 America/Lima] PHP Parse error:  syntax error, unexpected '' as PUNTAJE,'' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 213
+[08-Mar-2018 08:52:41 America/Lima] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 214
+[08-Mar-2018 14:48:43 America/Lima] PHP Fatal error:  Call to a member function get() on array in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 213
+[08-Mar-2018 14:52:56 America/Lima] PHP Fatal error:  Call to a member function get() on array in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 213
+[08-Mar-2018 15:08:24 America/Lima] PHP Fatal error:  Call to a member function get() on array in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 213
+[08-Mar-2018 15:15:35 America/Lima] PHP Parse error:  syntax error, unexpected 'ASISTIO' (T_STRING) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 214
+[08-Mar-2018 15:19:16 America/Lima] PHP Fatal error:  Call to a member function get() on array in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 214
+[08-Mar-2018 15:40:54 America/Lima] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 218
+[09-Mar-2018 10:40:41 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Pagos' not found in /home/unab5534/laravel/app/Http/Controllers/ReporteController.php on line 199
+[09-Mar-2018 10:42:16 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Pagos' not found in /home/unab5534/laravel/app/Http/Controllers/ReporteController.php on line 199
+[09-Mar-2018 10:42:23 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Pagos' not found in /home/unab5534/laravel/app/Http/Controllers/ReporteController.php on line 199
+[09-Mar-2018 10:52:47 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/app/Http/Controllers/ReporteController.php on line 203
+[12-Mar-2018 11:09:58 America/Lima] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 467
+[16-Mar-2018 09:57:20 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 330
+[16-Mar-2018 09:58:00 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 330
+[16-Mar-2018 10:02:37 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 330
+[16-Mar-2018 11:17:42 America/Lima] PHP Fatal error:  Cannot declare class App\Http\Controllers\Tarifa because the name is already in use in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 16
+[16-Mar-2018 11:17:52 America/Lima] PHP Fatal error:  Cannot declare class App\Http\Controllers\Tarifa because the name is already in use in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 16
+[16-Mar-2018 11:26:27 America/Lima] PHP Fatal error:  Cannot declare class App\Http\Controllers\Tarifa because the name is already in use in /home/unab5534/laravel/app/Http/Controllers/TarifaController.php on line 16
+[16-Mar-2018 12:34:21 America/Lima] PHP Parse error:  syntax error, unexpected '(' in /home/unab5534/laravel/app/Http/Controllers/TarifaModalidad.php on line 50
+[16-Mar-2018 12:34:52 America/Lima] PHP Parse error:  syntax error, unexpected '(' in /home/unab5534/laravel/app/Http/Controllers/TarifaModalidad.php on line 50
+[18-Mar-2018 20:29:25 America/Lima] PHP Fatal error:  Class 'App\Hojaidentificacioncepre' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 473
+[20-Mar-2018 15:22:10 America/Lima] PHP Parse error:  syntax error, unexpected 'Controller' (T_STRING), expecting '{' in /home/unab5534/laravel/app/Http/Controllers/ExadmiController.php on line 4
+[20-Mar-2018 15:23:08 America/Lima] PHP Fatal error:  Class 'Controller' not found in /home/unab5534/laravel/app/Http/Controllers/ExadmiController.php on line 5
+[20-Mar-2018 15:25:17 America/Lima] PHP Fatal error:  Class 'Controller' not found in /home/unab5534/laravel/app/Http/Controllers/ExadmiController.php on line 6
+[20-Mar-2018 15:26:29 America/Lima] PHP Fatal error:  Class 'Controller' not found in /home/unab5534/laravel/app/Http/Controllers/ExadmiController.php on line 6
+[20-Mar-2018 21:57:00 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\WKPDF' not found in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 290
+[20-Mar-2018 21:59:00 America/Lima] PHP Fatal error:  Class 'WKPDF' not found in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 292
+[20-Mar-2018 22:05:51 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:06:01 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:06:17 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:13:02 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:16:32 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:17:31 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:23:51 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:25:40 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:28:35 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:31:09 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:31:26 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:31:32 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:32:37 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:32:45 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:33:01 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:33:43 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:26 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:36 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:37 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:37 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:38 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:38 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:34:54 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:36:31 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:36:41 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:36:45 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:39:15 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:40:09 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:40:16 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:40:40 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:41:26 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:41:43 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:41:59 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:52:09 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:55:52 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:55:56 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:56:44 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 22:59:58 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[20-Mar-2018 23:05:47 America/Lima] PHP Fatal error:  Class 'Barryvdh\Snappy\ServiceProvider' not found in /home/unab5534/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[21-Mar-2018 11:42:16 America/Lima] PHP Fatal error:  Class 'WKPDF' not found in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 292
+[22-Mar-2018 10:31:10 America/Lima] PHP Fatal error:  Call to undefined method Barryvdh\DomPDF\PDF::inline() in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 239
+[22-Mar-2018 11:51:37 CST6CDT] PHP Parse error:  syntax error, unexpected ''),' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/config/snappy.php on line 8
+[22-Mar-2018 11:51:37 CST6CDT] PHP Parse error:  syntax error, unexpected ''),' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/config/snappy.php on line 8
+[22-Mar-2018 11:51:39 CST6CDT] PHP Parse error:  syntax error, unexpected ''),' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/config/snappy.php on line 8
+[22-Mar-2018 12:08:36 CST6CDT] PHP Parse error:  syntax error, unexpected ''),' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/config/snappy.php on line 8
+[22-Mar-2018 14:35:06 America/Lima] PHP Parse error:  syntax error, unexpected '$key' (T_VARIABLE) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 31
+[22-Mar-2018 14:35:51 America/Lima] PHP Parse error:  syntax error, unexpected '$key' (T_VARIABLE) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 31
+[22-Mar-2018 14:37:11 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 31
+[22-Mar-2018 14:37:11 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 31
+[22-Mar-2018 14:37:28 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 31
+[22-Mar-2018 14:45:47 America/Lima] PHP Parse error:  syntax error, unexpected '=', expecting ',' or ';' in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 36
+[22-Mar-2018 14:46:16 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 36
+[22-Mar-2018 14:46:42 America/Lima] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 36
+[22-Mar-2018 14:46:48 America/Lima] PHP Parse error:  syntax error, unexpected '=' in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 36
+[22-Mar-2018 15:33:11 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/215ee96de8257204aa31fa4c36ecc8b82f416437.php on line 81
+[23-Mar-2018 08:32:55 America/Lima] PHP Parse error:  syntax error, unexpected 'content' (T_STRING) in /home/unab5534/laravel/storage/framework/views/7de412e140cfdaecc74b33d02540deba9a80b744.php on line 3
+[23-Mar-2018 08:33:07 America/Lima] PHP Parse error:  syntax error, unexpected 'content' (T_STRING) in /home/unab5534/laravel/storage/framework/views/7de412e140cfdaecc74b33d02540deba9a80b744.php on line 3
+[23-Mar-2018 09:12:00 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hojaidentificacionsimulacro' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[23-Mar-2018 09:14:41 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\Hojaidentificacionsimulacro' not found in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[23-Mar-2018 12:11:23 America/Lima] PHP Parse error:  syntax error, unexpected '$request' (T_VARIABLE) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 884
+[24-Mar-2018 19:25:34 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:41:51 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:47:48 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:51:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:53:07 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:53:12 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[24-Mar-2018 19:53:45 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[24-Mar-2018 19:58:37 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 19:58:43 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[24-Mar-2018 19:59:35 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:01:18 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:02:33 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:02:36 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[24-Mar-2018 20:04:32 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:04:43 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:07:42 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 623
+[24-Mar-2018 20:11:02 America/Lima] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 693
+[24-Mar-2018 20:11:28 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 661
+[24-Mar-2018 20:16:14 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 545
+[24-Mar-2018 20:16:17 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 578
+[24-Mar-2018 20:16:21 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 623
+[24-Mar-2018 20:16:24 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 661
+[24-Mar-2018 21:50:40 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 450
+[24-Mar-2018 21:50:58 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 486
+[24-Mar-2018 21:55:40 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 534
+[24-Mar-2018 21:58:51 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 577
+[24-Mar-2018 22:49:19 America/Lima] PHP Parse error:  syntax error, unexpected '/' in /home/unab5534/laravel/storage/framework/views/7de412e140cfdaecc74b33d02540deba9a80b744.php on line 16
+[24-Mar-2018 23:38:30 America/Lima] PHP Parse error:  syntax error, unexpected ':' in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 328
+[24-Mar-2018 23:39:09 America/Lima] PHP Parse error:  syntax error, unexpected ':' in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 328
+[24-Mar-2018 23:42:03 America/Lima] PHP Parse error:  syntax error, unexpected ';' in /home/unab5534/laravel/storage/framework/views/9f95721ce09cb2b364983e453fe7ec3559b92b31.php on line 114
+[24-Mar-2018 23:57:03 America/Lima] PHP Fatal error:  Call to a member function get() on array in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 196
+[25-Mar-2018 00:10:51 America/Lima] PHP Fatal error:  Call to undefined function secure_iterable() in /home/unab5534/laravel/storage/framework/views/9f95721ce09cb2b364983e453fe7ec3559b92b31.php on line 94
+[25-Mar-2018 10:11:29 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 696
+[26-Mar-2018 11:47:38 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 362
+[26-Mar-2018 12:03:01 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 376
+[26-Mar-2018 12:03:30 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 376
+[26-Mar-2018 12:03:43 America/Lima] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 376
+[26-Mar-2018 12:18:22 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 354
+[26-Mar-2018 12:18:26 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 388
+[26-Mar-2018 15:19:27 America/Lima] PHP Parse error:  syntax error, unexpected '!', expecting '(' in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 374
+[27-Mar-2018 15:39:14 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 484
+[27-Mar-2018 15:39:25 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/TxtController.php on line 448
+[28-Mar-2018 15:01:45 America/Lima] PHP Parse error:  syntax error, unexpected '$key' (T_VARIABLE) in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 94
+[28-Mar-2018 15:01:54 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 94
+[28-Mar-2018 15:02:51 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 94
+[28-Mar-2018 15:03:05 America/Lima] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 94
+[28-Mar-2018 15:59:10 America/Lima] PHP Fatal error:  Class 'Font_Metrics' not found in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 128
+[28-Mar-2018 15:59:41 America/Lima] PHP Fatal error:  Class 'Font_Metrics' not found in /home/unab5534/laravel/storage/framework/views/0d5370f9c95a47ac92c4320c1138ee27a2b04b08.php on line 128
+[28-Mar-2018 16:21:32 America/Lima] PHP Fatal error:  Class 'Font_Metrics' not found in /home/unab5534/laravel/vendor/dompdf/dompdf/src/PhpEvaluator.php(55) : eval()'d code on line 3
+[28-Mar-2018 18:43:23 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:43:38 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:44:02 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:44:11 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:44:38 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:44:49 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:45:26 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:45:53 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:45:59 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:46:01 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:46:01 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:46:05 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:46:38 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:47:31 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:47:37 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:47:37 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:47:48 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:48:03 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:48:30 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:49:01 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:49:04 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:49:38 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:49:55 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:50:39 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:50:49 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:51:12 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 18:53:07 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 906
+[28-Mar-2018 18:57:24 America/Lima] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 906
+[28-Mar-2018 23:05:52 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 23:07:42 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[28-Mar-2018 23:08:06 America/Lima] PHP Fatal error:  Class 'App\Http\Controllers\phpmailerException' not found in /home/unab5534/laravel/app/Http/Controllers/email.php on line 2522
+[29-Mar-2018 13:57:38 America/Lima] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/unab5534/laravel/app/Http/Controllers/ReporteController.php on line 260
+[29-Mar-2018 15:14:43 America/Lima] PHP Fatal error:  Can't use method return value in write context in /home/unab5534/laravel/app/Http/Controllers/PDFController.php on line 264
+[02-Apr-2018 10:44:51 America/Lima] PHP Parse error:  syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 756
+[02-Apr-2018 10:45:08 America/Lima] PHP Parse error:  syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING) in /home/unab5534/laravel/app/Http/Controllers/PostulacionController.php on line 756
+[11-Sep-2018 13:04:10 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 531
+[11-Sep-2018 13:04:15 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 531
+[11-Sep-2018 13:04:18 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 531
+[11-Sep-2018 13:04:30 America/Lima] PHP Parse error:  syntax error, unexpected end of file in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 531
+[11-Sep-2018 13:07:16 America/Lima] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Pagos.php on line 87
+[11-Sep-2018 13:07:16 America/Lima] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Pagos.php on line 87
+[11-Sep-2018 13:07:16 America/Lima] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Pagos.php on line 87
+[11-Sep-2018 13:07:16 America/Lima] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Pagos.php on line 87
+[11-Sep-2018 13:07:18 America/Lima] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/unab5534/laravel/app/Pagos.php on line 87
+[17-Sep-2018 14:35:26 America/Lima] PHP Fatal error:  Class 'Postulacion' not found in /home/unab5534/laravel/storage/framework/views/593b38254e0c42be92e14d2a068d1b0ba7a48448.php on line 119
