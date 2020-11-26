@@ -626,7 +626,7 @@ class TxtController extends Controller
                     ->where('activo',1)
                     ->get();
 
-        $array = json_decode($proceso); 
+        $array = json_decode($proceso);        
         $idProceso="" ;
         $descripcion="";
         foreach($array as $obj){
