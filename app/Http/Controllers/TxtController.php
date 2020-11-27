@@ -665,7 +665,7 @@ class TxtController extends Controller
                     $hojaidentificacioncepre ->CANAL=$data[1];
                     $hojaidentificacioncepre ->CODIGO=$data[2];
                     $hojaidentificacioncepre ->AULA=$nombreOriginal;
-                    $hojaidentificacioncepre ->idProceso=4;
+                    $hojaidentificacioncepre ->idProceso=$idProceso;
                     $hojaidentificacioncepre ->save();
                     $fila++;
                     $numero = $fila;

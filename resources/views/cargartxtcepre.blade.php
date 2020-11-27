@@ -251,7 +251,7 @@
         var formData = new FormData($("#"+nombreform+"")[0]);
       
         //hacemos la petición ajax   
-//        alert('ENTRO');
+        //alert('ENTRO');
         $.ajax({
             url: miurl,  
             type: 'POST',
