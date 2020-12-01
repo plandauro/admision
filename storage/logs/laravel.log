@@ -1,3 +1,15 @@
 [2020-11-27 15:05:06] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 60 seconds exceeded in C:\laragon\www\admision\vendor\laravel\framework\src\Illuminate\Database\Connection.php:480
 Stack trace:
 #0 {main}  
+[2020-11-27 16:10:31] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 60 seconds exceeded in C:\laragon\www\admision\vendor\laravel\framework\src\Illuminate\Database\Connection.php:480
+Stack trace:
+#0 {main}  
+[2020-11-27 16:17:00] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 60 seconds exceeded in C:\laragon\www\admision\vendor\laravel\framework\src\Illuminate\Database\Connection.php:480
+Stack trace:
+#0 {main}  
+[2020-11-27 16:21:05] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 60 seconds exceeded in C:\laragon\www\admision\vendor\laravel\framework\src\Illuminate\Database\Connection.php:480
+Stack trace:
+#0 {main}  
+[2020-11-27 16:47:03] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 60 seconds exceeded in C:\laragon\www\admision\vendor\laravel\framework\src\Illuminate\Database\Connection.php:480
+Stack trace:
+#0 {main}  

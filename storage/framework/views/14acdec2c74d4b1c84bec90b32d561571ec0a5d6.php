@@ -249,7 +249,7 @@
         var formData = new FormData($("#"+nombreform+"")[0]);
       
         //hacemos la petición ajax   
-//        alert('ENTRO');
+        //alert('ENTRO');
         $.ajax({
             url: miurl,  
             type: 'POST',
@@ -268,11 +268,11 @@
             },
             //una vez finalizado correctamente
             success: function(data) {
-            $("#alert1.1").show(0).delay(5000).hide(0);
+            $("#alert1.1").show(0).delay(15000).hide(0);
 
 	        if(data.correcto=="SI"){
    $("#archivo2").val("");
-          $("#alert21").show(0).delay(5000).hide(0);
+          $("#alert21").show(0).delay(15000).hide(0);
           $("#message21").text("Se cargo correctamente");        
 
 
