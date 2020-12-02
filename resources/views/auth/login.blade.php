@@ -16,7 +16,7 @@ use App\Proceso;
             <img src="{{ asset('images/logo.png') }}" alt="">
             <form role="form" method="POST" action="{{ url('/login') }}">
                 {{ csrf_field() }}
-              <h1>Inicio de Sesión</h1>
+              <h1>Inicio de Sesió</h1>
               <div style="margin-bottom: 10px;">
                 <input style="margin-bottom: 1px;" id="email" type="email" class="form-control"  name="email" value="{{ old('email') }}" placeholder="E-mail" required autofocus />
                 @if ($errors->has('email'))
