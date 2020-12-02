@@ -193,6 +193,11 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('rep-lista-calificacion-por-postulante-cepre-2', 'TxtController@listarReporteCalificacionPorPostulanteCepre2')->middleware('asistente');
 	
 	//Cargar Txt
+	Route::get('cargar-txt-2020-2', 'TxtController@cargarInformacion20202');
+	Route::post('cargar-txt-2020-2', 'TxtController@cargarInformacionTXT20202');
+	Route::post('cargar-txt1-2020-2', 'TxtController@cargarInformacionTXT120202');
+        Route::post('cargar-txt2-2020-2', 'TxtController@cargarInformacionTXT220202');
+        Route::post('cargar-txt3-2020-2', 'TxtController@cargarInformacionTXT320202');
         Route::get('cargar-txt', 'TxtController@cargarInformacion');
         Route::post('cargar-txt', 'TxtController@cargarInformacionTXT');
         Route::post('cargar-txt1', 'TxtController@cargarInformacionTXT1');
