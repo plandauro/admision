@@ -310,7 +310,7 @@ use App\Postulacion;
                               <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Duplicados</a>
                             </li>                            
                             <li>
-                              <a href="{{ url('/rep-calificacion-canales-2020-2') }}" >Admsion HI - Canal</a>
+                              <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
 		            </li>
                             <li>
                               <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
