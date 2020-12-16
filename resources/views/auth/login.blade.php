@@ -41,7 +41,7 @@ use App\Proceso;
               <div class="separator">
                 @if(Proceso::abierto())
                 <p class="change_link">
-                  <a style="font-size: 15px;" href="{{ url('register') }} " hidden=""> Registrarse </a>
+                  <a style="font-size: 15px;" href="{{ url('register') }} " type="hidden"> Registrarse </a>
                   <a style="font-size: 15px;" target="blank" href="{{ url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf') }}"> Descargar Instrucciones </a>
                 </p>
                 @endif
@@ -52,7 +52,7 @@ use App\Proceso;
                 <div>
                   <br>
                     <center>
-                        <p>UNAB © 2019 Todos los Derechos Reservados - Desarrollado por UTIC</p>
+                        <p>UNAB © 2020 Todos los Derechos Reservados - Desarrollado por UTIC</p>
                     </center>
                 </div>
               </div>

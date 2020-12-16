@@ -42,7 +42,7 @@ use App\Proceso;
               <div class="separator">
                 <?php if(Proceso::abierto()): ?>
                 <p class="change_link">
-                  <a style="font-size: 15px;" href="<?php echo e(url('register')); ?> " hidden=""> Registrarse </a>
+                  <a style="font-size: 15px;" href="<?php echo e(url('register')); ?> " type="hidden"> Registrarse </a>
                   <a style="font-size: 15px;" target="blank" href="<?php echo e(url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf')); ?>"> Descargar Instrucciones </a>
                 </p>
                 <?php endif; ?>
@@ -53,7 +53,7 @@ use App\Proceso;
                 <div>
                   <br>
                     <center>
-                        <p>UNAB © 2019 Todos los Derechos Reservados - Desarrollado por UTIC</p>
+                        <p>UNAB © 2020 Todos los Derechos Reservados - Desarrollado por UTIC</p>
                     </center>
                 </div>
               </div>

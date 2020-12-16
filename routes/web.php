@@ -109,6 +109,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/rep-estadisticas-list-post-edad', 'ReporteController@listaEstadisticaEdad')->middleware('asistente');
 	Route::get('/rep-estadisticas-ing-edad', 'ReporteController@estadisticaEdadIngresante')->middleware('asistente');
 	Route::post('/rep-estadisticas-list-ing-edad', 'ReporteController@listaEstadisticaEdadIngresante')->middleware('asistente');
+	
 	//Calificacion
 	Route::get('rep-calificacion', 'TxtController@postulantes')->middleware('asistente');
 	Route::post('rep-constancias-cali', 'TxtController@listPostulates')->middleware('asistente');
@@ -116,6 +117,11 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('rep-constancias-cali-cepre', 'TxtController@listPostulatesCepre')->middleware('asistente');
         Route::get('rep-calificacion-simulacro', 'TxtController@postulantesSimulacro')->middleware('asistente');
 	Route::post('rep-constancias-cali-simulacro', 'TxtController@listPostulatesSimulacro')->middleware('asistente');
+
+	//CALIFICACION - 2020
+
+	Route::get('rep-calificacion-2020-2', 'TxtController@postulantes2020II')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2', 'TxtController@listPostulates2020II')->middleware('asistente');
 	
 	//AGREGI 23/10/2018
 	Route::get('rep-calificacion-cepre-II', 'TxtController@postulantesCepreII')->middleware('asistente');
@@ -154,6 +160,10 @@ Route::group(['middleware' => 'auth'], function () {
 	//AGREGO 25/10/2018
 	Route::get('rep-calificacion-duplicados', 'TxtController@postulantesDuplicados')->middleware('asistente');
 	Route::post('rep-constancias-cali-duplicados', 'TxtController@listPostulatesDuplicados')->middleware('asistente');
+
+	//AGREGO DUPLICADOS 2020-2
+	Route::get('rep-calificacion-duplicados-2020-2', 'TxtController@postulantesDuplicados2020II')->middleware('asistente');
+	Route::post('rep-constancias-cali-duplicados-2020-2', 'TxtController@listPostulatesDuplicados2020II')->middleware('asistente');
 	
 	//AGREGO 17/11/2018
 	Route::get('rep-calificacion-canales-HR', 'TxtController@postulantesCanalesHR')->middleware('asistente');
@@ -226,6 +236,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('llenar-identificacion', 'TxtController@procesoIdentifacion');
 	Route::get('llenar-respuestas', 'TxtController@procesoRespuesta');
 	Route::get('llenar-respuestas-cepre', 'TxtController@procesoRespuestaCepre');
+	//respuesta 2020
+	Route::get('llenar-respuestas-2020-2', 'TxtController@procesoRespuesta2020II');
+
 	//AGREGADO 23/10/2018
 	Route::get('llenar-respuestas-cepre-II', 'TxtController@procesoRespuestaCepreII');
         Route::get('llenar-respuestas-simulacro', 'TxtController@procesoRespuestaSimulacro');
