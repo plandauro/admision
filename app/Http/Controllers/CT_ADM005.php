@@ -21,8 +21,8 @@ class CT_ADM005 extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
-    {
+    /* SIRVE PARA CONTROLAR LISTAR TODOS LOS USUARIOS DE ADMISION */
+    public function index(){
         $estados = (DB :: select( DB :: raw ("CALL P_LIS_SIS_PARAMETROS_DETALLE(1)")));
         $parametros = (DB :: select( DB :: raw ("CALL P_LIS_ADM_PARAMETROS()")));
         $parametrosdetalle = (DB :: select( DB :: raw ("CALL P_LIS_ADM_PARAMETROS_DETALLE()")));
@@ -36,10 +36,12 @@ class CT_ADM005 extends Controller
         }
         return view('configuracion.VB_ADM005')->with('estados', $estados)->with('parametros', $parametros)->with('parametrosdetalle', $parametrosdetalle)->with('proceso', $proceso)->with('escuela', $escuela)->with('ambiente', $ambiente)->with('cantidad', $cantidadM);
     }
+
     public function listaPostulanteSimulacro(Request $request){
       $postulanteSimulacro = (DB :: select( DB :: raw ("CALL P_LIS_ADM_POSTULANTE_SIMULACRO()")));
       return response()->json(['data' => $postulanteSimulacro]);
-    } 
+    }
+
     public function crearPostulanteSimulacro(Request $request){
         $txtproceso=$request->txtproceso;
         $txtescuela=$request->txtescuela;
@@ -67,6 +69,7 @@ class CT_ADM005 extends Controller
         }
 
     }
+
     public function actualizarPostulanteSimulacro(Request $request){
         $txtcodigo=$request->txtcodigo;
         $txtproceso=$request->txtproceso;
@@ -83,6 +86,7 @@ class CT_ADM005 extends Controller
         $msg = $request->txtcodigo;
         return response()->json(['success' => false,'message' => $msg]);
     }
+
     public function eliminarPostulanteSimulacro(Request $request){ 
         $txtcodigo=$request->txtcodigo;  
         $txtproceso=$request->txtproceso;   
