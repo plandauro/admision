@@ -2371,6 +2371,40 @@ class TxtController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
+
+    /* PARA DUPLICADOS 2020 II*/
+
+    public function postulantesDuplicados2020II()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacionDuplicados-2020-2')->with("procesos", $procesos);
+    }
+
+    public function listPostulatesDuplicados2020II(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela                
+                // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado-2020-2(2,$request->dato)"))); // NUEVO
+                break;
+
+
+            default:
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
+                // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado-2020-2(1,0)"))); // NUEVO
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+
+    /* FIN DUPLICADOS 2020 II*/
+
+
     public function postulantesCanalesHR()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
