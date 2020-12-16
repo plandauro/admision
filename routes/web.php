@@ -160,6 +160,10 @@ Route::group(['middleware' => 'auth'], function () {
 	//AGREGO 25/10/2018
 	Route::get('rep-calificacion-duplicados', 'TxtController@postulantesDuplicados')->middleware('asistente');
 	Route::post('rep-constancias-cali-duplicados', 'TxtController@listPostulatesDuplicados')->middleware('asistente');
+
+	//AGREGO DUPLICADOS 2020-2
+	Route::get('rep-calificacion-duplicados-2020-2', 'TxtController@postulantesDuplicados2020II')->middleware('asistente');
+	Route::post('rep-constancias-cali-duplicados-2020-2', 'TxtController@listPostulatesDuplicados2020II')->middleware('asistente');
 	
 	//AGREGO 17/11/2018
 	Route::get('rep-calificacion-canales-HR', 'TxtController@postulantesCanalesHR')->middleware('asistente');
