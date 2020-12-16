@@ -1633,7 +1633,7 @@ class TxtController extends Controller
     public function procesoRespuesta2020II()
     {
 
-        DB::statement('call sp_inserccion_calificar_proceso_2020_2()');
+        DB::statement('call sp_insercion_calificar_proceso_2020_2()');
 
         return redirect('rep-calificacion-2020-2'); //CALIFICACION 2020 - 2
 
