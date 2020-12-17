@@ -351,6 +351,10 @@ Route::group(['middleware' => 'auth'], function () {
 	//AGREGADO 17112018
 	Route::post('actualizarAdmisionDuplicado', 'TxtController@actualizarAdmisionDuplicado');
 	Route::post('actualizarAdmisionCanal', 'TxtController@actualizarAdmisionCanal');
+
+	//ACTUALIZACION DUPLICADOS 2020_2
+	Route::post('actualizarAdmisionDuplicado-2020-2', 'TxtController@actualizarAdmisionDuplicado2020II');
+	Route::post('actualizarAdmisionCanal-2020-2', 'TxtController@actualizarAdmisionCanal2020II');
 	
 	//AGREGADO 17112018
 	Route::post('actualizarAdmisionCanalHR', 'TxtController@actualizarAdmisionCanalHR');

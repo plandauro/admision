@@ -309,7 +309,15 @@ use App\Postulacion;
                               <li>
                                 <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                               </li>                            
-                              
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
+                              </li>
                             </ul>
                           </li>
                           

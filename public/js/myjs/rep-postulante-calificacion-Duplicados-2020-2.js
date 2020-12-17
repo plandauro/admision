@@ -93,7 +93,7 @@ function llenar(response, index, value) {
             //$("#alertDuplicado").show(0).delay(3000).hide(0);
             $("#alertDuplicado").show(0).delay(3000).hide(0).addClass('alert-danger');
             $("#mensajeDuplicado").text("ERROR : Seleccione solo un elemento");
-            console.log('HOLAAAAAAA');
+            // console.log('HOLAAAAAAA');
             return;
         }
         rows = dataTable.rows('.selected').data();

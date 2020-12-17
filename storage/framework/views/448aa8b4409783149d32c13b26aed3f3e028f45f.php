@@ -113,6 +113,6 @@
   <script src="<?php echo e(asset('js/vfs_fonts.js')); ?>"></script>
   <script src="<?php echo e(asset('js/buttons.html5.min.js')); ?>"></script>
   <script src="<?php echo e(asset('js/buttons.print.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/myjs/rep-postulante-calificacion-Duplicados.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/myjs/rep-postulante-calificacion-Duplicados-2020-2.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

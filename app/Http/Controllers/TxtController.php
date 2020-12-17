@@ -2315,6 +2315,22 @@ class TxtController extends Controller
             DB::table('hojaidenticacion_proceso_3')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
 
+    /* ACTUALIZAR DUPLICADOS 2020 */
+    public function actualizarAdmisionDuplicado2020II(Request $request)
+    {
+
+        $hojaidentificacioncepre =
+            DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+    }
+
+    public function actualizarAdmisionCanal2020II(Request $request)
+    {
+
+        $hojaidentificacioncepre =
+            DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
+    }
+    /* FIN DE ACTUALIZAR DUPLICADOS 2020 */
+    
     public function postulantesCanales()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
@@ -2388,20 +2404,22 @@ class TxtController extends Controller
         switch ($request->tipo) {
             case 2: #Por Escuela                
                 // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
-                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(2,$request->dato)"))); // NUEVO
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado-2020-2(2,$request->dato)"))); // NUEVO
                 break;
 
 
             default:
                 //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
                 // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
-                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(1,0)"))); // NUEVO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado-2020-2(1,0)"))); // NUEVO
                 break;
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
 
+
     /* FIN DUPLICADOS 2020 II*/
+
 
     public function postulantesCanalesHR()
     {
