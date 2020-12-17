@@ -2694,6 +2694,12 @@ class TxtController extends Controller
         return view('reporte.ReporteCalificacionPorPostulante')->with("procesos", $procesos);
     }
 
+    public function ReporteCalificacionPorPostulante2020II()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('reporte.ReporteCalificacionPorPostulante2020II')->with("procesos", $procesos);
+    }
+
     public function listarReporteCalificacionPorPostulante(Request $request)
     {
         $txtcodigo = $request->codigopostulante;
@@ -2706,6 +2712,21 @@ class TxtController extends Controller
 
         return response()->json(['postulaciones' => $postulaciones]);
     }
+
+
+    public function listarReporteCalificacionPorPostulante2020II(Request $request)
+    {
+        $txtcodigo = $request->codigopostulante;
+        if ($txtcodigo == '') {
+            $postulaciones = (DB::select(DB::raw("CALL P_OBT_ADM_REPORTE_MARCADO_POSTULANTE_2020_2(0)")));
+        } else {
+            $postulaciones = (DB::select(DB::raw("CALL P_OBT_ADM_REPORTE_MARCADO_POSTULANTE_2020_2($txtcodigo)")));
+        }
+
+
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
 
     public function ReporteCalificacionPorPostulanteCepre()
     {

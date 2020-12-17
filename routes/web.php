@@ -197,6 +197,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('rep-calificacion-por-postulante', 'TxtController@ReporteCalificacionPorPostulante')->middleware('asistente');
 	Route::post('rep-lista-calificacion-por-postulante', 'TxtController@listarReporteCalificacionPorPostulante')->middleware('asistente');
 
+	Route::get('rep-calificacion-por-postulante-2020-2', 'TxtController@ReporteCalificacionPorPostulante2020II')->middleware('asistente');
+	Route::post('rep-lista-calificacion-por-postulante-2020-2', 'TxtController@listarReporteCalificacionPorPostulante2020II')->middleware('asistente');
+
+
 	Route::get('rep-calificacion-por-postulante-cepre', 'TxtController@ReporteCalificacionPorPostulanteCepre')->middleware('asistente');
 	Route::post('rep-lista-calificacion-por-postulante-cepre', 'TxtController@listarReporteCalificacionPorPostulanteCepre')->middleware('asistente');
 	Route::get('rep-calificacion-por-postulante-cepre-2', 'TxtController@ReporteCalificacionPorPostulanteCepre2')->middleware('asistente');
