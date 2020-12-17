@@ -2388,22 +2388,20 @@ class TxtController extends Controller
         switch ($request->tipo) {
             case 2: #Por Escuela                
                 // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado-2020-2(2,$request->dato)"))); // NUEVO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(2,$request->dato)"))); // NUEVO
                 break;
 
 
             default:
                 //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
                 // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
-                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado-2020-2(1,0)"))); // NUEVO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(1,0)"))); // NUEVO
                 break;
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
 
-
     /* FIN DUPLICADOS 2020 II*/
-
 
     public function postulantesCanalesHR()
     {
