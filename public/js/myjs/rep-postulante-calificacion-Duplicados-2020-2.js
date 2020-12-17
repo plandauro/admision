@@ -111,7 +111,7 @@ function llenar(response, index, value) {
         codlitho = $('#codlitho').val();
         codpostulante = $('#codpostulante').val();
         urlbase = $("body").attr('urlbase');
-        url = urlbase + "/actualizarAdmisionDuplicado";
+        url = urlbase + "/actualizarAdmisionDuplicado2020II";
         console.log(url);
         $.ajax({
             url: url,
