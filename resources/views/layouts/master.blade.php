@@ -300,24 +300,24 @@ use App\Postulacion;
                             <i></i> Proceso del Examen de Admisión 2020-2 <span class="fa fa-chevron-down"></span>
                             </a>
                             <ul class="nav child_menu">
-                            <li>
-                              <a href="{{ url('/cargar-txt-2020-2') }}" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="{{ url('/rep-calificacion-2020-2') }}" >Reporte de calificacion</a>
-                            </li>
-                            <!--li>
-                              <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Duplicados</a>
-                            </li>                            
-                            <li>
-                              <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
-		            </li>
-                            <li>
-                              <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
-                            </li-->
-                            <li>
-                              <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
-                            </li>
+                              <li>
+                                <a href="{{ url('/cargar-txt-2020-2') }}" >Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-2020-2') }}" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                              </li>                            
+                              {{-- <li>
+                                <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
+                              </li> --}}
                             </ul>
                           </li>
                           
