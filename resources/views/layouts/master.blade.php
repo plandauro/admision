@@ -309,7 +309,7 @@ use App\Postulacion;
                               <li>
                                 <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                               </li>                            
-                              <li>
+                              {{-- <li>
                                 <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
                               </li>
                               <li>
@@ -317,7 +317,7 @@ use App\Postulacion;
                               </li>
                               <li>
                                 <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
-                              </li>
+                              </li> --}}
                             </ul>
                           </li>
                           
