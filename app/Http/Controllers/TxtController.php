@@ -2697,7 +2697,7 @@ class TxtController extends Controller
     public function ReporteCalificacionPorPostulante2020II()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
-        return view('reporte.ReporteCalificacionPorPostulante2020II')->with("procesos", $procesos);
+        return view('reporte.ReporteCalificacionPorPostulante20202')->with("procesos", $procesos);
     }
 
     public function listarReporteCalificacionPorPostulante(Request $request)
