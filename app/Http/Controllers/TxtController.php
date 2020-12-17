@@ -2319,8 +2319,8 @@ class TxtController extends Controller
     public function actualizarAdmisionDuplicado2020II(Request $request)
     {
 
-        $hojaidentificacioncepre =
-            DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+        //var_dump($request);
+        $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
     }
 
     public function actualizarAdmisionCanal2020II(Request $request)
@@ -2330,7 +2330,7 @@ class TxtController extends Controller
             DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
     /* FIN DE ACTUALIZAR DUPLICADOS 2020 */
-    
+
     public function postulantesCanales()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
@@ -2752,7 +2752,7 @@ class TxtController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('reporte.ReporteCalificacionPorPostulanteCepre2')->with("procesos", $procesos);
     }
-    
+
     public function listarReporteCalificacionPorPostulanteCepre2(Request $request)
     {
         $txtcodigo = $request->codigopostulante;
