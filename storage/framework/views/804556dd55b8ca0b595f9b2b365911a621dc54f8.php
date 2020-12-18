@@ -1,13 +1,11 @@
-@extends('layouts.master')
+<?php $__env->startSection('title', 'Cargar Informacion Simulacro'); ?>
 
-@section('title', '')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
   @parent
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Informacion CEPRE con DLM</h3>
+        <h3>Cargar Informacion Simulacro con DLM</h3>
       </div>
 
     </div>
@@ -22,7 +20,6 @@
             <div class="row">
               <div class="col-md-6">
                 <h2>Cargue los resultados de DLM:</h2>
-                 
                  <form  id="f_cargar_datos_usuarios2" name="f_cargar_datos_usuarios2" method="post"  class="formarchivo2" enctype="multipart/form-data" >                
       
       
@@ -44,14 +41,15 @@
                             <p id="message31"></p>         
             </div>
       </div>
-          
-
            <div class="box-footer">
-                          <button type="submit" class="btn btn-primary">Cargar Datos</button>
+             <button type="submit" class="btn btn-primary">Cargar Datos</button>
+      </div>    
       </div>
-     </div>
 
-      </form>                 
+      </form>     
+       
+      
+      
                  
                 <form  id="f_cargar_datos_usuarios" name="f_cargar_datos_usuarios" method="post"  class="formarchivo" enctype="multipart/form-data" >                
       
@@ -73,16 +71,15 @@
         	<button type="button" class="close" data-dismiss="alert">&times;</button>
                             <p id="message11"></p>         
             </div>
-      </div>     
-
-           <div class="box-footer">
-                          <button type="submit" class="btn btn-primary">Cargar Datos</button>
       </div>
-     </div>
+           <div class="box-footer">
+             <button type="submit" class="btn btn-primary">Cargar Datos</button>
+      </div>    
+      </div>
 
       </form>
-
-<form  id="f_cargar_datos_usuarios1" name="f_cargar_datos_usuarios1" method="post"  class="formarchivo1" enctype="multipart/form-data" >                
+      
+       <form  id="f_cargar_datos_usuarios1" name="f_cargar_datos_usuarios1" method="post"  class="formarchivo1" enctype="multipart/form-data" >                
       
       
       <input type="hidden" name="_token" id="_token"  value="<?= csrf_token(); ?>"> 
@@ -103,17 +100,14 @@
                             <p id="message21"></p>         
             </div>
       </div>
-          
-
            <div class="box-footer">
-                          <button type="submit" class="btn btn-primary">Cargar Datos</button>
+             <button type="submit" class="btn btn-primary">Cargar Datos</button>
+      </div>    
       </div>
-     </div>
 
       </form>
       
-      
-
+     
               </div>
             </div>
             
@@ -123,17 +117,17 @@
       </div>
     </div>
   </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('css')
+<?php $__env->startSection('css'); ?>
  
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <!-- PNotify -->
-  <script src="{{ asset('js/pnotify.js') }}"></script>
-  <script src="{{ asset('js/pnotify.buttons.js') }}"></script>
-  <script src="{{ asset('js/pnotify.nonblock.js') }}"></script>
+  <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.buttons.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.nonblock.js')); ?>"></script>
   <script>
   
   function fileValidation(){
@@ -153,20 +147,20 @@
         return false;
     }
   }
-    
-
+  
+ 
 
  
     $(document).on("submit",".formarchivo",function(e){
   	fileValidation();
-
+     
         e.preventDefault();
         var formu=$(this);
         var nombreform=$(this).attr("id");
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-cepre";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-simulacro";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -196,8 +190,7 @@
 	        if(data.correcto=="SI"){
 		$("#archivo").val("");
 	        $("#alert11").show(0).delay(15000).hide(0);
-	        $("#message11").text("Se cargo correctamente"); 
-	        
+	        $("#message11").text("Se cargo correctamente. TOTAL: "+data.total+" registros"); 
 
 
 	        }
@@ -211,9 +204,10 @@
         });
         //alert("Se cargo con exito") ;
     }); 
+    
+    
   </script>
-
-<script>
+  <script>
   
   function fileValidation2(){
     var fileInput = document.getElementById('archivo2');
@@ -232,98 +226,18 @@
     }
     
  }
-    
-
-
+  
  
-    $(document).on("submit",".formarchivo1",function(e){
-  	fileValidation2();
-
-        e.preventDefault();
-        var formu=$(this);
-        var nombreform=$(this).attr("id");
-
-
-        //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt-cepre1";  var divresul="notificacion_resul_fcdu"}
-
-        //información del formulario
-        var formData = new FormData($("#"+nombreform+"")[0]);
-      
-        //hacemos la petición ajax   
-        //alert('ENTRO');
-        $.ajax({
-            url: miurl,  
-            type: 'POST',
+ $(document).on("submit",".formarchivo1",function(e){
+    fileValidation2();
      
-            // Form data
-            //datos del formulario
-            data: formData,
-            //necesario para subir archivos via ajax
-            cache: false,
-            contentType: false,
-            processData: false,
-            //mientras enviamos el archivo
-            //
-            beforeSend: function(){
-              //$("#"+divresul+"").html($("#cargador_empresa").html());                
-            },
-            //una vez finalizado correctamente
-            success: function(data) {
-            $("#alert1.1").show(0).delay(15000).hide(0);
-
-	        if(data.correcto=="SI"){
-   $("#archivo2").val("");
-          $("#alert21").show(0).delay(15000).hide(0);
-          $("#message21").text("Se cargo correctamente");        
-
-
-	        }
-
-        	},
-            //si ha ocurrido un error
-            error: function(data){
-               //alert(data);
-                
-            }
-        });
-        //alert("Se cargo con exito") ;
-    }); 
-  </script>
-  
-  <script>
-  
-  function fileValidation3(){
-    var fileInput = document.getElementById('archivo3');
-    var filePath = fileInput.value;
-    var allowedExtensions = /(.dlm)$/i;
-    
-        if(!allowedExtensions.exec(filePath)){
-       $("#archivo3").val("");
-
-       $("#alert3").show(0).delay(15000).hide(0);
-       $("#message3").text("Error...Debe ser un archivo DLM");  
-       
-
-        return false;
-    
-    }
-    
- }
-    
-
-
- 
-    $(document).on("submit",".formarchivo2",function(e){
-  	fileValidation3();
-
         e.preventDefault();
         var formu=$(this);
         var nombreform=$(this).attr("id");
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt-cepre2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt-simulacro1";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -350,15 +264,13 @@
             success: function(data) {
             $("#alert1.1").show(0).delay(15000).hide(0);
 
-	        if(data.correcto=="SI"){
-  $("#archivo3").val("");
-          $("#alert31").show(0).delay(15000).hide(0);
-          $("#message31").text("Se cargo correctamente");       
+          if(data.correcto=="SI"){
+    $("#archivo2").val("");
+            $("#alert21").show(0).delay(15000).hide(0);
+            $("#message21").text("Se cargo correctamente"); 
+          }
 
-
-	        }
-
-        	},
+          },
             //si ha ocurrido un error
             error: function(data){
                //alert(data);
@@ -367,6 +279,83 @@
         });
         //alert("Se cargo con exito") ;
     }); 
+    
+    
+  </script>
+  <script>
+  
+  function fileValidation3(){
+    var fileInput = document.getElementById('archivo3');
+    var filePath = fileInput.value;
+    var allowedExtensions = /(.dlm)$/i;
+    
+        if(!allowedExtensions.exec(filePath)){
+       $("#archivo3").val("");
+
+       $("#alert3").show(0).delay(15000).hide(0);
+       $("#message3").text("Error...Debe ser un archivo DLM");  
+       
+
+        return false;
+    
+    }
+    
+ }
+  
+ 
+ $(document).on("submit",".formarchivo2",function(e){
+    fileValidation3();
+     
+        e.preventDefault();
+        var formu=$(this);
+        var nombreform=$(this).attr("id");
+
+
+        //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
+        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt-simulacro2";  var divresul="notificacion_resul_fcdu"}
+
+        //información del formulario
+        var formData = new FormData($("#"+nombreform+"")[0]);
+      
+        //hacemos la petición ajax   
+//        alert('ENTRO');
+        $.ajax({
+            url: miurl,  
+            type: 'POST',
+     
+            // Form data
+            //datos del formulario
+            data: formData,
+            //necesario para subir archivos via ajax
+            cache: false,
+            contentType: false,
+            processData: false,
+            //mientras enviamos el archivo
+            //
+            beforeSend: function(){
+              //$("#"+divresul+"").html($("#cargador_empresa").html());                
+            },
+            //una vez finalizado correctamente
+            success: function(data) {
+            $("#alert1.1").show(0).delay(15000).hide(0);
+
+          if(data.correcto=="SI"){
+    $("#archivo3").val("");
+          $("#alert31").show(0).delay(15000).hide(0);
+          $("#message31").text("Se cargo correctamente"); 
+          }
+
+          },
+            //si ha ocurrido un error
+            error: function(data){
+               //alert(data);
+                
+            }
+        });
+        //alert("Se cargo con exito") ;
+    }); 
+    
+    
   </script>
   
   <script>
@@ -388,18 +377,18 @@
     }
     
  }
-
-
-    $(document).on("submit",".formarchivo3",function(e){
-  	fileValidation4();
-
+  
+ 
+ $(document).on("submit",".formarchivo3",function(e){
+    fileValidation4();
+     
         e.preventDefault();
         var formu=$(this);
         var nombreform=$(this).attr("id");
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt-cepre3";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt-simulacro3";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -426,15 +415,13 @@
             success: function(data) {
             $("#alert1.1").show(0).delay(15000).hide(0);
 
-	        if(data.correcto=="SI"){
-
+          if(data.correcto=="SI"){
     $("#archivo4").val("");
           $("#alert41").show(0).delay(15000).hide(0);
           $("#message41").text("Se cargo correctamente");
+          }
 
-	        }
-
-        	},
+          },
             //si ha ocurrido un error
             error: function(data){
                //alert(data);
@@ -443,6 +430,9 @@
         });
         //alert("Se cargo con exito") ;
     }); 
+    
+    
   </script>
   
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

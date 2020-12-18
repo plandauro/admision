@@ -1,8 +1,6 @@
-@extends('layouts.master')
+<?php $__env->startSection('title', ''); ?>
 
-@section('title', '')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
   @parent
   <div class="">
     <div class="page-title">
@@ -123,17 +121,17 @@
       </div>
     </div>
   </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('css')
+<?php $__env->startSection('css'); ?>
  
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <!-- PNotify -->
-  <script src="{{ asset('js/pnotify.js') }}"></script>
-  <script src="{{ asset('js/pnotify.buttons.js') }}"></script>
-  <script src="{{ asset('js/pnotify.nonblock.js') }}"></script>
+  <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.buttons.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.nonblock.js')); ?>"></script>
   <script>
   
   function fileValidation(){
@@ -445,4 +443,5 @@
     }); 
   </script>
   
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

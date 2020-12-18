@@ -13,25 +13,25 @@ use App\Postulacion;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>UNAB | @yield('title')</title>
+    <title>UNAB | <?php echo $__env->yieldContent('title'); ?></title>
 
     <!-- Bootstrap -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="<?php echo e(asset('css/bootstrap.min.css')); ?>" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="<?php echo e(asset('css/font-awesome.min.css')); ?>" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="{{ asset('css/custom.min.css') }}" rel="stylesheet">
-    <meta id="csrf-token" name="csrf-token" content="{{ csrf_token() }}">
-    @yield('css')
+    <link href="<?php echo e(asset('css/custom.min.css')); ?>" rel="stylesheet">
+    <meta id="csrf-token" name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+    <?php echo $__env->yieldContent('css'); ?>
   </head>
 
-  <body class="nav-md" urlbase="{{ url('/') }}">
+  <body class="nav-md" urlbase="<?php echo e(url('/')); ?>">
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="{{ url('/') }}" class="site_title"><img width="40px" src="{{asset('images/logochico.png')}}" alt=""> <span>Admisión UNAB</span></a>
+              <a href="<?php echo e(url('/')); ?>" class="site_title"><img width="40px" src="<?php echo e(asset('images/logochico.png')); ?>" alt=""> <span>Admisión UNAB</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -41,15 +41,15 @@ use App\Postulacion;
               <div class="profile_pic" style="width: 80px;height: 80px;">
                 <img 
                   style="width: 65px;height: 65px;"
-                  src="@if(Auth::user()->foto== '') 
-                          {{ asset('images/user.png') }} 
-                      @else {{ asset(Auth::user()->foto) }}  
-                      @endif" 
+                  src="<?php if(Auth::user()->foto== ''): ?> 
+                          <?php echo e(asset('images/user.png')); ?> 
+                      <?php else: ?> <?php echo e(asset(Auth::user()->foto)); ?>  
+                      <?php endif; ?>" 
                   class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Bienvenido,</span>
-                <h2>{{ Auth::user()->nombre }}</h2>
+                <h2><?php echo e(Auth::user()->nombre); ?></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -60,7 +60,7 @@ use App\Postulacion;
                 <ul class="nav side-menu">
 
                   <li>
-                    <a href="{{ url('/') }}">
+                    <a href="<?php echo e(url('/')); ?>">
                       <i class="fa fa-home"></i> Inicio  
                     </a>
                   </li>
@@ -71,120 +71,120 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="{{ url('/perfil') }}">Mi perfil</a>
+                        <a href="<?php echo e(url('/perfil')); ?>">Mi perfil</a>
                       </li>
                      <li>
-                        <a href="{{ url('/sisfoh') }}">Ficha Socioeconómica Única</a>
+                        <a href="<?php echo e(url('/sisfoh')); ?>">Ficha Socioeconómica Única</a>
                       </li>
                     </ul> 
                   </li>
                   -->
-                  @if(Proceso::abierto())
+                  <?php if(Proceso::abierto()): ?>
                     
-                    @if(Auth::user()->isAdmin() || Auth::user()->isCoordinador() || Auth::user()->isAsistente())
-                    @else
-                      @if(Pagos::buscarPago(Auth::user()->id)==null)
+                    <?php if(Auth::user()->isAdmin() || Auth::user()->isCoordinador() || Auth::user()->isAsistente()): ?>
+                    <?php else: ?>
+                      <?php if(Pagos::buscarPago(Auth::user()->id)==null): ?>
                       <li>
-                        <a href="{{ url('/cargar-informacion') }}" onclick='alert("NO HAY PAGO REGISTRADO                                                                  NOTA: LOS PAGOS SE ACTUALIZAN DESPUES DE 24H DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS LOS DIAS VIERNES, SÁBADO Y DOMINGO SE REGISTRARAN EL LUNES A LAS 11:00 AM.")'>
+                        <a href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("NO HAY PAGO REGISTRADO                                                                  NOTA: LOS PAGOS SE ACTUALIZAN DESPUES DE 24H DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS LOS DIAS VIERNES, SÁBADO Y DOMINGO SE REGISTRARAN EL LUNES A LAS 11:00 AM.")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
-                      @if(Pagos::buscarPago(Auth::user()->id)=="ms1")
+                      <?php else: ?>
+                      <?php if(Pagos::buscarPago(Auth::user()->id)=="ms1"): ?>
                       	<li>
-                        <a  href="{{ url('/cargar-informacion') }}" onclick='alert("NO REALIZO LO PAGOS COMPLETOS")'>
+                        <a  href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("NO REALIZO LO PAGOS COMPLETOS")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
-                      @if(Pagos::buscarPago(Auth::user()->id)=="ms2")
+                      <?php else: ?>
+                      <?php if(Pagos::buscarPago(Auth::user()->id)=="ms2"): ?>
                       	<li>
-                        <a  href="{{ url('/cargar-informacion') }}" onclick='alert("SOLO HA PAGADO COSTO DE CARPETA POR FAVOR COMPLETAR EL PAGO DE PROSPECTO Y LA MODALIDAD")'>
+                        <a  href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("SOLO HA PAGADO COSTO DE CARPETA POR FAVOR COMPLETAR EL PAGO DE PROSPECTO Y LA MODALIDAD")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
-                      @if(Pagos::buscarPago(Auth::user()->id)=="ms3")
+                      <?php else: ?>
+                      <?php if(Pagos::buscarPago(Auth::user()->id)=="ms3"): ?>
                       	<li>
-                        <a  href="{{ url('/cargar-informacion') }}" onclick='alert("SOLO HA PAGADO EL PROSPECTO POR FAVOR COMPLETAR EL PAGO DE CARPETA Y LA MODALIDAD")'>
+                        <a  href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("SOLO HA PAGADO EL PROSPECTO POR FAVOR COMPLETAR EL PAGO DE CARPETA Y LA MODALIDAD")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
-                      @if(Pagos::buscarPago(Auth::user()->id)=="ms4")
+                      <?php else: ?>
+                      <?php if(Pagos::buscarPago(Auth::user()->id)=="ms4"): ?>
                         <li>
-                        <a  href="{{ url('/cargar-informacion') }}" onclick='alert("SOLO HA PAGADO COSTO DE CARPETA + EL PROSPECTO POR FAVOR COMPLETAR EL PAGO MODALIDAD")'>
+                        <a  href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("SOLO HA PAGADO COSTO DE CARPETA + EL PROSPECTO POR FAVOR COMPLETAR EL PAGO MODALIDAD")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
-                      @if(Postulacion::buscarPostulacion(Auth::user()->id)==1)
+                      <?php else: ?>
+                      <?php if(Postulacion::buscarPostulacion(Auth::user()->id)==1): ?>
                       <li>
-                        <a href="{{ url('/cargar-informacion') }}" onclick='alert("YA REALIZO UNA POSTULACION EN ESTE PROCESO DE ADMISION")'>
+                        <a href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("YA REALIZO UNA POSTULACION EN ESTE PROCESO DE ADMISION")'>
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                      @else
+                      <?php else: ?>
                       <li>
-                        <a href="{{ url('/postular') }}">
+                        <a href="<?php echo e(url('/postular')); ?>">
                           <i class="fa fa-check-square-o"></i> Postular    
                         </a>
                       </li>
-                     	 @endif
-	                 @endif
-                       @endif
-                      @endif
+                     	 <?php endif; ?>
+	                 <?php endif; ?>
+                       <?php endif; ?>
+                      <?php endif; ?>
 
-                      @endif
-                      @endif
-                    @endif
+                      <?php endif; ?>
+                      <?php endif; ?>
+                    <?php endif; ?>
                   
                     <li>
-                        <a href="{{ url('/cargar-informacion') }}">
+                        <a href="<?php echo e(url('/cargar-informacion')); ?>">
                           <i class="fa fa-check-square-o"></i> Informacion de Pagos
                         </a>
                     </li>
                     <li>
-                      <a target="blank" href="{{ url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf') }}">
+                      <a target="blank" href="<?php echo e(url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf')); ?>">
                         <i class="fa fa-file-pdf-o"></i> Instrucciones    
                       </a>
                     </li>
                     <li>
-                      <a target="blank" href="{{ url('pdf/flujograma.pdf') }}">
+                      <a target="blank" href="<?php echo e(url('pdf/flujograma.pdf')); ?>">
                         <i class="fa fa-file-pdf-o"></i> Flujograma    
                       </a>
                     </li>
-                  @endif
+                  <?php endif; ?>
 
-                  @if(Auth::user()->isAsistente() || Auth::user()->isCoordinador())
-                    @if(Proceso::abierto())
+                  <?php if(Auth::user()->isAsistente() || Auth::user()->isCoordinador()): ?>
+                    <?php if(Proceso::abierto()): ?>
                       <li>
-                        <a href="{{ url('/verificarpostulacion') }}">
+                        <a href="<?php echo e(url('/verificarpostulacion')); ?>">
                           <i class="fa fa-check-square-o"></i> Verificar Postulación
                         </a>
                       </li>
-                      @if( Auth::user()->isCoordinador())
+                      <?php if( Auth::user()->isCoordinador()): ?>
                       <li>
-                        <a href="{{ url('/cargar-resultados') }}">
+                        <a href="<?php echo e(url('/cargar-resultados')); ?>">
                           <i class="fa fa-cloud-upload"></i> Cargar Resultados
                         </a>
                       </li>
-                      @endif
-                      @if( Auth::user()->isCoordinador())
+                      <?php endif; ?>
+                      <?php if( Auth::user()->isCoordinador()): ?>
                       <li>
-                        <a href="{{ url('/cargar-pagos') }}">
+                        <a href="<?php echo e(url('/cargar-pagos')); ?>">
                           <i class="fa fa-credit-card"></i> Cargar Pagos
                         </a>
                       </li>
-                      @endif
-                      @if( Auth::user()->isCoordinador())
+                      <?php endif; ?>
+                      <?php if( Auth::user()->isCoordinador()): ?>
                       <li>
-                        <a href="{{ url('/cargar-preguntas') }}">
+                        <a href="<?php echo e(url('/cargar-preguntas')); ?>">
                           <i class="fa fa-database"></i> Cargar Banco de Preguntas
                         </a>
                       </li>
-                      @endif
-                    @endif
+                      <?php endif; ?>
+                    <?php endif; ?>
 
                   <li>
                     <a>
@@ -192,13 +192,13 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
 		      <li>
-                        <a href="{{ url('/rep-listaIngresantes') }}">Lista de Ingresantes</a>
+                        <a href="<?php echo e(url('/rep-listaIngresantes')); ?>">Lista de Ingresantes</a>
                       </li>
                       <li>
-                        <a href="{{ url('/rep-postulantes') }}">Lista de Postulantes</a>
+                        <a href="<?php echo e(url('/rep-postulantes')); ?>">Lista de Postulantes</a>
                       </li>
 			<li>
-                        <a href="{{ url('/rep-postulantesvalidosnovalidos') }}">Lista de Postulantes Validos / No Validos</a>
+                        <a href="<?php echo e(url('/rep-postulantesvalidosnovalidos')); ?>">Lista de Postulantes Validos / No Validos</a>
                       </li>
                       <li>
                             <a>
@@ -206,53 +206,53 @@ use App\Postulacion;
                             </a>
                             <ul class="nav child_menu">
                             <li>
-	                      <a href="{{ url('/rep-estadisticas') }}">Ubicacion - Ingresantes</a>
+	                      <a href="<?php echo e(url('/rep-estadisticas')); ?>">Ubicacion - Ingresantes</a>
 	                    </li>
                             <li>
-                              <a href="{{ url('/rep-estadisticas-post-edad') }}" >Edad - Postulantes</a>
+                              <a href="<?php echo e(url('/rep-estadisticas-post-edad')); ?>" >Edad - Postulantes</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-estadisticas-ing-edad') }}" >Edad - Ingresantes</a>
+                              <a href="<?php echo e(url('/rep-estadisticas-ing-edad')); ?>" >Edad - Ingresantes</a>
                             </li>
                             </ul>
                           </li>
                       <li>
-                        <a href="{{ url('/rep-constancias') }}">Constancias de Ingreso</a>
+                        <a href="<?php echo e(url('/rep-constancias')); ?>">Constancias de Ingreso</a>
                       </li>
                       <li>
-                        <a href="{{ url('/rep-pagos') }}">Pagos</a>
+                        <a href="<?php echo e(url('/rep-pagos')); ?>">Pagos</a>
                       </li>
 		      <li>
-                        <a href="{{ url('/rep-pagossubidos') }}">Pagos Subidos</a>
+                        <a href="<?php echo e(url('/rep-pagossubidos')); ?>">Pagos Subidos</a>
                       </li>
                       <li>
-                        <a href="{{ url('/rep-padron') }}">Padron de Ingresantes</a>
+                        <a href="<?php echo e(url('/rep-padron')); ?>">Padron de Ingresantes</a>
                       </li>
                       <li>
-                        <a href="{{ url('/rep-padron-postulantes') }}">Padron de Postulantes</a>
+                        <a href="<?php echo e(url('/rep-padron-postulantes')); ?>">Padron de Postulantes</a>
                       </li>
                     </ul> 
                   </li>
-                    @if( Auth::user()->isCoordinador())
+                    <?php if( Auth::user()->isCoordinador()): ?>
                       <li>
                         <a>
                           <i class="fa fa-pencil"></i> Mantenimiento <span class="fa fa-chevron-down"></span>
                         </a>
                         <ul class="nav child_menu">
                           <li>
-                            <a href="{{ url('/mantenimiento/proceso') }}">Proceso de Postulación</a>
+                            <a href="<?php echo e(url('/mantenimiento/proceso')); ?>">Proceso de Postulación</a>
                           </li>
                           <li>
-                            <a href="{{ url('/mantenimiento/aulasPorExamen') }}">Gestion de Aulas</a>
+                            <a href="<?php echo e(url('/mantenimiento/aulasPorExamen')); ?>">Gestion de Aulas</a>
                           </li>
                           <li>
-                            <a href="{{ url('/mantenimiento/usuarios') }}">Gestion de Usuarios</a>
+                            <a href="<?php echo e(url('/mantenimiento/usuarios')); ?>">Gestion de Usuarios</a>
                           </li>
                          <li>
-                            <a href="{{ url('/mantenimiento/tarifa') }}">Tarifa</a>
+                            <a href="<?php echo e(url('/mantenimiento/tarifa')); ?>">Tarifa</a>
                           </li>
                           <!--li>
-                            <a href="{{ url('/mantenimiento/materia') }}">Gestion de Materia</a>
+                            <a href="<?php echo e(url('/mantenimiento/materia')); ?>">Gestion de Materia</a>
                           </li-->
 			                   <li>
                             <!--a>
@@ -260,20 +260,20 @@ use App\Postulacion;
                             </a-->
                             <!--ul class="nav child_menu">
                             <li>
-                              <a href="{{ url('/mantenimiento/preguntas') }}" >Preguntas No Usadas</a>
+                              <a href="<?php echo e(url('/mantenimiento/preguntas')); ?>" >Preguntas No Usadas</a>
                             </li>
                             <li>
-                              <a href="{{ url('/mantenimiento/preguntas-usadas') }}" >Preguntas Usadas</a>
+                              <a href="<?php echo e(url('/mantenimiento/preguntas-usadas')); ?>" >Preguntas Usadas</a>
                             </li>
                             </ul-->
                             <li>
-                            <a href="{{ url('/configuracion/postulanteSimulacro') }}">Postulantes Simulacro</a>
+                            <a href="<?php echo e(url('/configuracion/postulanteSimulacro')); ?>">Postulantes Simulacro</a>
                           </li>
                           </li>
                         </ul> 
                       </li>
-                    @endif
-                    @if( Auth::user()->isCoordinador())
+                    <?php endif; ?>
+                    <?php if( Auth::user()->isCoordinador()): ?>
                     
                         
                         <!--li>
@@ -282,7 +282,7 @@ use App\Postulacion;
                         </a>
                         <ul class="nav child_menu">
                           <li>
-                            <a href="{{ url('/generarexa/lista') }}">Proceso</a>
+                            <a href="<?php echo e(url('/generarexa/lista')); ?>">Proceso</a>
                           </li>
                            <li>
                             <a>Matenimiento</a>
@@ -301,22 +301,22 @@ use App\Postulacion;
                             </a>
                             <ul class="nav child_menu">
                               <li>
-                                <a href="{{ url('/cargar-txt-2020-2') }}" >Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                                <a href="<?php echo e(url('/cargar-txt-2020-2')); ?>" >Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                               </li>
                               <li>
-                                <a href="{{ url('/rep-calificacion-2020-2') }}" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                                <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
                               </li>
                               <li>
-                                <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                                <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                               </li>                            
                               <li>
-                                <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>
                               <li>
-                                <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
                               </li>
                               <li>
-                                <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
                               </li>
                             </ul>
                           </li>
@@ -332,25 +332,25 @@ use App\Postulacion;
                             </a>
                             <ul class="nav child_menu">
                             <li>
-                              <a href="{{ url('/cargar-txt-cepre') }}" >Subir Resultados DLM</a>
+                              <a href="<?php echo e(url('/cargar-txt-cepre')); ?>" >Subir Resultados DLM</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre') }}" >Reporte de calificacion</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre')); ?>" >Reporte de calificacion</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-duplicados') }}" >Duplicados</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados')); ?>" >Duplicados</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales') }}" >Cepre Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales')); ?>" >Cepre Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales-HI') }}" >Cepre HI - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI')); ?>" >Cepre HI - Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales-HR') }}" >Cepre HR - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR')); ?>" >Cepre HR - Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-por-postulante-cepre') }}" >Reporte de Calificacion Por Alumno</a>
+                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre')); ?>" >Reporte de Calificacion Por Alumno</a>
                             </li>
                             </ul>
                             </li>
@@ -360,30 +360,30 @@ use App\Postulacion;
                             </a>
                             <ul class="nav child_menu">
                             <li>
-                              <a href="{{ url('/cargar-txt-cepre-2') }}" >Subir Resultados DLM</a>
+                              <a href="<?php echo e(url('/cargar-txt-cepre-2')); ?>" >Subir Resultados DLM</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-II') }}" >Reporte de calificacion</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-II')); ?>" >Reporte de calificacion</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-duplicados-II') }}" >Duplicados</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados-II')); ?>" >Duplicados</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales-II') }}" >Cepre Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-II')); ?>" >Cepre Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales-HI-2') }}" >Cepre HI - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI-2')); ?>" >Cepre HI - Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-canales-HR-2') }}" >Cepre HR - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR-2')); ?>" >Cepre HR - Canal</a>
                             </li>
                              <li>
-                              <a href="{{ url('/rep-calificacion-por-postulante-cepre-2') }}" >Reporte de Calificacion Por Alumno</a>
+                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre-2')); ?>" >Reporte de Calificacion Por Alumno</a>
                             </li>
                             </ul>
                             </li>                            
                             <li>
-                              <a href="{{ url('/rep-calificacion-cepre-final') }}" >Reporte de calificacion - Final</a>
+                              <a href="<?php echo e(url('/rep-calificacion-cepre-final')); ?>" >Reporte de calificacion - Final</a>
                             </li>
                             </ul>
                           </li>
@@ -394,22 +394,22 @@ use App\Postulacion;
                             </a>
                             <ul class="nav child_menu">
                             <li>
-                              <a href="{{ url('/cargar-txt-simulacro') }}" >Subir Resultados DLM</a>
+                              <a href="<?php echo e(url('/cargar-txt-simulacro')); ?>" >Subir Resultados DLM</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-simulacro') }}" >Reporte de calificacion</a>
+                              <a href="<?php echo e(url('/rep-calificacion-simulacro')); ?>" >Reporte de calificacion</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-simulacro-duplicados') }}" >Duplicados</a>
+                              <a href="<?php echo e(url('/rep-calificacion-simulacro-duplicados')); ?>" >Duplicados</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-simulacro-canales') }}" >Simulacro Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales')); ?>" >Simulacro Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-simulacro-canales-HI') }}" >Simulacro HI - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HI')); ?>" >Simulacro HI - Canal</a>
                             </li>
                             <li>
-                              <a href="{{ url('/rep-calificacion-simulacro-canales-HR') }}" >Simulacro HR - Canal</a>
+                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HR')); ?>" >Simulacro HR - Canal</a>
                             </li>
                             </ul>
                           </li-->
@@ -421,8 +421,8 @@ use App\Postulacion;
                       </li>  
                       </ul> 
                       </li>
-                    @endif
-                  @endif
+                    <?php endif; ?>
+                  <?php endif; ?>
                   
                 </ul>
               </div>
@@ -441,7 +441,7 @@ use App\Postulacion;
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ url('/logout') }}" onclick="event.preventDefault();
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?php echo e(url('/logout')); ?>" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
@@ -462,21 +462,23 @@ use App\Postulacion;
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img style="width: 30px;height: 30px;"
-                      src="@if(Auth::user()->foto== '') 
-                          {{ asset('images/user.png') }} 
-                          @else {{ asset(Auth::user()->foto) }}  
-                          @endif" alt="">{{ Auth::user()->nombre }}
+                      src="<?php if(Auth::user()->foto== ''): ?> 
+                          <?php echo e(asset('images/user.png')); ?> 
+                          <?php else: ?> <?php echo e(asset(Auth::user()->foto)); ?>  
+                          <?php endif; ?>" alt=""><?php echo e(Auth::user()->nombre); ?>
+
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="javascript:;"> Perfil</a></li>
                     <li><a id="btnCPassword"  > Cambiar Contraseña</a></li>
-                    <li><a href="{{ url('/logout') }}" onclick="event.preventDefault();
+                    <li><a href="<?php echo e(url('/logout')); ?>" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
                   </ul>
                 </li>
-                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
+                <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;">
+                    <?php echo e(csrf_field()); ?>
+
                 </form>
 
               </ul>
@@ -488,7 +490,7 @@ use App\Postulacion;
         <!-- page content -->
         <div class="right_col" role="main">
           
-          @yield('content')
+          <?php echo $__env->yieldContent('content'); ?>
 
         </div>
         <!-- /page content -->
@@ -513,8 +515,8 @@ use App\Postulacion;
                                         </span>
                       </label>
 
-                      <input type="hidden" class="form-control input-sm"  name="iduser" value="{{Auth::user()->id}}" placeholder="Antigua Clave" type="text" maxlength="16" >
-                      <input  type="hidden" class="form-control input-sm"  name="oldpassword1" placeholder="Antigua Clave" type="text" maxlength="16" value="{{Auth::user()->password}}">
+                      <input type="hidden" class="form-control input-sm"  name="iduser" value="<?php echo e(Auth::user()->id); ?>" placeholder="Antigua Clave" type="text" maxlength="16" >
+                      <input  type="hidden" class="form-control input-sm"  name="oldpassword1" placeholder="Antigua Clave" type="text" maxlength="16" value="<?php echo e(Auth::user()->password); ?>">
                       <span class="help-block"></span>
                       <input class="form-control input-sm"  name="oldpassword" placeholder="Antigua Clave" type="text" maxlength="16" >
                       <span class="help-block"></span>
@@ -566,14 +568,14 @@ use App\Postulacion;
     </div>
 
 
-<script src="{{ asset('js/pnotify.js') }}"></script>
+<script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
 
     <!-- jQuery -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="<?php echo e(asset('js/jquery.min.js')); ?>"></script>
     <!-- Bootstrap -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
+    <script src="<?php echo e(asset('js/bootstrap.min.js')); ?>"></script> 
     <!-- Custom Theme Scripts -->
-    <script src="{{ asset('js/custom.min.js') }}"></script>
+    <script src="<?php echo e(asset('js/custom.min.js')); ?>"></script>
     
     <script>
     $(document).ready(function() {
@@ -647,7 +649,7 @@ function mensaje(msg, color) {
 }
     </script>
 
-    @yield('js')
+    <?php echo $__env->yieldContent('js'); ?>
   
   </body>
 </html>

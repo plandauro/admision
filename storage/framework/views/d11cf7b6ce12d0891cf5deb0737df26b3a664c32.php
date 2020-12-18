@@ -1,13 +1,11 @@
-@extends('layouts.master')
+<?php $__env->startSection('title', ''); ?>
 
-@section('title', '')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
   @parent
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Informacion CEPRE con DLM</h3>
+        <h3>Cargar Informacion CEPRE - II con DLM</h3>
       </div>
 
     </div>
@@ -123,17 +121,17 @@
       </div>
     </div>
   </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('css')
+<?php $__env->startSection('css'); ?>
  
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <!-- PNotify -->
-  <script src="{{ asset('js/pnotify.js') }}"></script>
-  <script src="{{ asset('js/pnotify.buttons.js') }}"></script>
-  <script src="{{ asset('js/pnotify.nonblock.js') }}"></script>
+  <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.buttons.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.nonblock.js')); ?>"></script>
   <script>
   
   function fileValidation(){
@@ -166,7 +164,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-cepre";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-cepre-2";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -245,13 +243,13 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt-cepre1";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt-cepre1-2";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
       
         //hacemos la petición ajax   
-        //alert('ENTRO');
+//        alert('ENTRO');
         $.ajax({
             url: miurl,  
             type: 'POST',
@@ -323,7 +321,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt-cepre2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt-cepre2-2";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -399,7 +397,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt-cepre3";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt-cepre3-2";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -445,4 +443,5 @@
     }); 
   </script>
   
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

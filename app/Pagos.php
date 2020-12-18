@@ -16,7 +16,7 @@ class Pagos extends Model
     {
     	$proceso = DB::table('proceso')
     		    //MODIFICADO 10/09/2018 
-//                    ->select('descripcion')
+            //->select('descripcion')
 		    ->select('descripcion','costocarpeta','costoprospecto')
                     ->where('activo','=',1)
                     ->get();
@@ -61,7 +61,7 @@ class Pagos extends Model
 
 		}  
     			 
-/*   	if($pagos){
+       /*if($pagos){
    		if($dni1importe=="10.00"){
     			return "10.00";
     		}else{
