@@ -295,33 +295,33 @@ use App\Postulacion;
                           <i class="fa fa-pencil"></i> Calificación <span class="fa fa-chevron-down"></span>
                         </a>
                         <ul class="nav child_menu">
-                          <!--li>
+                          <li>
                             <a>
-                            <i></i> Proceso del Examen de Admisión <span class="fa fa-chevron-down"></span>
+                            <i></i> Proceso del Examen de Admisión 2020-2 <span class="fa fa-chevron-down"></span>
                             </a>
                             <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-duplicados')); ?>" >Duplicados</a>
-                            </li>                            
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-canales')); ?>" >Admsion HI - Canal</a>
-		            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-canales-HR')); ?>" >Admision HR - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-por-postulante')); ?>" >Reporte de Calificacion Por Alumno</a>
-                            </li>
+                              <li>
+                                <a href="<?php echo e(url('/cargar-txt-2020-2')); ?>" >Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                              </li>                            
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
+                              </li>
                             </ul>
-                          </li-->
+                          </li>
                           
-                          <li>
+                          <!--li>
                             <a>
                             <i></i> Proceso del Examen de CEPRE<span class="fa fa-chevron-down"></span>
                             </a>
@@ -412,7 +412,7 @@ use App\Postulacion;
                               <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HR')); ?>" >Simulacro HR - Canal</a>
                             </li>
                             </ul>
-                          </li>
+                          </li-->
                           
                      	</ul>
 
