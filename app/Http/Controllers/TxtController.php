@@ -236,33 +236,35 @@ class TxtController extends Controller
             $request->tipo = 0;
         switch ($request->tipo) {
             case 2: #Por Escuela
-                $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
-                    ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
-                    ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
-                    ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
-                    ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
-                    ->leftJoin('institucion_educativa', 'users.idinstitucioneducativa', '=', 'institucion_educativa.id')
-                    ->join('area', 'escuela.idarea', '=', 'area.id')
-                    ->select(
-                        'users.id as idpostulante',
-                        'users.nombre',
-                        'users.apepaterno',
-                        'users.fechanacimiento',
-                        'users.apematerno',
-                        'users.dni',
-                        'postulacion.id as idpostulacion',
-                        'area.nombre as area',
-                        'tarifa.descripcion as tarifa',
-                        'escuela.descripcion as escuela',
-                        'ambiente.descripcion as ambiente',
-                        'modalidad.descripcion as modalidad',
-                        'institucion_educativa.tipo as tipoie',
-                        'postulacion.resultado as resultado'
-                    )
-                    ->where('postulacion.estado', 2)
-                    ->where('escuela.id', $request->dato)
-                    ->where('postulacion.idproceso', $request->idproceso)
-                    ->get();
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
+
                 break;
             default:
 
