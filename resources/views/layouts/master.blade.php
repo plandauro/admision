@@ -315,9 +315,9 @@ use App\Postulacion;
                               <li>
                                 <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
                               </li>
-                              <li>
+                              <!-- <li>
                                 <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
-                              </li>
+                              </li> -->
                             </ul>
                           </li>
                           
