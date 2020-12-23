@@ -191,7 +191,7 @@ function cargarCombo(){
 
 function consultaProducto(){
     $.ajax({
-      url: 'rep-constancias-cali-2020-2',
+      url: 'rep-constancias-cali-2020-2_canal_A',
       method: 'POST',
       data:{
   			tipo: $tipo.val(),

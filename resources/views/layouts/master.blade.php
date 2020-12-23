@@ -307,9 +307,21 @@ use App\Postulacion;
                                 <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}" >Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                               </li>
                               <li>
-                                <a href="{{ url('/rep-calificacion-2020-2') }}" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                              </li>                                                          
+                                <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}" >Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>  
                               <li>
+                                <a href="{{ url('/rep-calificacion-2020-2_canal_B') }}" >Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>  
+                              <li>
+                                <a href="{{ url('/rep-calificacion-2020-2_canal_C') }}" >Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>  
+                              <li>
+                                <a href="{{ url('/rep-calificacion-2020-2_canal_D') }}" >Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>  
+                              <li>
+                                <a href="{{ url('/rep-calificacion-2020-2') }}" >Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>                                                          
+                              <!--li>
                                 <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
                               </li>
                               <li>
@@ -317,7 +329,7 @@ use App\Postulacion;
                               </li>
                               <li>
                                 <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
-                              </li>
+                              </li-->
                             </ul>
                           </li>
                           
