@@ -304,11 +304,11 @@ use App\Postulacion;
                                 <a href="<?php echo e(url('/cargar-txt-2020-2')); ?>" >Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                               </li>
                               <li>
-                                <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                                <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>" >Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                               </li>
                               <li>
-                                <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>" >Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
-                              </li>                            
+                                <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>" >Reporte de calificacion</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                              </li>                                                          
                               <li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>
