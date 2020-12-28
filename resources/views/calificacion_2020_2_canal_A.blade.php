@@ -21,7 +21,7 @@
               <li style="margin-right: 15px">
                 <select style="width: 200px" id="tipobusqueda" onchange="cargarCombo()" class="form-control" name="" id="">
                   <option value="0">Postulantes Canal A</option>
-                  <option value="2">Por escuela</option>
+                  <option value="21">Por escuela</option>
                 </select>
               </li>
               <li>
