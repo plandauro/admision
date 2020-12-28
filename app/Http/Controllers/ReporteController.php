@@ -224,10 +224,31 @@ class ReporteController extends Controller
                 break;
 
             case 21:
-                    $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
-                            ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
-                            ->whereIn('escuela.id', [4, 5, 6])
-                            ->distinct()->get();
+                $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                        ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
+                        ->whereIn('escuela.id', [4, 5, 6])
+                        ->distinct()->get();
+                    break;
+
+            case 22:
+                $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                        ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
+                        ->whereIn('escuela.id', [3, 7])
+                        ->distinct()->get();
+                    break;
+
+            case 23:
+                 $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                        ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
+                        ->wherE('escuela.id', 2)
+                        ->distinct()->get();
+                    break;
+
+            case 24:
+                $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                        ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
+                        ->wherE('escuela.id', 1)
+                        ->distinct()->get();
                     break;
             case 3:
                 $list = Postulacion::join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')

@@ -359,7 +359,7 @@ class TxtController extends Controller
         if ($request->dato == 0)
             $request->tipo = 0;
         switch ($request->tipo) {
-            case 2: #Por Escuela
+            case 22: #Por Escuela
                 // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
                 //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
                 //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
@@ -387,7 +387,7 @@ class TxtController extends Controller
                 //     ->where('postulacion.idproceso', $request->idproceso)
                 //     ->get();
 
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_B($request->dato)")));
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
 
                 break;
             default:
@@ -436,7 +436,7 @@ class TxtController extends Controller
                 //     ->where('postulacion.idproceso', $request->idproceso)
                 //     ->get();
 
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_C($request->dato)")));
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
 
                 break;
             default:
@@ -485,7 +485,7 @@ class TxtController extends Controller
                 //     ->where('postulacion.idproceso', $request->idproceso)
                 //     ->get();
 
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_D($request->dato)")));
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
 
                 break;
             default:
