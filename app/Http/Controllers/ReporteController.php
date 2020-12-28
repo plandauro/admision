@@ -222,6 +222,13 @@ class ReporteController extends Controller
                         ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
                         ->distinct()->get();
                 break;
+
+            case 21:
+                    $list = Postulacion::join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                            ->select('escuela.id as codigo', 'escuela.descripcion as descripcion')
+                            ->whereIn('escuela.id', [4, 5, 6])
+                            ->distinct()->get();
+                    break;
             case 3:
                 $list = Postulacion::join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
                         ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')

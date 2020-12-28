@@ -182,6 +182,30 @@ class TxtController extends Controller
         return view('calificacion_2020_2')->with("procesos", $procesos);
     }
 
+    public function postulantes2020II_canal_A()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacion_2020_2_canal_A')->with("procesos", $procesos);
+    }
+
+    public function postulantes2020II_canal_B()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacion_2020_2_canal_B')->with("procesos", $procesos);
+    }
+
+    public function postulantes2020II_canal_C()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacion_2020_2_canal_C')->with("procesos", $procesos);
+    }
+
+    public function postulantes2020II_canal_D()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacion_2020_2_canal_D')->with("procesos", $procesos);
+    }
+
     public function listPostulates(Request $request)
     {
         $postulacion = null;
@@ -277,6 +301,206 @@ class TxtController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
+
+
+
+    public function listPostulates2020II_canal_A(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 21: #Por Escuela
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
+
+                break;
+            default:
+
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_A()")));
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    public function listPostulates2020II_canal_B(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_B($request->dato)")));
+
+                break;
+            default:
+
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_B()")));
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    public function listPostulates2020II_canal_C(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_C($request->dato)")));
+
+                break;
+            default:
+
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_C()")));
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    public function listPostulates2020II_canal_D(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_canal_D($request->dato)")));
+
+                break;
+            default:
+
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_D()")));
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    
 
     public function postulantesX()
     {
@@ -1638,6 +1862,50 @@ class TxtController extends Controller
         DB::statement('call sp_insercion_calificar_proceso_2020_2()');
 
         return redirect('rep-calificacion-2020-2'); //CALIFICACION 2020 - 2
+
+        // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
+
+    }
+
+    public function procesoRespuesta2020II_canal_A()
+    {
+
+        DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_A()');
+
+        return redirect('rep-calificacion-2020-2_canal_A'); //CALIFICACION 2020 - 2
+
+        // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
+
+    }
+
+    public function procesoRespuesta2020II_canal_B()
+    {
+
+        DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_B()');
+
+        return redirect('rep-calificacion-2020-2_canal_B'); //CALIFICACION 2020 - 2
+
+        // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
+
+    }
+
+    public function procesoRespuesta2020II_canal_C()
+    {
+
+        DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_C()');
+
+        return redirect('rep-calificacion-2020-2_canal_C'); //CALIFICACION 2020 - 2
+
+        // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
+
+    }
+
+    public function procesoRespuesta2020II_canal_D()
+    {
+
+        DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_D()');
+
+        return redirect('rep-calificacion-2020-2_canal_D'); //CALIFICACION 2020 - 2
 
         // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
 
