@@ -122,6 +122,18 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('rep-calificacion-2020-2', 'TxtController@postulantes2020II')->middleware('asistente');
 	Route::post('rep-constancias-cali-2020-2', 'TxtController@listPostulates2020II')->middleware('asistente');
+
+	Route::get('rep-calificacion-2020-2_canal_A', 'TxtController@postulantes2020II_canal_A')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2_canal_A', 'TxtController@listPostulates2020II_canal_A')->middleware('asistente');
+
+	Route::get('rep-calificacion-2020-2_canal_B', 'TxtController@postulantes2020II_canal_B')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2_canal_B', 'TxtController@listPostulates2020II_canal_B')->middleware('asistente');
+
+	Route::get('rep-calificacion-2020-2_canal_C', 'TxtController@postulantes2020II_canal_C')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2_canal_C', 'TxtController@listPostulates2020II_canal_C')->middleware('asistente');
+
+	Route::get('rep-calificacion-2020-2_canal_D', 'TxtController@postulantes2020II_canal_D')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2_canal_D', 'TxtController@listPostulates2020II_canal_D')->middleware('asistente');
 	
 	//AGREGI 23/10/2018
 	Route::get('rep-calificacion-cepre-II', 'TxtController@postulantesCepreII')->middleware('asistente');
@@ -241,8 +253,18 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('llenar-respuestas', 'TxtController@procesoRespuesta');
 	Route::get('llenar-respuestas-cepre', 'TxtController@procesoRespuestaCepre');
 	//respuesta 2020
+
 	Route::get('llenar-respuestas-2020-2', 'TxtController@procesoRespuesta2020II');
 
+	Route::get('llenar-respuestas-2020-2_canal_A', 'TxtController@procesoRespuesta2020II_canal_A');
+
+	Route::get('llenar-respuestas-2020-2_canal_B', 'TxtController@procesoRespuesta2020II_canal_B');
+
+	Route::get('llenar-respuestas-2020-2_canal_C', 'TxtController@procesoRespuesta2020II_canal_C');
+
+	Route::get('llenar-respuestas-2020-2_canal_D', 'TxtController@procesoRespuesta2020II_canal_D');
+
+	
 	//AGREGADO 23/10/2018
 	Route::get('llenar-respuestas-cepre-II', 'TxtController@procesoRespuestaCepreII');
         Route::get('llenar-respuestas-simulacro', 'TxtController@procesoRespuestaSimulacro');
