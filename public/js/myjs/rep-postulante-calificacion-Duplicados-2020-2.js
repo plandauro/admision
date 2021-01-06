@@ -71,7 +71,7 @@ function llenar(response, index, value) {
         }],
         "language": {
             "lengthMenu": "Mostrar _MENU_ postulaciones",
-            "zeroRecords": "No se encontró ningún registro",
+            "No se encontró ningún registro": "No se encontró ningún registro",
             "info": "_PAGE_ de _PAGES_",
             "infoEmpty": "No records available",
             "infoFiltered": "(Filtrado de un total de _MAX_ total registros)",
@@ -187,10 +187,12 @@ function consultaProducto() {
             idproceso: $idproceso.val()
         }
     }).done(function (response) {
+        console.log(response.postulaciones); //comentar
+
         $.each(response, function (index, value) {
             llenar(response.postulaciones, index, value);
         });
-    }).fail(function (response) { });
+    }).fail(function (error) { console.log(error); });
 
     $('#myTable tbody').on('click', 'tr', function () {
         $(this).toggleClass('selected');

@@ -2663,6 +2663,7 @@ class TxtController extends Controller
     public function postulantesDuplicados2020II()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
+
         return view('calificacionDuplicados-2020-2')->with("procesos", $procesos);
     }
 
