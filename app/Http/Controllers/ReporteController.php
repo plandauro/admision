@@ -203,7 +203,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area','tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
-                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
+                        // ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;
