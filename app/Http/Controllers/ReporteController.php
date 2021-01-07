@@ -510,6 +510,7 @@ class ReporteController extends Controller
                                 'users.fechanacimiento', 'users.apematerno',
                                 'postulacion.id as idpostulacion','postulacion.nroPostulante as idpostulacionX','area.nombre as area','tarifa.descripcion as tarifa', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.estado','escuela.descripcion as escuela')
                         ->where('postulacion.estado',2)
+                        ->where('postulacion.idtarifa', '!=', 17)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;
@@ -539,6 +540,8 @@ class ReporteController extends Controller
                         ->select('users.id as idpostulante', 'users.nombre', 'users.apepaterno', 
                                 'users.fechanacimiento', 'users.apematerno',
                                 'postulacion.id as idpostulacion','postulacion.nroPostulante as idpostulacionX', 'area.nombre as area','tarifa.descripcion as tarifa', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.estado','escuela.descripcion as escuela')
+                        ->where('postulacion.estado',2)
+                        ->where('postulacion.idtarifa', '!=', 17)        
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;
