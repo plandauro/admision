@@ -305,19 +305,19 @@ use App\Postulacion;
                       <li>
                         <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
-                      <li class="duplicados_report">
+                      <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li class="duplicados_report">
+                      <li> <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_B') }}">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li class="duplicados_report">
+                      <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_C') }}">Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li class="duplicados_report">
+                      <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_D') }}">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li class="duplicados_report">
+                      <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
                       <!--li>

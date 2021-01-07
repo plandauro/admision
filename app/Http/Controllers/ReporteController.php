@@ -328,7 +328,7 @@ class ReporteController extends Controller
     public function listaPagos(Request $request)
     { 
     	//MODIFICADO 17/09/2018
-	/*$postulaciones = Postulacion::join('proceso', 'postulacion.idproceso', '=', 'proceso.id')
+	    /*$postulaciones = Postulacion::join('proceso', 'postulacion.idproceso', '=', 'proceso.id')
                                     ->join('users', 'postulacion.idPostulante', '=', 'users.id')
                                     ->select('postulacion.id as idpostulacion', 'postulacion.costotarifa', 'postulacion.numerooperacion',
                                             'users.nombre', 'users.apepaterno', 'users.apematerno',
@@ -432,7 +432,7 @@ class ReporteController extends Controller
         			->join('area', 'ambiente.idarea', '=', 'area.id')
                                 ->select('postulacion.idproceso', 'ambiente.id', 'ambiente.descripcion', 'area.nombre as nomarea','ambiente.capacidad', DB::raw("COUNT(*) AS cantidad"))
                                 ->where('idproceso', $request->idproceso)
-//                                ->where('postulacion.estado', 2)
+        //                      ->where('postulacion.estado', 2)
                                 ->whereIn('postulacion.estado', [1,2])
                                 //AGREGADO 20/09/2018
                                 ->where('postulacion.idtarifa','!=',17)
