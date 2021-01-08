@@ -120,7 +120,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('rep-calificacion-simulacro', 'TxtController@postulantesSimulacro')->middleware('asistente');
 	Route::post('rep-constancias-cali-simulacro', 'TxtController@listPostulatesSimulacro')->middleware('asistente');
 
-	//CALIFICACION - 2020
+	//CALIFICACION - 2020 - POR CANALES
 
 	Route::get('rep-calificacion-2020-2', 'TxtController@postulantes2020II')->middleware('asistente');
 	Route::post('rep-constancias-cali-2020-2', 'TxtController@listPostulates2020II')->middleware('asistente');
@@ -136,6 +136,9 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('rep-calificacion-2020-2_canal_D', 'TxtController@postulantes2020II_canal_D')->middleware('asistente');
 	Route::post('rep-constancias-cali-2020-2_canal_D', 'TxtController@listPostulates2020II_canal_D')->middleware('asistente');
+
+	Route::get('rep-calificacion-2020-2-especial', 'TxtController@postulantes2020IIESPECIAL')->middleware('asistente');
+	Route::post('rep-constancias-cali-2020-2-especial', 'TxtController@listPostulates2020IIESPECIAL')->middleware('asistente');
 
 	//AGREGI 23/10/2018
 	Route::get('rep-calificacion-cepre-II', 'TxtController@postulantesCepreII')->middleware('asistente');
@@ -265,6 +268,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('llenar-respuestas-2020-2_canal_C', 'TxtController@procesoRespuesta2020II_canal_C');
 
 	Route::get('llenar-respuestas-2020-2_canal_D', 'TxtController@procesoRespuesta2020II_canal_D');
+
+	Route::get('llenar-respuestas-2020-2_especial', 'TxtController@procesoRespuesta2020IIESPECIAL');
 
 
 	//AGREGADO 23/10/2018
