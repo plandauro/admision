@@ -306,6 +306,7 @@ use App\Postulacion;
                         <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
+<<<<<<< HEAD
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       <li> <!-- class="duplicados_report" -->
@@ -321,6 +322,20 @@ use App\Postulacion;
                         <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
+=======
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <li> <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_C')); ?>">Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_D')); ?>">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <li>  <!-- class="duplicados_report" -->
+>>>>>>> 9140772ed4d91bc7d2b938282909975942e76e99
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
                       <!--li>
