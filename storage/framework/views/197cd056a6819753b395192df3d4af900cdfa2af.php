@@ -294,6 +294,7 @@ use App\Postulacion;
                   <i class="fa fa-pencil"></i> Calificación <span class="fa fa-chevron-down"></span>
                 </a>
                 <ul class="nav child_menu">
+                  
                   <li>
                     <a>
                       <i></i> Proceso del Examen de Admisión 2020-2 <span class="fa fa-chevron-down"></span>
@@ -305,25 +306,10 @@ use App\Postulacion;
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
-<<<<<<< HEAD
-                      <li class="duplicados_report">
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
-                      <li class="duplicados_report">
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
-                      <li class="duplicados_report">
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_C')); ?>">Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
-                      <li class="duplicados_report">
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_D')); ?>">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
-                      <li class="duplicados_report">
-=======
                       <li>  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
+                      <li> <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
@@ -336,7 +322,6 @@ use App\Postulacion;
                         <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
                       <!--li>
@@ -350,6 +335,38 @@ use App\Postulacion;
                               </li-->
                     </ul>
                   </li>
+                  
+
+                  
+                  <li>
+                    <a>
+                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="<?php echo e(url('/cargartxt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                      </li>                     
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
+                      </li>
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <!--li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
+                              </li-->
+                    </ul>
+                  </li>
+                  
 
                   <!--li>
                             <a>
@@ -444,11 +461,9 @@ use App\Postulacion;
                             </ul>
                           </li-->
 
-                </ul>
-
-
-
+                </ul>                
               </li>
+
               </ul>
               </li>
               <?php endif; ?>
@@ -549,7 +564,6 @@ use App\Postulacion;
                     <span class="help-block"></span>
                     <input class="form-control input-sm" name="oldpassword" placeholder="Antigua Clave" type="text" maxlength="16">
                     <span class="help-block"></span>
-<<<<<<< HEAD
 
                   </div>
                   <div class="form-group">
@@ -560,25 +574,10 @@ use App\Postulacion;
                     </label>
                     <input class="form-control input-sm" name="newpassword" placeholder="Nueva Clave" type="text" maxlength="16">
                     <span class="help-block"></span>
-=======
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
 
                   </div>
                   <div class="form-group">
                     <label>
-<<<<<<< HEAD
-=======
-                      <span class="label label-warning">
-                        Nueva clave
-                      </span>
-                    </label>
-                    <input class="form-control input-sm" name="newpassword" placeholder="Nueva Clave" type="text" maxlength="16">
-                    <span class="help-block"></span>
-
-                  </div>
-                  <div class="form-group">
-                    <label>
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
                       <span class="label label-success">
                         Repita nueva clave
                       </span>
@@ -611,14 +610,8 @@ use App\Postulacion;
       <!-- /footer content -->
     </div>
   </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
 
-  <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
-
-<<<<<<< HEAD
   <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
 
   <!-- jQuery -->
@@ -628,46 +621,10 @@ use App\Postulacion;
   <!-- Custom Theme Scripts -->
   <script src="<?php echo e(asset('js/custom.min.js')); ?>"></script>
 
-=======
-  <!-- jQuery -->
-  <script src="<?php echo e(asset('js/jquery.min.js')); ?>"></script>
-  <!-- Bootstrap -->
-  <script src="<?php echo e(asset('js/bootstrap.min.js')); ?>"></script>
-  <!-- Custom Theme Scripts -->
-  <script src="<?php echo e(asset('js/custom.min.js')); ?>"></script>
-
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
   <script>
     $(document).ready(function() {
       $urlbase = $("body").attr('urlbase');
 
-<<<<<<< HEAD
-      //VALIDAR DUPLICADOS
-      $.ajax({
-        url: 'rep-constancias-cali-duplicados-2020-2',
-        method: 'POST',
-        data: {
-          tipo: $tipo.val(),
-          dato: $dato.val(),
-          idproceso: $idproceso.val()
-        }
-      }).done(function(response) {
-        console.log(response.postulaciones);
-
-        if(response.postulaciones != ""){
-          console.log("lleno")
-          $(".duplicados_report").hide()
-        }else{
-          console.log("vacio")
-          $(".duplicados_report").show()
-        }
-
-        //$.each(response, function(index, value) {
-        //});
-      }).fail(function(error) {
-        console.log(error);
-      });
-=======
       // //VALIDAR DUPLICADOS
       // $.ajax({
       //   url: 'rep-constancias-cali-duplicados-2020-2',
@@ -693,7 +650,6 @@ use App\Postulacion;
       // }).fail(function(error) {
       //   console.log(error);
       // });
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
     });
 
     $.ajaxSetup({
@@ -766,8 +722,6 @@ use App\Postulacion;
     }
   </script>
 
-<<<<<<< HEAD
-=======
   <!-- <script>
       //VALIDAR DUPLICADOS
       $.ajax({
@@ -796,7 +750,6 @@ use App\Postulacion;
       });
   </script> -->
 
->>>>>>> adb50f2235926b5e46f9a2adf7ce489559c1d0e8
   <?php echo $__env->yieldContent('js'); ?>
 
 </body>
