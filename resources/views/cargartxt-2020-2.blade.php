@@ -7,7 +7,7 @@
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Información con DLM</h3>
+        <h3>Cargar Información con DLM - Examen General 2020-II</h3>
       </div>
 
     </div>
@@ -21,7 +21,7 @@
           <div id="principal"  class="x_content">
             <div class="row">
               <div class="col-md-6">
-                <h2>Cargue los resultados de DLM:</h2>
+                <h2>Cargue los resultados de DLM - Examen General 2020-II:</h2>
                  
                 <form  id="f_cargar_datos_usuarios" name="f_cargar_datos_usuarios" method="post"  class="formarchivo" enctype="multipart/form-data" >                
       
