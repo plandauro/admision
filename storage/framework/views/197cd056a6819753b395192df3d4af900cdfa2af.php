@@ -309,7 +309,7 @@ use App\Postulacion;
                       <li>  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
+                      <li> <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
@@ -320,8 +320,6 @@ use App\Postulacion;
                       </li>
                       
                       <li>  <!-- class="duplicados_report" -->
-<<<<<<< HEAD
-=======
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
                       <!--li>
@@ -347,19 +345,11 @@ use App\Postulacion;
                         <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>                     
                       <li>  <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-<<<<<<< HEAD
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL -->
                       </li>                      
-=======
-                      </li>
-                      <li>  <!-- class="duplicados_report" -->
->>>>>>> 4a7e9a79a1165eba9158038876090cc0f3686717
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
->>>>>>> e5a183dc6250e8748c422999e98e24c4cbf7b7e5
                       <!--li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>

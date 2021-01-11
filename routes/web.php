@@ -182,6 +182,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('rep-calificacion-duplicados-2020-2', 'TxtController@postulantesDuplicados2020II')->middleware('asistente');
 	Route::post('rep-constancias-cali-duplicados-2020-2', 'TxtController@listPostulatesDuplicados2020II')->middleware('asistente');
 
+	//AGREGO DUPLICADOS 2020-2 ESPECIAL
+	Route::get('rep-calificacion-duplicados-2020-2-E', 'TxtController@postulantesDuplicados2020IIESPECIAL')->middleware('asistente');
+	Route::post('rep-constancias-cali-duplicados-2020-2-E', 'TxtController@listPostulatesDuplicados2020IIESPECIAL')->middleware('asistente');
+
 	//AGREGO 17/11/2018
 	Route::get('rep-calificacion-canales-HR', 'TxtController@postulantesCanalesHR')->middleware('asistente');
 	Route::post('rep-constancias-cali-canales-HR', 'TxtController@listPostulatesCanalesHR')->middleware('asistente');
@@ -397,6 +401,10 @@ Route::group(['middleware' => 'auth'], function () {
 	//ACTUALIZACION DUPLICADOS 2020_2
 	Route::post('actualizarAdmisionDuplicado-2020-2', 'TxtController@actualizarAdmisionDuplicado2020II');
 	Route::post('actualizarAdmisionCanal-2020-2', 'TxtController@actualizarAdmisionCanal2020II');
+
+	//ACTUALIZACION DUPLICADOS 2020_2 ESPECIAL
+	Route::post('actualizarAdmisionDuplicado-2020-2-E', 'TxtController@actualizarAdmisionDuplicado2020IIESPECIAL');
+	Route::post('actualizarAdmisionCanal-2020-2-E', 'TxtController@actualizarAdmisionCanal2020IIESPECIAL');
 
 	//Route::post('ROUTE', 'NAME OF CONTROLLER@NAME OF FUNCTION');
 

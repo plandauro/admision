@@ -2969,7 +2969,7 @@ class TxtController extends Controller
             DB::table('hojaidenticacion_proceso_3')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
 
-    /* ACTUALIZAR DUPLICADOS 2020 */
+    /* ACTUALIZAR DUPLICADOS 2020-II*/
     public function actualizarAdmisionDuplicado2020II(Request $request)
     {
 
@@ -2983,7 +2983,23 @@ class TxtController extends Controller
         $hojaidentificacioncepre =
             DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
-    /* FIN DE ACTUALIZAR DUPLICADOS 2020 */
+    /* FIN DE ACTUALIZAR DUPLICADOS 2020-II*/
+
+    /* ACTUALIZAR DUPLICADOS 2020-II EXAMEN ESPECIAL*/
+    public function actualizarAdmisionDuplicado2020IIESPECIAL(Request $request)
+    {
+
+        //var_dump($request);
+        $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2_esp')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+    }
+
+    public function actualizarAdmisionCanal2020IIESPECIAL(Request $request)
+    {
+
+        $hojaidentificacioncepre =
+            DB::table('hojaidenticacion_proceso_2020_2_esp')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
+    }
+    /* FIN DE ACTUALIZAR DUPLICADOS 2020-II EXAMEN ESPECIAL*/
 
     public function postulantesCanales()
     {
@@ -3072,8 +3088,40 @@ class TxtController extends Controller
         return response()->json(['postulaciones' => $postulaciones]);
     }
 
-
     /* FIN DUPLICADOS 2020 II*/
+
+
+    /* PARA DUPLICADOS DE ESPECIAL 2020-II */
+
+    public function postulantesDuplicados2020IIESPECIAL()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+
+        return view('calificacionDuplicados-2020-2-E')->with("procesos", $procesos);
+    }
+
+    public function listPostulatesDuplicados2020IIESPECIAL(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela                
+                // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2_E(2,$request->dato)"))); // NUEVO
+                break;
+
+
+            default:
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
+                // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2_E(1,0)"))); // NUEVO
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    /* FIN DUPLICADOS ESPECIAL 2020-II */
 
 
     public function postulantesCanalesHR()
