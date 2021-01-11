@@ -345,10 +345,14 @@ use App\Postulacion;
                         <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>                     
                       <li>  <!-- class="duplicados_report" -->
+<<<<<<< HEAD
                         <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
+=======
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
+>>>>>>> 97e1e3b011a0f4aa04594c202ed902449aba4a63
                       </li>                      
                       <!--li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
