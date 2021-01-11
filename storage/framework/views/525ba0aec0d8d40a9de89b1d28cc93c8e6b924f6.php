@@ -186,7 +186,7 @@
 	        if(data.correcto=="SI"){
 		$("#archivo").val("");
 	        $("#alert11").show(0).delay(15000).hide(0);
-	        $("#message11").text("Se cargo correctamente TOTAL: "+data.total); 
+	        $("#message11").text("Se cargo correctamente"); 
 	        
 
 

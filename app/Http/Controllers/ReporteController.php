@@ -66,6 +66,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area', 'tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
+                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('ambiente.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->orderBy('apepaterno', 'asc')
@@ -100,6 +101,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area','tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
+                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('escuela.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
@@ -134,6 +136,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area', 'tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
+                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('modalidad.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
@@ -167,6 +170,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area','tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
+                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('area.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
@@ -199,6 +203,7 @@ class ReporteController extends Controller
                                 'postulacion.id as idpostulacion', 'area.nombre as area','tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.nroPostulante as codPostulantex')
                         ->where('postulacion.estado', 2)
+                        ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;
@@ -323,7 +328,7 @@ class ReporteController extends Controller
     public function listaPagos(Request $request)
     { 
     	//MODIFICADO 17/09/2018
-	/*$postulaciones = Postulacion::join('proceso', 'postulacion.idproceso', '=', 'proceso.id')
+	    /*$postulaciones = Postulacion::join('proceso', 'postulacion.idproceso', '=', 'proceso.id')
                                     ->join('users', 'postulacion.idPostulante', '=', 'users.id')
                                     ->select('postulacion.id as idpostulacion', 'postulacion.costotarifa', 'postulacion.numerooperacion',
                                             'users.nombre', 'users.apepaterno', 'users.apematerno',
@@ -427,7 +432,7 @@ class ReporteController extends Controller
         			->join('area', 'ambiente.idarea', '=', 'area.id')
                                 ->select('postulacion.idproceso', 'ambiente.id', 'ambiente.descripcion', 'area.nombre as nomarea','ambiente.capacidad', DB::raw("COUNT(*) AS cantidad"))
                                 ->where('idproceso', $request->idproceso)
-//                                ->where('postulacion.estado', 2)
+        //                      ->where('postulacion.estado', 2)
                                 ->whereIn('postulacion.estado', [1,2])
                                 //AGREGADO 20/09/2018
                                 ->where('postulacion.idtarifa','!=',17)
@@ -505,6 +510,7 @@ class ReporteController extends Controller
                                 'users.fechanacimiento', 'users.apematerno',
                                 'postulacion.id as idpostulacion','postulacion.nroPostulante as idpostulacionX','area.nombre as area','tarifa.descripcion as tarifa', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.estado','escuela.descripcion as escuela')
                         ->where('postulacion.estado',2)
+                        ->where('postulacion.idtarifa', '!=', 17)
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;
@@ -534,6 +540,8 @@ class ReporteController extends Controller
                         ->select('users.id as idpostulante', 'users.nombre', 'users.apepaterno', 
                                 'users.fechanacimiento', 'users.apematerno',
                                 'postulacion.id as idpostulacion','postulacion.nroPostulante as idpostulacionX', 'area.nombre as area','tarifa.descripcion as tarifa', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.estado','escuela.descripcion as escuela')
+                        ->where('postulacion.estado',2)
+                        ->where('postulacion.idtarifa', '!=', 17)        
                         ->where('postulacion.idproceso', $request->idproceso)
                         ->get();
                 break;

@@ -206,6 +206,73 @@ class TxtController extends Controller
         return view('calificacion_2020_2_canal_D')->with("procesos", $procesos);
     }
 
+    // INICIO PARA EXAMEN ESPECIAL
+    public function postulantes2020IIESPECIAL()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('calificacion_2020_2_especial')->with("procesos", $procesos);
+    }
+
+    public function listPostulates2020IIESPECIAL(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela
+                // $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                //     ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                //     ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                //     ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                //     ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                //     ->join('area', 'escuela.idarea', '=', 'area.id')
+                //     ->select(
+                //         'users.id as idpostulante',
+                //         'users.nombre',
+                //         'users.apepaterno',
+                //         'users.fechanacimiento',
+                //         'users.apematerno',
+                //         'users.dni',
+                //         'postulacion.id as idpostulacion',
+                //         'area.nombre as area',
+                //         'tarifa.descripcion as tarifa',
+                //         'escuela.descripcion as escuela',
+                //         'ambiente.descripcion as ambiente',
+                //         'modalidad.descripcion as modalidad',
+                //         'institucion_educativa.tipo as tipoie',
+                //         'postulacion.resultado as resultado'
+                //     )
+                //     ->where('postulacion.estado', 2)
+                //     ->where('escuela.id', $request->dato)
+                //     ->where('postulacion.idproceso', $request->idproceso)
+                //     ->get();
+
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
+                break;
+
+            default:
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_E()")));
+
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    public function procesoRespuesta2020IIESPECIAL()
+    {
+
+        DB::statement('call sp_insercion_calificar_proceso_2020_2_E()');
+
+        return redirect('rep-calificacion-2020-2-especial'); //CALIFICACION 2020 - 2 ESPECIAL
+
+        // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
+
+    }
+    //FIN EXAMEN ESPECIAL
+
     public function listPostulates(Request $request)
     {
         $postulacion = null;
@@ -301,8 +368,6 @@ class TxtController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
-
-
 
     public function listPostulates2020II_canal_A(Request $request)
     {
@@ -499,8 +564,6 @@ class TxtController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
-
-    
 
     public function postulantesX()
     {
@@ -773,7 +836,6 @@ class TxtController extends Controller
 
         return response()->json(['correcto' => $correcto, 'total' => $total1, 'igual' => $litho]);
     }
-
 
     public function cargarInformacionTXT1(Request $request)
     {
@@ -1256,7 +1318,6 @@ class TxtController extends Controller
         return response()->json(['correcto' => $correcto]);
     }
 
-
     public function cargarInformacionTXT320202(Request $request)
     {
 
@@ -1683,7 +1744,6 @@ class TxtController extends Controller
 
         return response()->json(['correcto' => $correcto, 'total' => $total]);
     }
-
 
     public function cargarInformacionTXTSimulacro1(Request $request)
     {
@@ -2466,6 +2526,7 @@ class TxtController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
+
     public function postulantesCepreCanalesII()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
@@ -2697,6 +2758,7 @@ class TxtController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('calificacionCanalesHR')->with("procesos", $procesos);
     }
+
     //AGREGO 27/09/2018
     public function listPostulatesCanalesHR(Request $request)
     {
@@ -2814,6 +2876,7 @@ class TxtController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('calificacionCepreCanalesHR_2')->with("procesos", $procesos);
     }
+
     //AGREGO 20/02/2019
     public function listPostulatesCepreCanalesHR_2(Request $request)
     {
@@ -2927,6 +2990,7 @@ class TxtController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('calificacionSimulacroCanalesHR')->with("procesos", $procesos);
     }
+
     //AGREGO 14/02/2019
     public function listPostulatesSimulacroCanalesHR(Request $request)
     {
