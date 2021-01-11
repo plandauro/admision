@@ -890,15 +890,14 @@ class TxtController extends Controller
 
         //CAMBIO 26/03/2019
         //$array=(DB :: select( "SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion"));   
-        $array = (DB::select("SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion_proceso_2020_2_E"));
+        // $array = (DB::select("SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion_proceso_2020_2_esp"));
 
+       // $total1 = 0;
+       // foreach ($array as $obj) {
+        //   $total1 = $obj->TOTAL;
+        // }
 
-        $total1 = 0;
-        foreach ($array as $obj) {
-            $total1 = $obj->TOTAL;
-        }
-
-        return response()->json(['correcto' => $correcto, 'total' => $total1, 'igual' => $litho]);
+        return response()->json(['correcto' => $correcto, 'igual' => $litho]);
     }
 
 
@@ -1665,7 +1664,7 @@ class TxtController extends Controller
                     $hojaclaves = new Hojaclaves();
                     $hojaclaves->LITHO = $data2[0];
                     $hojaclaves->CANAL = $data2[1];
-                    
+
                     $hojaclaves->idpregunta = $c - 1;
                     $hojaclaves->R = $data2[$c];
                     $hojaclaves->save();
