@@ -318,9 +318,9 @@ use App\Postulacion;
                       <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_D') }}">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION CANAL D 2020-2 -->
                       </li>
-                      <li>  <!-- class="duplicados_report" -->
+                      {{-- <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2-especial') }}">Reporte de Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-                      </li>
+                      </li> --}}
                       <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
@@ -351,10 +351,7 @@ use App\Postulacion;
                       </li>                     
                       <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2-especial') }}">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-                      </li>
-                      <li>  <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
+                      </li>                      
                       <!--li>
                                 <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
                               </li>
