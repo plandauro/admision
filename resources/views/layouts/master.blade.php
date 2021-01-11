@@ -308,7 +308,7 @@ use App\Postulacion;
                       <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li> <!-- class="duplicados_report" -->
+                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_B') }}">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
@@ -688,6 +688,34 @@ use App\Postulacion;
 
     }
   </script>
+
+  <!-- <script>
+      //VALIDAR DUPLICADOS
+      $.ajax({
+        url: 'rep-constancias-cali-duplicados-2020-2',
+        method: 'POST',
+        data: {
+          tipo: $tipo.val(),
+          dato: $dato.val(),
+          idproceso: $idproceso.val()
+        }
+      }).done(function(response) {
+        console.log(response.postulaciones);
+
+        if(response.postulaciones != ""){
+          console.log("lleno")
+          $(".duplicados_report").hide()
+        }else{
+          console.log("vacio")
+          $(".duplicados_report").show()
+        }
+
+        //$.each(response, function(index, value) {
+        //});
+      }).fail(function(error) {
+        console.log(error);
+      });
+  </script> -->
 
   @yield('js')
 
