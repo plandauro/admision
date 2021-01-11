@@ -294,6 +294,7 @@ use App\Postulacion;
                   <i class="fa fa-pencil"></i> Calificación <span class="fa fa-chevron-down"></span>
                 </a>
                 <ul class="nav child_menu">
+                  {{-- INICIO - EXAMEN ORDINDARIO POR CANALES --}}
                   <li>
                     <a>
                       <i></i> Proceso del Examen de Admisión 2020-2 <span class="fa fa-chevron-down"></span>
@@ -308,7 +309,7 @@ use App\Postulacion;
                       <li>  <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
+                      <li> <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2_canal_B') }}">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
                       <li>  <!-- class="duplicados_report" -->
@@ -334,6 +335,38 @@ use App\Postulacion;
                               </li-->
                     </ul>
                   </li>
+                  {{-- FIN - EXAMEN ORDINDARIO POR CANALES --}}
+
+                  {{-- INICIO - EXAMEN ESPECIAL --}}
+                  <li>
+                    <a>
+                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="{{ url('/cargar-txt-2020-2-E') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                      </li>
+                      <li>
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                      </li>                     
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="{{ url('/rep-calificacion-2020-2-especial') }}">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
+                      </li>
+                      <li>  <!-- class="duplicados_report" -->
+                        <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <!--li>
+                                <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}" >Reporte de Calificacion Por Alumno</a>
+                              </li-->
+                    </ul>
+                  </li>
+                  {{-- FIN - EXAMEN ESPECIAL --}}
 
                   <!--li>
                             <a>
@@ -428,11 +461,9 @@ use App\Postulacion;
                             </ul>
                           </li-->
 
-                </ul>
-
-
-
+                </ul>                
               </li>
+
               </ul>
               </li>
               @endif

@@ -156,7 +156,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -234,7 +234,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt1-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt1-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -310,7 +310,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt2-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt2-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -386,7 +386,7 @@ function fileValidation4(){
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt3-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt3-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
