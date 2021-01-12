@@ -619,7 +619,7 @@ use App\Postulacion;
   <script>
     $(document).ready(function() {
       $urlbase = $("body").attr('urlbase');
-
+    
       // //VALIDAR DUPLICADOS
       // $.ajax({
       //   url: 'rep-constancias-cali-duplicados-2020-2',
@@ -717,8 +717,11 @@ use App\Postulacion;
     }
   </script>
 
-  <!-- <script>
+  {{-- <script>
       //VALIDAR DUPLICADOS
+    $(document).ready(function() {
+      // $urlbase = $("body").attr('urlbase');
+      function A: $(document).ready(function())
       $.ajax({
         url: 'rep-constancias-cali-duplicados-2020-2',
         method: 'POST',
@@ -743,7 +746,8 @@ use App\Postulacion;
       }).fail(function(error) {
         console.log(error);
       });
-  </script> -->
+    });
+  </script> --}}
 
   @yield('js')
 
