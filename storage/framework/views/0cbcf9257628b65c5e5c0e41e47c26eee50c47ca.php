@@ -1,4 +1,4 @@
-<?php $__env->startSection('title', 'RESULTADOS DEL EXAMEN DEL GENERAL 2020-II'); ?>
+<?php $__env->startSection('title', 'RESULTADOS DEL EXAMEN ESPECIAL 2020-II'); ?>
 <?php $__env->startSection('content'); ?>
 @parent
 

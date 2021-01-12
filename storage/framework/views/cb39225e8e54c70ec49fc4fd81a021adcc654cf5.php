@@ -5,7 +5,15 @@
   <div class="">
     <div class="page-title">
       <div class="title_left">
+<<<<<<< HEAD
         <h3>Cargar Información con DLM  - Examen Especial 2020-II</h3>
+=======
+<<<<<<< HEAD
+        <h3>Cargar Información con DLM  - Examen Especial 2020-II</h3>
+=======
+        <h3>Cargar Información con DLM │ Examen Especial 2020-II</h3>
+>>>>>>> 97e1e3b011a0f4aa04594c202ed902449aba4a63
+>>>>>>> 2e3c3a4b197f8259f4568f5c1ce56ec37f49313f
       </div>
 
     </div>

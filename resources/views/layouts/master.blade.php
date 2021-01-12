@@ -347,10 +347,10 @@ use App\Postulacion;
                         <a href="{{ url('/cargar-txt-2020-2-E') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2-E') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>                     
                       <li>  <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2-especial') }}">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
+                        <a href="{{ url('/rep-calificacion-2020-2-especial') }}">Reporte de Calificación Examen Especial</a>
                       </li>                      
                       <!--li>
                                 <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}" >Admsion HI - Canal</a>
@@ -619,7 +619,7 @@ use App\Postulacion;
   <script>
     $(document).ready(function() {
       $urlbase = $("body").attr('urlbase');
-
+    
       // //VALIDAR DUPLICADOS
       // $.ajax({
       //   url: 'rep-constancias-cali-duplicados-2020-2',
@@ -717,8 +717,11 @@ use App\Postulacion;
     }
   </script>
 
-  <!-- <script>
+  {{-- <script>
       //VALIDAR DUPLICADOS
+    $(document).ready(function() {
+      // $urlbase = $("body").attr('urlbase');
+      function A: $(document).ready(function())
       $.ajax({
         url: 'rep-constancias-cali-duplicados-2020-2',
         method: 'POST',
@@ -743,7 +746,8 @@ use App\Postulacion;
       }).fail(function(error) {
         console.log(error);
       });
-  </script> -->
+    });
+  </script> --}}
 
   @yield('js')
 
