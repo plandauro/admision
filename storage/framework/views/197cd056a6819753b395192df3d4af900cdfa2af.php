@@ -349,14 +349,7 @@ use App\Postulacion;
                       </li>                     
                       <li>  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-<<<<<<< HEAD
                       </li>                      
-=======
-                      </li>
-                      <li>  <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
->>>>>>> e5a183dc6250e8748c422999e98e24c4cbf7b7e5
                       <!--li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>
