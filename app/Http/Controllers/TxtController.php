@@ -255,7 +255,7 @@ class TxtController extends Controller
                 //     ->where('postulacion.idproceso', $request->idproceso)
                 //     ->get();
 
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_E($request->dato)")));
                 break;
 
             default:

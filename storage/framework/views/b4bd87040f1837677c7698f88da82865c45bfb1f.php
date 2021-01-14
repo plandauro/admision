@@ -1,4 +1,4 @@
-<?php $__env->startSection('title', 'RESULTADOS DEL EXAMEN DEL GENERAL 2020-II'); ?>
+<?php $__env->startSection('title', 'RESULTADOS DEL EXAMEN GENERAL 2020-II'); ?>
 <?php $__env->startSection('content'); ?>
   @parent
   
@@ -7,10 +7,10 @@
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
-            <h2>Reporte de Calificacion</h2>
+            <h1>Reporte de Calificacion │ Examen General 2020-II</h1>
                         <br>     <br>                   
             <div class="col-md-2">
-			<button><a  href="<?php echo e(url('llenar-respuestas-2020-2')); ?>">Proceso de Calificación</a></button>
+			
 		</div>
 
             <ul class="nav navbar-right panel_toolbox">
