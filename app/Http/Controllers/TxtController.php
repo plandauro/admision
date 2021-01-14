@@ -140,6 +140,14 @@ class TxtController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('cargartxt-2020-2')->with('procesos', $procesos);
     }
+    public function cargarInformacion20202E()
+    {
+        if (!Proceso::abierto())
+            return redirect("/");
+        //return view("cargartxt-2020-2");
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+        return view('cargartxt-2020-2-E')->with('procesos', $procesos);
+    }
 
     public function cargarInformacionCepre()
     {
@@ -247,7 +255,7 @@ class TxtController extends Controller
                 //     ->where('postulacion.idproceso', $request->idproceso)
                 //     ->get();
 
-                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2($request->dato)")));
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_escuela_proceso_2020_2_E($request->dato)")));
                 break;
 
             default:
@@ -837,6 +845,62 @@ class TxtController extends Controller
         return response()->json(['correcto' => $correcto, 'total' => $total1, 'igual' => $litho]);
     }
 
+    public function cargarInformacionTXT20202E(Request $request)
+    {
+
+        if (!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto = "SI";
+
+        $proceso = (DB::select(DB::raw("CALL P_OBT_ADM_PROCESO(1)")));
+
+        foreach ($proceso as $proceso) {
+            $idProceso = $proceso->id;
+            $descripcion = $proceso->descripcion;
+        }
+
+        $archivo = $request->file('archivo');
+        $nombreOriginal = $archivo->getClientOriginalName();
+        //AGREGO 17/11/2018
+        $nombreOriginalProceso = $descripcion . $nombreOriginal;
+        $extension = $archivo->getClientOriginalExtension();
+
+        if ($extension == "dlm") {
+            //        	$r = \Storage::disk('calificacion')->put($nombreOriginal, \File::get($archivo));
+            $r = \Storage::disk('calificacion')->put($nombreOriginalProceso, \File::get($archivo));
+        }
+
+        //        $ruta  =  storage_path('calificacion') ."/". $nombreOriginal;
+        $ruta  =  storage_path('calificacion') . "/" . $nombreOriginalProceso;
+        //       $linecount = count(file(storage_path('calificacion') ."/". $nombreOriginal));
+        $linecount = count(file(storage_path('calificacion') . "/" . $nombreOriginalProceso));
+
+        $total = $linecount - 1;
+
+        if (($handle = fopen($ruta, 'r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
+                $litho = $data[0];
+                $canal = $data[1];
+                $codigo = $data[2];
+                $codigoProceso = $idProceso;
+                DB::statement("call P_INS_ADM_HOJA_IDENTIFICACION_ADMISION_2020_2_E('$litho','$canal','$codigo',$codigoProceso)");
+            }
+            fclose($handle);
+        }
+
+        //CAMBIO 26/03/2019
+        //$array=(DB :: select( "SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion"));   
+        // $array = (DB::select("SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion_proceso_2020_2_esp"));
+
+       // $total1 = 0;
+       // foreach ($array as $obj) {
+        //   $total1 = $obj->TOTAL;
+        // }
+
+        return response()->json(['correcto' => $correcto, 'igual' => $litho]);
+    }
+
+
     public function cargarInformacionTXT1(Request $request)
     {
 
@@ -1081,6 +1145,128 @@ class TxtController extends Controller
         return response()->json(['correcto' => $correcto]);
     }
 
+    public function cargarInformacionTXT120202E(Request $request)
+    {
+
+        /*if(!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto="SI";
+        
+        //AGREGO 11/10/2018
+        $proceso = DB::table('proceso')
+                    ->select('id','descripcion')
+                    ->where('activo',1)
+                    ->get();
+
+        $array = json_decode($proceso); 
+        $idProceso="" ;
+        $descripcion="";
+        foreach($array as $obj){
+            $idProceso= $obj->id;
+            $descripcion= $obj->descripcion;
+        }
+        
+        $archivo2 =$request->file('archivo2');
+        $nombreOriginal2= $archivo2->getClientOriginalName();
+        //AGREGO 11/10/2018
+        $nombreOriginalProceso = $descripcion.$nombreOriginal2;
+        $extension2 = $archivo2->getClientOriginalExtension();
+        
+        if($extension2=="dlm"){
+        //AGREGO 11/10/2018
+                //$r2 = \Storage::disk('calificacion')->put($nombreOriginal2, \File::get($archivo2));  
+                $r2 = \Storage::disk('calificacion')->put($nombreOriginalProceso , \File::get($archivo2));  
+        }
+        
+
+       //$linecount = count(file(storage_path('calificacion') ."/". $nombreOriginal2));
+              $linecount = count(file(storage_path('calificacion') ."/". $nombreOriginalProceso ));
+       
+       $total = $linecount-1;
+        
+        //        $ruta  =  storage_path('calificacion') ."/". $nombreOriginal2;
+                $ruta  =  storage_path('calificacion') ."/". $nombreOriginalProceso ;
+        $fila = 1;
+        if(($handle = fopen($ruta,'r'))!==FALSE){
+        	        		
+        		while(($data=fgetcsv($handle, 1000, ','))!==FALSE){
+
+			$numero = count($data);
+
+			$fila++;
+			
+			for ($c=2; $c < $numero; $c++) {
+			    
+        		     $hojarespuesta= new Hojarespuesta();
+        		     $hojarespuesta->LITHO=$data[0];
+	        		$hojarespuesta->CANAL=$data[1];
+				$hojarespuesta->ID=$c-1;
+	        		$hojarespuesta->R=$data[$c];    
+	        		$hojarespuesta->idProceso=$idProceso;    		
+	        		$hojarespuesta->save();         		
+		        }
+			        	
+        	}	        	
+        	fclose($handle);
+        
+            }
+
+        	 return response()->json(['correcto' => $correcto,'total' => $total ]);*/
+        if (!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto = "SI";
+
+        $proceso = (DB::select(DB::raw("CALL P_OBT_ADM_PROCESO(1)")));
+
+        foreach ($proceso as $proceso) {
+            $idProceso = $proceso->id;
+            $descripcion = $proceso->descripcion;
+        }
+
+        $archivo = $request->file('archivo2');
+        $nombreOriginal = $archivo->getClientOriginalName();
+        $nombreOriginalProceso = $descripcion . "-" . $nombreOriginal;
+        $extension = $archivo->getClientOriginalExtension();
+
+        if ($extension == "dlm") {
+            $r = \Storage::disk('calificacion')->put($nombreOriginalProceso, \File::get($archivo));
+        }
+
+        $USUARIO = Auth::id();
+
+        $ruta  =  storage_path('calificacion') . "/" . $nombreOriginalProceso;
+
+        $fila = 1;
+
+        if (($handle = fopen($ruta, 'r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
+                $numero = count($data);
+                $fila++;
+                for ($c = 2; $c < $numero; $c++) {
+                    $litho = $data[0];
+                    $canal = $data[1];
+                    $clavemarcada = $data[$c];
+                    $nropregunta = $c - 1;
+                    $codigoProceso = $idProceso;
+                    DB::statement("call P_INS_ADM_HOJA_RESPUESTA_ADMISION_2020_2_E('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
+                }
+            }
+            fclose($handle);
+        }
+
+        /*$array=(DB :: select( "CALL P_OBT_ADM_CANTIDAD_LITHO_RESPUESTA($idProceso)"));   
+
+        $id_fruta=0;
+        foreach($array as $obj){
+            $id_fruta = $obj->TOTAL;
+        }
+        $total=$id_fruta-2;*/
+        //return response()->json(['correcto' => $correcto, 'total' =>  $total]);
+        //$total=0;
+        //return response()->json(['correcto' => $correcto,'total' => $total ]);
+        return response()->json(['correcto' => $correcto]);
+    }
+
     public function cargarInformacionTXT2(Request $request)
     {
 
@@ -1283,6 +1469,107 @@ class TxtController extends Controller
         return response()->json(['correcto' => $correcto]);
     }
 
+    public function cargarInformacionTXT220202E(Request $request)
+    {
+
+        /*if(!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto="SI";
+        
+        
+        //AGREGO 17/11/2018
+        $proceso = DB::table('proceso')
+                    ->select('id','descripcion')
+                    ->where('activo',1)
+                    ->get();
+
+        $array = json_decode($proceso); 
+        $idProceso="" ;
+        $descripcion="";
+        foreach($array as $obj){
+            $idProceso= $obj->id;
+            $descripcion= $obj->descripcion;
+        }
+        
+       $archivo3 =$request->file('archivo3');
+        $nombreOriginal3= $archivo3->getClientOriginalName();
+        //AGREGO 17/11/2018
+        $nombreOriginalProceso3 = $descripcion.$nombreOriginal3;
+        $extension3 = $archivo3->getClientOriginalExtension();
+        
+        if($extension3=="dlm"){
+        //MODIFICADO 17/11/2018
+	    //$r3 = \Storage::disk('calificacion')->put($nombreOriginal3, \File::get($archivo3));  
+                $r3 = \Storage::disk('calificacion')->put($nombreOriginalProceso3 , \File::get($archivo3));   
+        }
+        
+        //MODIFICADO 17/11/2018
+       //$ruta2  =  storage_path('calificacion') ."/". $nombreOriginal3;
+       $ruta2  =  storage_path('calificacion') ."/". $nombreOriginalProceso3;
+        
+        if(($handle = fopen($ruta2,'r'))!==FALSE){
+        	while(($data1=fgetcsv($handle, 1000, ','))!==FALSE){	        	
+		        
+		        $numero = count($data1);
+		        for ($c=2; $c < $numero; $c++) {
+		        $hojaclaves = new Hojaclaves();
+        		$hojaclaves ->LITHO=$data1[0];        		
+        		$hojaclaves ->CANAL=$data1[1];
+        		$hojaclaves ->idpregunta=$c-1;
+        		$hojaclaves ->R=$data1[$c];
+        		$hojaclaves ->idProceso=$idProceso;
+        		$hojaclaves ->save();
+		        }
+        		
+        	}
+        	fclose($handle);
+        }*/
+
+        if (!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto = "SI";
+
+        $proceso = (DB::select(DB::raw("CALL P_OBT_ADM_PROCESO(1)")));
+
+        foreach ($proceso as $proceso) {
+            $idProceso = $proceso->id;
+            $descripcion = $proceso->descripcion;
+        }
+
+        $archivo3 = $request->file('archivo3');
+        $nombreOriginal = $archivo3->getClientOriginalName();
+        $nombreOriginalProceso = $descripcion . "-" . $nombreOriginal;
+        $extension = $archivo3->getClientOriginalExtension();
+
+        if ($extension == "dlm") {
+            $r = \Storage::disk('calificacion')->put($nombreOriginalProceso, \File::get($archivo3));
+        }
+
+        $USUARIO = Auth::id();
+
+        $ruta  =  storage_path('calificacion') . "/" . $nombreOriginalProceso;
+
+        $fila = 1;
+
+        if (($handle = fopen($ruta, 'r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
+                $numero = count($data);
+                $fila++;
+                for ($c = 2; $c < $numero; $c++) {
+                    $litho = $data[0];
+                    $canal = $data[1];
+                    $clavemarcada = $data[$c];
+                    $nropregunta = $c - 1;
+                    $codigoProceso = $idProceso;
+                    DB::statement("call P_INS_ADM_HOJA_CLAVES_ADMISION_2020_2_E('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
+                }
+            }
+            fclose($handle);
+        }
+
+        return response()->json(['correcto' => $correcto]);
+    }
+
     public function cargarInformacionTXT3(Request $request)
     {
 
@@ -1342,6 +1629,42 @@ class TxtController extends Controller
                     $hojaclaves = new Hojaclaves();
                     $hojaclaves->LITHO = $data2[0];
                     $hojaclaves->CANAL = $data2[1];
+                    $hojaclaves->idpregunta = $c - 1;
+                    $hojaclaves->R = $data2[$c];
+                    $hojaclaves->save();
+                }
+            }
+            fclose($handle);
+        }
+
+        return response()->json(['correcto' => $correcto]);
+    }
+
+    public function cargarInformacionTXT320202E(Request $request)
+    {
+
+        if (!Proceso::abierto())
+            return "Acceso Denegado";
+        $correcto = "SI";
+        $archivo4 = $request->file('archivo4');
+        $nombreOriginal4 = $archivo4->getClientOriginalName();
+        $extension4 = $archivo4->getClientOriginalExtension();
+
+        if ($extension4 == "dlm") {
+            $r4 = \Storage::disk('calificacion')->put($nombreOriginal4, \File::get($archivo4));
+        }
+
+        $ruta3  =  storage_path('calificacion') . "/" . $nombreOriginal4;
+
+        if (($handle = fopen($ruta3, 'r')) !== FALSE) {
+            while (($data2 = fgetcsv($handle, 1000, ',')) !== FALSE) {
+
+                $numero = count($data2);
+                for ($c = 2; $c < $numero; $c++) {
+                    $hojaclaves = new Hojaclaves();
+                    $hojaclaves->LITHO = $data2[0];
+                    $hojaclaves->CANAL = $data2[1];
+
                     $hojaclaves->idpregunta = $c - 1;
                     $hojaclaves->R = $data2[$c];
                     $hojaclaves->save();
@@ -2646,7 +2969,7 @@ class TxtController extends Controller
             DB::table('hojaidenticacion_proceso_3')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
 
-    /* ACTUALIZAR DUPLICADOS 2020 */
+    /* ACTUALIZAR DUPLICADOS 2020-II*/
     public function actualizarAdmisionDuplicado2020II(Request $request)
     {
 
@@ -2660,7 +2983,23 @@ class TxtController extends Controller
         $hojaidentificacioncepre =
             DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
     }
-    /* FIN DE ACTUALIZAR DUPLICADOS 2020 */
+    /* FIN DE ACTUALIZAR DUPLICADOS 2020-II*/
+
+    /* ACTUALIZAR DUPLICADOS 2020-II EXAMEN ESPECIAL*/
+    public function actualizarAdmisionDuplicado2020IIESPECIAL(Request $request)
+    {
+
+        //var_dump($request);
+        $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2_esp')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+    }
+
+    public function actualizarAdmisionCanal2020IIESPECIAL(Request $request)
+    {
+
+        $hojaidentificacioncepre =
+            DB::table('hojaidenticacion_proceso_2020_2_esp')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
+    }
+    /* FIN DE ACTUALIZAR DUPLICADOS 2020-II EXAMEN ESPECIAL*/
 
     public function postulantesCanales()
     {
@@ -2749,8 +3088,40 @@ class TxtController extends Controller
         return response()->json(['postulaciones' => $postulaciones]);
     }
 
-
     /* FIN DUPLICADOS 2020 II*/
+
+
+    /* PARA DUPLICADOS DE ESPECIAL 2020-II */
+
+    public function postulantesDuplicados2020IIESPECIAL()
+    {
+        $procesos = Proceso::orderBy('id', 'desc')->get();
+
+        return view('calificacionDuplicados-2020-2-E')->with("procesos", $procesos);
+    }
+
+    public function listPostulatesDuplicados2020IIESPECIAL(Request $request)
+    {
+        $postulacion = null;
+        if ($request->dato == 0)
+            $request->tipo = 0;
+        switch ($request->tipo) {
+            case 2: #Por Escuela                
+                // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2_E(2,$request->dato)"))); // NUEVO
+                break;
+
+
+            default:
+                //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
+                // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
+                $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2_E(1,0)"))); // NUEVO
+                break;
+        }
+        return response()->json(['postulaciones' => $postulaciones]);
+    }
+
+    /* FIN DUPLICADOS ESPECIAL 2020-II */
 
 
     public function postulantesCanalesHR()

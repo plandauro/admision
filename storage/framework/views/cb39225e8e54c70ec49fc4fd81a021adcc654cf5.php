@@ -1,13 +1,11 @@
-@extends('layouts.master')
+<?php $__env->startSection('title', ''); ?>
 
-@section('title', '')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
   @parent
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Información con DLM │ Examen General 2020-II</h3>
+        <h3>Cargar Información con DLM │ Examen Especial 2020-II</h3>
       </div>
 
     </div>
@@ -21,7 +19,7 @@
           <div id="principal"  class="x_content">
             <div class="row">
               <div class="col-md-6">
-                <h2>Cargue los resultados de DLM - Examen General 2020-II:</h2>
+                <h2>Cargue los resultados de DLM:</h2>
                  
                 <form  id="f_cargar_datos_usuarios" name="f_cargar_datos_usuarios" method="post"  class="formarchivo" enctype="multipart/form-data" >                
       
@@ -116,17 +114,17 @@
       </div>
     </div>
   </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('css')
+<?php $__env->startSection('css'); ?>
  
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <!-- PNotify -->
-  <script src="{{ asset('js/pnotify.js') }}"></script>
-  <script src="{{ asset('js/pnotify.buttons.js') }}"></script>
-  <script src="{{ asset('js/pnotify.nonblock.js') }}"></script>
+  <script src="<?php echo e(asset('js/pnotify.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.buttons.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/pnotify.nonblock.js')); ?>"></script>
   <script>
   
   function fileValidation(){
@@ -158,7 +156,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios" ){ var miurl="cargar-txt-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -236,7 +234,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt1-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios1" ){ var miurl="cargar-txt1-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -312,7 +310,7 @@
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt2-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios2" ){ var miurl="cargar-txt2-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -388,7 +386,7 @@ function fileValidation4(){
 
 
         //if(nombreform=="f_subir_imagen" ){ var miurl="subir_imagen_usuario";  var divresul="notificacion_resul_fci"}
-        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt3-2020-2";  var divresul="notificacion_resul_fcdu"}
+        if(nombreform=="f_cargar_datos_usuarios3" ){ var miurl="cargar-txt3-2020-2-E";  var divresul="notificacion_resul_fcdu"}
 
         //información del formulario
         var formData = new FormData($("#"+nombreform+"")[0]);
@@ -433,4 +431,5 @@ function fileValidation4(){
     }); 
   </script>
   
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

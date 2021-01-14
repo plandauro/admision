@@ -1,8 +1,8 @@
- 
+ @extends('layouts.master')
 
-<?php $__env->startSection('title', 'REPORTE DE CALIFICACION DUPLICADOS'); ?>
+@section('title', 'REPORTE DE CALIFICACION DUPLICADOS')
 
-<?php $__env->startSection('content'); ?>
+@section('content')
   @parent
   <div class="">
     <div class="row">
@@ -10,7 +10,7 @@
         <div class="x_panel">
           <div class="x_title">
 
-            <h2>Reporte de Calificacion Duplicados │ EXAMEN GENERAL 2020-II</h2>
+            <h2>Reporte de Calificacion Duplicados │ EXAMEN ESPECIAL 2020-II</h2>
                  <ul class="nav navbar-right panel_toolbox">
               <li style="margin-right: 15px">
                 <h4> Filtros de busqueda:</h4>
@@ -98,21 +98,20 @@
  
 
 </div>
-<?php $__env->stopSection(); ?>
+@endsection
 
-<?php $__env->startSection('css'); ?>
-<link rel="stylesheet" href="<?php echo e(asset('css/jquery.dataTables.min.css')); ?>">
-<link rel="stylesheet" href="<?php echo e(asset('css/buttons.dataTables.min.css')); ?>">
-<?php $__env->stopSection(); ?>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/buttons.dataTables.min.css') }}">
+@endsection
 
-<?php $__env->startSection('js'); ?>
-  <script src="<?php echo e(asset('js/jquery.dataTables.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/dataTables.buttons.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/jszip.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/pdfmake.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/vfs_fonts.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/buttons.html5.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/buttons.print.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/myjs/rep-postulante-calificacion-Duplicados-2020-2.js')); ?>"></script>
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+@section('js')
+  <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('js/dataTables.buttons.min.js') }}"></script>
+  <script src="{{ asset('js/jszip.min.js') }}"></script>
+  <script src="{{ asset('js/pdfmake.min.js') }}"></script>
+  <script src="{{ asset('js/vfs_fonts.js') }}"></script>
+  <script src="{{ asset('js/buttons.html5.min.js') }}"></script>
+  <script src="{{ asset('js/buttons.print.min.js') }}"></script>
+  <script src="{{ asset('js/myjs/rep-postulante-calificacion-Duplicados-2020-2-E.js') }}"></script>
+@endsection

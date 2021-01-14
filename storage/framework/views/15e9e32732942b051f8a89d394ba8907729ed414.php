@@ -1,31 +1,22 @@
-<?php $__env->startSection('title', 'RESULTADOS DEL EXAMEN GENERAL 2020-II'); ?>
+<?php $__env->startSection('title', 'Reporte de Estadisticas Ingresantes - Edades'); ?>
+
 <?php $__env->startSection('content'); ?>
   @parent
-  
   <div class="">
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
-            <h1>Reporte de Calificacion │ Examen General 2020-II</h1>
-                        <br>     <br>                   
-            <div class="col-md-2">
-			
-		</div>
-
+            <h2>Reporte de Estadisticas Ingresantes - Edades</h2>
             <ul class="nav navbar-right panel_toolbox">
               <li style="margin-right: 15px">
-                <h4> Filtros de busqueda:</h4>
+                <h4> Filtros:</h4>
               </li>
-              <li style="margin-right: 15px">
-                <select style="width: 200px" id="tipobusqueda" onchange="cargarCombo()" class="form-control" name="" id="">
-                  <option value="0">Todos los postulantes</option>
-                  <option value="2">Por escuela</option>
-                </select>
-              </li>
-              <li>
-                <select id="dato" style="width: 150px" onchange="consultaProducto()" disabled="true" class="form-control" name="" id="">
-                  <option value="0">Todos</option>
+               <li style="margin-right: 15px">
+                <select style="width: 120px" id="idproceso" onchange="consultar()" class="form-control" name="">
+                  <?php $__currentLoopData = $procesos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $proceso): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                    <option value="<?php echo e($proceso->id); ?>"><?php echo e($proceso->descripcion); ?></option>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
                 </select>
               </li>
             </ul>
@@ -34,6 +25,11 @@
           <div class="x_content">
             <p> <strong id="message"></strong></p>
               <table id="myTable" width="100%" class="table table-hover table-bordered">
+                <tfoot>
+                  <tr>
+                    
+                  </tr>
+                </tfoot>
               </table>
           </div>
         </div>
@@ -55,32 +51,6 @@
   <script src="<?php echo e(asset('js/vfs_fonts.js')); ?>"></script>
   <script src="<?php echo e(asset('js/buttons.html5.min.js')); ?>"></script>
   <script src="<?php echo e(asset('js/buttons.print.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('js/myjs/rep-postulante-calificacion-2020-2.js')); ?>"></script>
-  <script>
-  	$(document).ready(function(){ 
-	$('#ididentificacion').click(function() { 
-	
-	var nombre = $("#nombre").val(); 
-	
-	$.ajax({ 
-	type: "POST", 
-	url: 'rep-calificacion-2020-2', 
-	success: function(data) { 
-	if(data.existe==""){
-
-	        $("#alert1").show(0).delay(15000).hide(0);
-	        $("#message1").text("No existe el archivo ... Por favor subirlo el DDL"); 
-	        
-	}else{	
-
-	        $("#alert1").show(0).delay(15000).hide(0);
-	        $("#message1").text("Se cargo correctamente"); 
-	}
-	window.location.href;
-	}	
-	} 
-	}); 
-	});
-  </script>
+  <script src="<?php echo e(asset('js/myjs/rep-estadistica-ingresante-edad.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
