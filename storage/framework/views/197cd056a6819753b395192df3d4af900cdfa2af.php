@@ -309,17 +309,17 @@ use App\Postulacion;
                       <li class="duplicados_report">  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li> <!-- class="duplicados_report" -->
+                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
-                      <li>  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_C')); ?>">Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION CANAL C 2020-2 -->
                       </li>
-                      <li>  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_D')); ?>">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION CANAL D 2020-2 -->
                       </li>
                       
-                      <li>  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
                       <!--li>
@@ -347,16 +347,8 @@ use App\Postulacion;
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>                     
-                      <li>  <!-- class="duplicados_report" -->
-<<<<<<< HEAD
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-=======
-<<<<<<< HEAD
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a> <!-- REPORTE CALIFICACION 2020-2 ESPECIAL-->
-=======
+                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
->>>>>>> 97e1e3b011a0f4aa04594c202ed902449aba4a63
->>>>>>> 2e3c3a4b197f8259f4568f5c1ce56ec37f49313f
                       </li>                      
                       <!--li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
@@ -628,31 +620,31 @@ use App\Postulacion;
     $(document).ready(function() {
       $urlbase = $("body").attr('urlbase');
     
-      // //VALIDAR DUPLICADOS
-      // $.ajax({
-      //   url: 'rep-constancias-cali-duplicados-2020-2',
-      //   method: 'POST',
-      //   data: {
-      //     tipo: $tipo.val(),
-      //     dato: $dato.val(),
-      //     idproceso: $idproceso.val()
-      //   }
-      // }).done(function(response) {
-      //   console.log(response.postulaciones);
+      //VALIDAR DUPLICADOS
+      $.ajax({
+        url: 'rep-constancias-cali-duplicados-2020-2',
+        method: 'POST',
+        data: {
+          tipo: $tipo.val(),
+          dato: $dato.val(),
+          idproceso: $idproceso.val()
+        }
+      }).done(function(response) {
+        console.log(response.postulaciones);
 
-      //   if(response.postulaciones != ""){
-      //     console.log("lleno")
-      //     $(".duplicados_report").hide()
-      //   }else{
-      //     console.log("vacio")
-      //     $(".duplicados_report").show()
-      //   }
+        if(response.postulaciones != ""){
+          console.log("lleno")
+          $(".duplicados_report").hide()
+        }else{
+          console.log("vacio")
+          $(".duplicados_report").show()
+        }
 
-      //   //$.each(response, function(index, value) {
-      //   //});
-      // }).fail(function(error) {
-      //   console.log(error);
-      // });
+        //$.each(response, function(index, value) {
+        //});
+      }).fail(function(error) {
+        console.log(error);
+      });
     });
 
     $.ajaxSetup({
@@ -725,7 +717,7 @@ use App\Postulacion;
     }
   </script>
 
-  <script>
+  <!-- <script>
       //VALIDAR DUPLICADOS
     $(document).ready(function() {
       // $urlbase = $("body").attr('urlbase');
@@ -755,7 +747,7 @@ use App\Postulacion;
         console.log(error);
       });
     });
-  </script>
+  </script> -->
 
   <?php echo $__env->yieldContent('js'); ?>
 
