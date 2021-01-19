@@ -306,64 +306,70 @@ use App\Postulacion;
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
-                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion canal A</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
-                      <li class="duplicados_report"> <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_B')); ?>">Reporte de calificacion canal B</a> <!-- REPORTE CALIFICACION CANAL B 2020-2 -->
                       </li>
-                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_C')); ?>">Reporte de calificacion canal C</a> <!-- REPORTE CALIFICACION CANAL C 2020-2 -->
                       </li>
-                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_D')); ?>">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION CANAL D 2020-2 -->
                       </li>
                       
-                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
-                      </li>
-                      <!--li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
-                              </li-->
-                    </ul>
+                  <li class="duplicados_report">
+                    <!-- class="duplicados_report" -->
+                    <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                   </li>
-                  
-
-                  
-                  <li>
-                    <a>
-                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
-                    </a>
-                    <ul class="nav child_menu">
-                      <li>
-                        <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
-                      </li>
-                      <li>
-                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
-                      </li>                     
-                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
-                      </li>                      
-                      <!--li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
-                              </li-->
-                    </ul>
-                  </li>
-                  
-
                   <!--li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
+                              </li-->
+                </ul>
+              </li>
+              
+
+              
+              <li>
+                <a>
+                  <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                  <li>
+                    <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                  </li>
+                  <li>
+                    <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                  </li>
+                  <li class="duplicados_report">
+                    <!-- class="duplicados_report" -->
+                    <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
+                  </li>
+                  <!--li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
+                              </li>
+                              <li>
+                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
+                              </li-->
+                </ul>
+              </li>
+              
+
+              <!--li>
                             <a>
                             <i></i> Proceso del Examen de CEPRE<span class="fa fa-chevron-down"></span>
                             </a>
@@ -456,7 +462,7 @@ use App\Postulacion;
                             </ul>
                           </li-->
 
-                </ul>                
+              </ul>
               </li>
 
               </ul>
@@ -619,32 +625,32 @@ use App\Postulacion;
   <script>
     $(document).ready(function() {
       $urlbase = $("body").attr('urlbase');
-    
       //VALIDAR DUPLICADOS
-      $.ajax({
-        url: 'rep-constancias-cali-duplicados-2020-2',
-        method: 'POST',
-        data: {
-          tipo: $tipo.val(),
-          dato: $dato.val(),
-          idproceso: $idproceso.val()
-        }
-      }).done(function(response) {
-        console.log(response.postulaciones);
+      // $.ajax({
+      //   url: 'rep-constancias-cali-duplicados-2020-2',
+      //   method: 'POST',
+      //   data: {
+      //     tipo: $tipo.val(),
+      //     dato: $dato.val(),
+      //     idproceso: $idproceso.val()
+      //   }
+      // }).done(function(response) {
+      //   console.log(response.postulaciones);
 
-        if(response.postulaciones != ""){
-          console.log("lleno")
-          $(".duplicados_report").hide()
-        }else{
-          console.log("vacio")
-          $(".duplicados_report").show()
-        }
+      //   if (response.postulaciones != "") {
+      //     console.log("lleno")
+      //     $(".duplicados_report").hide()
+      //   } else {
+      //     console.log("vacio")
+      //     $(".duplicados_report").show()
+      //   }
 
-        //$.each(response, function(index, value) {
-        //});
-      }).fail(function(error) {
-        console.log(error);
-      });
+      //   //$.each(response, function(index, value) {
+      //   //});
+      // }).fail(function(error) {
+      //   console.log(error);
+      // });
+      //FIN VALIDACION      
     });
 
     $.ajaxSetup({

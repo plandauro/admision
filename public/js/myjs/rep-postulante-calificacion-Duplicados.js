@@ -2,7 +2,7 @@ $urlbase = $("body").attr('urlbase');
 $tipo = $("#tipobusqueda");
 $dato = $("#dato");
 $idproceso = $("#idproceso");
-$(document).ready(function() {
+$(document).ready(function () {
     consultaProducto();
 });
 
@@ -49,7 +49,7 @@ function llenar(response, index, value) {
             exportOptions: {
                 columns: [0, 1, 2, 3, 4]
             },
-            customize: function(doc) {
+            customize: function (doc) {
                 doc.content.splice(1, 0, {
                     margin: [0, 0, 0, 12],
                     title: 's',
@@ -64,7 +64,7 @@ function llenar(response, index, value) {
             exportOptions: {
                 columns: [0, 1, 2, 3, 4]
             },
-            customize: function(win) {
+            customize: function (win) {
                 $(win.document.body).css('font-size', '7pt').css('text-align', 'center');
                 $(win.document.body).find('table').addClass('compact').css('font-size', 'inherit');
             }
@@ -84,11 +84,11 @@ function llenar(response, index, value) {
             },
         },
     });
-    $('#myTable tbody').on('click', 'tr', function() {
+    $('#myTable tbody').on('click', 'tr', function () {
         $(this).toggleClass('selected');
         //console.log('saasas');
     });
-    $('#btnActualizar').click(function() {
+    $('#btnActualizar').click(function () {
         if (dataTable.rows('.selected').data().length == 0 || dataTable.rows('.selected').data().length > 1) {
             //$("#alertDuplicado").show(0).delay(3000).hide(0);
             $("#alertDuplicado").show(0).delay(3000).hide(0).addClass('alert-danger');
@@ -97,7 +97,7 @@ function llenar(response, index, value) {
             return;
         }
         rows = dataTable.rows('.selected').data();
-        $.each(rows, function(i, item) {
+        $.each(rows, function (i, item) {
             id = item.LITHO;
             $('#codlitho').val(item.LITHO);
             document.getElementById("codlitho").readOnly = true;
@@ -106,7 +106,7 @@ function llenar(response, index, value) {
         });
     });
 
-    $('#btnGrabar').click(function() {
+    $('#btnGrabar').click(function () {
         _token = $('#_token').val();
         codlitho = $('#codlitho').val();
         codpostulante = $('#codpostulante').val();
@@ -122,10 +122,10 @@ function llenar(response, index, value) {
                 codlitho: codlitho,
                 codpostulante: codpostulante
             },
-            complete: function(response) {
+            complete: function (response) {
                 $("#alertDuplicadoS").show(0).delay(4000).hide(0);
                 $("#alertDuplicadoS").show(0).delay(4000).hide(0).addClass('alert alert-success');
-                $("#mensajeDuplicadoS").text("CODIGO LITHO: "+codlitho+" se modifico el codigo de postulante");
+                $("#mensajeDuplicadoS").text("CODIGO LITHO: " + codlitho + " se modifico el codigo de postulante");
                 $('#codlitho').val('');
                 $('#codpostulante').val('');
                 setTimeout(reFresh, 4000);
@@ -168,13 +168,13 @@ function cargarCombo() {
             dato: $dato.val(),
             idproceso: $idproceso.val()
         }
-    }).done(function(responce) {
-        $.each(responce.list, function(index, value) {
+    }).done(function (responce) {
+        $.each(responce.list, function (index, value) {
             $html += '<option value="' + value.codigo + '">' + value.descripcion + '</option>';
         });
         $("#dato").html($html);
         $("#dato").prop('disabled', false);
-    }).fail(function(responce) {
+    }).fail(function (responce) {
         // body...
     });
 }
@@ -188,15 +188,15 @@ function consultaProducto() {
             dato: $dato.val(),
             idproceso: $idproceso.val()
         }
-    }).done(function(response) {
-        $.each(response, function(index, value) {
+    }).done(function (response) {
+        $.each(response, function (index, value) {
             llenar(response.postulaciones, index, value);
         });
-    }).fail(function(response) {});
+    }).fail(function (response) { });
 
-    $('#myTable tbody').on('click', 'tr', function() {
+    $('#myTable tbody').on('click', 'tr', function () {
         $(this).toggleClass('selected');
-                //console.log('222');
+        //console.log('222');
     });
 }
 
@@ -207,5 +207,5 @@ function pad(n, length) {
 }
 
 function reFresh() {
-  location.reload();
+    location.reload();
 }

@@ -57,7 +57,7 @@ function llenar(response, index, value) {
                 "visible": false
             },
             {
-                "title": "2ERA AREA_DESEMPATE_2DO_NIVEL",
+                "title": "1ERA AREA_DESEMPATE_2DO_NIVEL",
                 "data":"1area_desempate_2nivel",
                 "visible": false
               },
