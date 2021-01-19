@@ -637,17 +637,10 @@ use App\Postulacion;
       // }).done(function(response) {
       //   console.log(response.postulaciones);
 
-<<<<<<< HEAD
-      //   if(response.postulaciones != ""){
-      //     console.log("lleno")
-      //     $(".duplicados_report").hide()
-      //   }else{
-=======
       //   if (response.postulaciones != "") {
       //     console.log("lleno")
       //     $(".duplicados_report").hide()
       //   } else {
->>>>>>> 5a1bceaef1f9dd5e2e280768bed18196a5fb1e36
       //     console.log("vacio")
       //     $(".duplicados_report").show()
       //   }
@@ -657,10 +650,7 @@ use App\Postulacion;
       // }).fail(function(error) {
       //   console.log(error);
       // });
-<<<<<<< HEAD
-=======
       //FIN VALIDACION      
->>>>>>> 5a1bceaef1f9dd5e2e280768bed18196a5fb1e36
     });
 
     $.ajaxSetup({
