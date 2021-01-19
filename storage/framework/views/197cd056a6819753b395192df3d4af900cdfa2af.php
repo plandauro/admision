@@ -347,6 +347,7 @@ use App\Postulacion;
                 </a>
                 <ul class="nav child_menu">
                   <li>
+<<<<<<< HEAD
                     <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                   </li>
                   <li>
@@ -357,6 +358,26 @@ use App\Postulacion;
                     <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
                   </li>
                   <!--li>
+=======
+                    <a>
+                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                      </li>                     
+<<<<<<< HEAD
+                      <li>  <!-- class="duplicados_report" -->
+=======
+                      <li class="duplicados_report">  <!-- class="duplicados_report" -->
+>>>>>>> 4741008d96b953459b781df4f53e0c9b8ff582fd
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
+                      </li>                      
+                      <!--li>
+>>>>>>> 879121b4bab6c08b9ab95dfeb9496eb93dc31e58
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>
                               <li>
