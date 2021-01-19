@@ -10,7 +10,7 @@
             <h1>Reporte de Calificacion │ Examen General 2020-II</h1>
                         <br>     <br>                   
             <div class="col-md-2">
-			
+			<button><a  href="<?php echo e(url('llenar-respuestas-2020-2')); ?>">Proceso de Calificación</a></button>
 		</div>
 
             <ul class="nav navbar-right panel_toolbox">
