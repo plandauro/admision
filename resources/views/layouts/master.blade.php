@@ -621,30 +621,30 @@ use App\Postulacion;
       $urlbase = $("body").attr('urlbase');
     
       //VALIDAR DUPLICADOS
-      $.ajax({
-        url: 'rep-constancias-cali-duplicados-2020-2',
-        method: 'POST',
-        data: {
-          tipo: $tipo.val(),
-          dato: $dato.val(),
-          idproceso: $idproceso.val()
-        }
-      }).done(function(response) {
-        console.log(response.postulaciones);
+      // $.ajax({
+      //   url: 'rep-constancias-cali-duplicados-2020-2',
+      //   method: 'POST',
+      //   data: {
+      //     tipo: $tipo.val(),
+      //     dato: $dato.val(),
+      //     idproceso: $idproceso.val()
+      //   }
+      // }).done(function(response) {
+      //   console.log(response.postulaciones);
 
-        if(response.postulaciones != ""){
-          console.log("lleno")
-          $(".duplicados_report").hide()
-        }else{
-          console.log("vacio")
-          $(".duplicados_report").show()
-        }
+      //   if(response.postulaciones != ""){
+      //     console.log("lleno")
+      //     $(".duplicados_report").hide()
+      //   }else{
+      //     console.log("vacio")
+      //     $(".duplicados_report").show()
+      //   }
 
-        //$.each(response, function(index, value) {
-        //});
-      }).fail(function(error) {
-        console.log(error);
-      });
+      //   //$.each(response, function(index, value) {
+      //   //});
+      // }).fail(function(error) {
+      //   console.log(error);
+      // });
     });
 
     $.ajaxSetup({
