@@ -56,8 +56,13 @@ return [
             'driver' => 'mysql',
             'host' => '172.18.1.20',
             'port' => '3306',
+<<<<<<< HEAD
             'database' => 'bd_unab_admision_pruebas',
             // 'database' => 'bd_unab_admision', /* esta es la oficial BD */  
+=======
+            //'database' => 'bd_unab_admision_pruebas',
+            'database' => 'bd_unab_admision', /* esta es la oficial BD */  
+>>>>>>> 3435f5d27bfe49844d125ebfcb6ec90ee3496c97
             'username' => 'root',
             'password' => 'qazwsx123456',
             'charset' => 'utf8',
