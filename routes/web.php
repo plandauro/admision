@@ -69,7 +69,7 @@ Route::group(['middleware' => 'auth'], function () {
 	// Postulación
 	Route::get('/postular', 'PostulacionController@index')->middleware('postulante');
 	Route::post('/postular/save', 'PostulacionController@saveStep');
-	Route::get('/verificarpostulacion', 'PostulacionController@indexverificar')->middleware('asistente');
+	// Route::get('/verificarpostulacion', 'PostulacionController@indexverificar')->middleware('asistente'); //COMENTADO POR EXAMEN DE ADMISON 2020-2
 	Route::post('getpostulacion', 'PostulacionController@getPostulacion');
 	Route::post('verificar', 'PostulacionController@verificar')->middleware('asistente');
 	Route::post('editar', 'PostulacionController@editar')->middleware('coordinador');

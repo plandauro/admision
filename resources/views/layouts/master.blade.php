@@ -157,11 +157,11 @@ use App\Postulacion;
 
                 @if(Auth::user()->isAsistente() || Auth::user()->isCoordinador())
                 @if(Proceso::abierto())
-                <li>
+                <!-- <li>
                   <a href="{{ url('/verificarpostulacion') }}">
                     <i class="fa fa-check-square-o"></i> Verificar Postulación
                   </a>
-                </li>
+                </li> -->
                 @if( Auth::user()->isCoordinador())
                 <li>
                   <a href="{{ url('/cargar-resultados') }}">
