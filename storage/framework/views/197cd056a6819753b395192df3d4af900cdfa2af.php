@@ -274,7 +274,7 @@ use App\Postulacion;
                 </li>
                 <!-- FIN MODULO MANTENIMIENTO -->
               </ul>
-              
+              <!-- aca iba un li demas -->
               <?php endif; ?>
               <?php if( Auth::user()->isCoordinador()): ?>
 
@@ -333,12 +333,12 @@ use App\Postulacion;
                         <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>">Admsion HI - Canal</a>
                       </li>
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>">Admision HR - Canal</a>
-                      </li>
+                      </li> -->
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>">Reporte de Calificacion Por Alumno</a>
                       </li>

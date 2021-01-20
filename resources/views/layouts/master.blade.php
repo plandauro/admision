@@ -274,7 +274,7 @@ use App\Postulacion;
                 </li>
                 <!-- FIN MODULO MANTENIMIENTO -->
               </ul>
-              
+              <!-- aca iba un li demas -->
               @endif
               @if( Auth::user()->isCoordinador())
 
