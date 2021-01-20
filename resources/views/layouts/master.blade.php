@@ -57,27 +57,25 @@ use App\Postulacion;
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <ul class="nav side-menu">
-
                 <li>
                   <a href="{{ url('/') }}">
                     <i class="fa fa-home"></i> Inicio
                   </a>
                 </li>
-                <!--  
-                  <li>
-                    <a>
-                      <0i class="fa fa-user"></i> Mis Datos <span class="fa fa-chevron-down"></span>
-                    </a>
-                    <ul class="nav child_menu">
-                      <li>
-                        <a href="{{ url('/perfil') }}">Mi perfil</a>
-                      </li>
-                     <li>
-                        <a href="{{ url('/sisfoh') }}">Ficha Socioeconómica Única</a>
-                      </li>
-                    </ul> 
-                  </li>
-                  -->
+                <!-- <li>
+                  <a>
+                    <0i class="fa fa-user"></i> Mis Datos <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="{{ url('/perfil') }}">Mi perfil</a>
+                    </li>
+                    <li>
+                      <a href="{{ url('/sisfoh') }}">Ficha Socioeconómica Única</a>
+                    </li>
+                  </ul>
+                </li> -->
+
                 @if(Proceso::abierto())
 
                 @if(Auth::user()->isAdmin() || Auth::user()->isCoordinador() || Auth::user()->isAsistente())
@@ -184,7 +182,8 @@ use App\Postulacion;
                 </li>
                 @endif
                 @endif
-
+                
+                <!-- MODULO REPORTES -->
                 <li>
                   <a>
                     <i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span>
@@ -232,7 +231,10 @@ use App\Postulacion;
                     </li>
                   </ul>
                 </li>
+                <!-- FIN MODULO REPORTES -->
+
                 @if( Auth::user()->isCoordinador())
+                <!-- MODULO MANTENIMIENTO -->
                 <li>
                   <a>
                     <i class="fa fa-pencil"></i> Mantenimiento <span class="fa fa-chevron-down"></span>
@@ -250,46 +252,49 @@ use App\Postulacion;
                     <li>
                       <a href="{{ url('/mantenimiento/tarifa') }}">Tarifa</a>
                     </li>
-                    <!--li>
-                            <a href="{{ url('/mantenimiento/materia') }}">Gestion de Materia</a>
-                          </li-->
+                    <!-- <li>
+                      <a href="{{ url('/mantenimiento/materia') }}">Gestion de Materia</a>
+                    </li>
                     <li>
-                      <!--a>
-                            <i></i>Gestion de Preguntas<span class="fa fa-chevron-down"></span>
-                            </a-->
-                      <!--ul class="nav child_menu">
-                            <li>
-                              <a href="{{ url('/mantenimiento/preguntas') }}" >Preguntas No Usadas</a>
-                            </li>
-                            <li>
-                              <a href="{{ url('/mantenimiento/preguntas-usadas') }}" >Preguntas Usadas</a>
-                            </li>
-                            </ul-->
+                      <a>
+                        <i></i>Gestion de Preguntas<span class="fa fa-chevron-down"></span>
+                      </a>
+                      <ul class="nav child_menu">
+                        <li>
+                          <a href="{{ url('/mantenimiento/preguntas') }}">Preguntas No Usadas</a>
+                        </li>
+                        <li>
+                          <a href="{{ url('/mantenimiento/preguntas-usadas') }}">Preguntas Usadas</a>
+                        </li>
+                      </ul>
+                    </li> -->
                     <li>
                       <a href="{{ url('/configuracion/postulanteSimulacro') }}">Postulantes Simulacro</a>
                     </li>
                 </li>
+                <!-- FIN MODULO MANTENIMIENTO -->
               </ul>
-              </li>
+              
               @endif
               @if( Auth::user()->isCoordinador())
 
-              <!-- generacion examen -->
-              <li>
-                        <a>
-                          <i class="fa fa-pencil"></i> Generación de Examen  <span class="fa fa-chevron-down"></span>
-                        </a>
-                        <ul class="nav child_menu">
-                          <li>
-                            <a href="{{ url('/generarexa/lista') }}">Proceso</a>
-                          </li>
-                           <li>
-                            <a>Matenimiento</a>
-                          </li>
-                     	</ul> 
-                      </li>
-                      <!-- fin generacion examen -->
+              <!-- MODULO GENERACION EXAMEN -->
+              <!-- <li>
+                <a>
+                  <i class="fa fa-pencil"></i> Generación de Examen <span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                  <li>
+                    <a href="{{ url('/generarexa/lista') }}">Proceso</a>
+                  </li>
+                  <li>
+                    <a>Matenimiento</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- FIN GENERACION EXAMEN -->
 
+              <!-- MODULO DE CALIFICACION -->
               <li>
                 <a>
                   <i class="fa fa-pencil"></i> Calificación <span class="fa fa-chevron-down"></span>
@@ -328,12 +333,12 @@ use App\Postulacion;
                         <!-- class="duplicados_report" -->
                         <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}">Admsion HI - Canal</a>
                       </li>
                       <li>
                         <a href="{{ url('/rep-calificacion-canales-HR-2020-2') }}">Admision HR - Canal</a>
-                      </li>
+                      </li> -->
                       <li>
                         <a href="{{ url('/rep-calificacion-por-postulante-2020-2') }}">Reporte de Calificacion Por Alumno</a>
                       </li>
@@ -466,7 +471,7 @@ use App\Postulacion;
 
                 </ul>
               </li>
-
+              <!-- FIN MODULO CALIFICACION -->
               </ul>
               </li>
               @endif
