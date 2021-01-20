@@ -57,27 +57,25 @@ use App\Postulacion;
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <ul class="nav side-menu">
-
                 <li>
                   <a href="<?php echo e(url('/')); ?>">
                     <i class="fa fa-home"></i> Inicio
                   </a>
                 </li>
-                <!--  
-                  <li>
-                    <a>
-                      <0i class="fa fa-user"></i> Mis Datos <span class="fa fa-chevron-down"></span>
-                    </a>
-                    <ul class="nav child_menu">
-                      <li>
-                        <a href="<?php echo e(url('/perfil')); ?>">Mi perfil</a>
-                      </li>
-                     <li>
-                        <a href="<?php echo e(url('/sisfoh')); ?>">Ficha Socioeconómica Única</a>
-                      </li>
-                    </ul> 
-                  </li>
-                  -->
+                <!-- <li>
+                  <a>
+                    <0i class="fa fa-user"></i> Mis Datos <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="<?php echo e(url('/perfil')); ?>">Mi perfil</a>
+                    </li>
+                    <li>
+                      <a href="<?php echo e(url('/sisfoh')); ?>">Ficha Socioeconómica Única</a>
+                    </li>
+                  </ul>
+                </li> -->
+
                 <?php if(Proceso::abierto()): ?>
 
                 <?php if(Auth::user()->isAdmin() || Auth::user()->isCoordinador() || Auth::user()->isAsistente()): ?>
@@ -184,7 +182,8 @@ use App\Postulacion;
                 </li>
                 <?php endif; ?>
                 <?php endif; ?>
-
+                
+                <!-- MODULO REPORTES -->
                 <li>
                   <a>
                     <i class="fa fa-file-text"></i> Reportes <span class="fa fa-chevron-down"></span>
@@ -232,7 +231,10 @@ use App\Postulacion;
                     </li>
                   </ul>
                 </li>
+                <!-- FIN MODULO REPORTES -->
+
                 <?php if( Auth::user()->isCoordinador()): ?>
+                <!-- MODULO MANTENIMIENTO -->
                 <li>
                   <a>
                     <i class="fa fa-pencil"></i> Mantenimiento <span class="fa fa-chevron-down"></span>
@@ -250,45 +252,49 @@ use App\Postulacion;
                     <li>
                       <a href="<?php echo e(url('/mantenimiento/tarifa')); ?>">Tarifa</a>
                     </li>
-                    <!--li>
-                            <a href="<?php echo e(url('/mantenimiento/materia')); ?>">Gestion de Materia</a>
-                          </li-->
+                    <!-- <li>
+                      <a href="<?php echo e(url('/mantenimiento/materia')); ?>">Gestion de Materia</a>
+                    </li>
                     <li>
-                      <!--a>
-                            <i></i>Gestion de Preguntas<span class="fa fa-chevron-down"></span>
-                            </a-->
-                      <!--ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/mantenimiento/preguntas')); ?>" >Preguntas No Usadas</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/mantenimiento/preguntas-usadas')); ?>" >Preguntas Usadas</a>
-                            </li>
-                            </ul-->
+                      <a>
+                        <i></i>Gestion de Preguntas<span class="fa fa-chevron-down"></span>
+                      </a>
+                      <ul class="nav child_menu">
+                        <li>
+                          <a href="<?php echo e(url('/mantenimiento/preguntas')); ?>">Preguntas No Usadas</a>
+                        </li>
+                        <li>
+                          <a href="<?php echo e(url('/mantenimiento/preguntas-usadas')); ?>">Preguntas Usadas</a>
+                        </li>
+                      </ul>
+                    </li> -->
                     <li>
                       <a href="<?php echo e(url('/configuracion/postulanteSimulacro')); ?>">Postulantes Simulacro</a>
                     </li>
                 </li>
+                <!-- FIN MODULO MANTENIMIENTO -->
               </ul>
-              </li>
+              
               <?php endif; ?>
               <?php if( Auth::user()->isCoordinador()): ?>
 
-              
-              <li>
-                        <a>
-                          <i class="fa fa-pencil"></i> Generación de Examen  <span class="fa fa-chevron-down"></span>
-                        </a>
-                        <ul class="nav child_menu">
-                          <li>
-                            <a href="<?php echo e(url('/generarexa/lista')); ?>">Proceso</a>
-                          </li>
-                           <li>
-                            <a>Matenimiento</a>
-                          </li>
-                     	</ul> 
-                      </li>
+              <!-- MODULO GENERACION EXAMEN -->
+              <!-- <li>
+                <a>
+                  <i class="fa fa-pencil"></i> Generación de Examen <span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                  <li>
+                    <a href="<?php echo e(url('/generarexa/lista')); ?>">Proceso</a>
+                  </li>
+                  <li>
+                    <a>Matenimiento</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- FIN GENERACION EXAMEN -->
 
+              <!-- MODULO DE CALIFICACION -->
               <li>
                 <a>
                   <i class="fa fa-pencil"></i> Calificación <span class="fa fa-chevron-down"></span>
@@ -368,74 +374,6 @@ use App\Postulacion;
                     </ul>
                   </li>
                   
-<<<<<<< HEAD
-
-                  <!--li>
-                            <a>
-                            <i></i> Proceso del Examen de CEPRE<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                            <a>
-                            <i></i>1ER Calificación<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt-cepre')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados')); ?>" >Duplicados</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales')); ?>" >Cepre Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI')); ?>" >Cepre HI - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR')); ?>" >Cepre HR - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre')); ?>" >Reporte de Calificacion Por Alumno</a>
-                            </li>
-                            </ul>
-                            </li>
-                            <li>
-                            <a>
-                            <i></i>2DA Calificación<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt-cepre-2')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-II')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados-II')); ?>" >Duplicados</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-II')); ?>" >Cepre Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI-2')); ?>" >Cepre HI - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR-2')); ?>" >Cepre HR - Canal</a>
-                            </li>
-                             <li>
-                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre-2')); ?>" >Reporte de Calificacion Por Alumno</a>
-                            </li>
-                            </ul>
-                            </li>                            
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-final')); ?>" >Reporte de calificacion - Final</a>
-                            </li>
-                            </ul>
-=======
                   <!-- inicio examen ceprep -->
                   <!-- <li>
                     <a>
@@ -449,7 +387,6 @@ use App\Postulacion;
                         <ul class="nav child_menu">
                           <li>
                             <a href="<?php echo e(url('/cargar-txt-cepre')); ?>">Subir Resultados DLM</a>
->>>>>>> 3946a801531b8be469938c2760d4bff63deee3bd
                           </li>
                           <li>
                             <a href="<?php echo e(url('/rep-calificacion-cepre')); ?>">Reporte de calificacion</a>
@@ -505,8 +442,6 @@ use App\Postulacion;
                     </ul>
                   </li>
 
-<<<<<<< HEAD
-=======
                   <li>
                     <a>
                       <i></i> Proceso del Examen de Simulacro<span class="fa fa-chevron-down"></span>
@@ -534,10 +469,9 @@ use App\Postulacion;
                   </li> -->
                   <!-- fin examen cepre -->
 
->>>>>>> 3946a801531b8be469938c2760d4bff63deee3bd
                 </ul>
               </li>
-
+              <!-- FIN MODULO CALIFICACION -->
               </ul>
               </li>
               <?php endif; ?>
