@@ -274,8 +274,8 @@ use App\Postulacion;
               <?php endif; ?>
               <?php if( Auth::user()->isCoordinador()): ?>
 
-
-              <!--li>
+              
+              <li>
                         <a>
                           <i class="fa fa-pencil"></i> Generación de Examen  <span class="fa fa-chevron-down"></span>
                         </a>
@@ -287,7 +287,7 @@ use App\Postulacion;
                             <a>Matenimiento</a>
                           </li>
                      	</ul> 
-                      </li-->
+                      </li>
 
               <li>
                 <a>
@@ -322,12 +322,41 @@ use App\Postulacion;
                         <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_D')); ?>">Reporte de calificacion canal D</a> <!-- REPORTE CALIFICACION CANAL D 2020-2 -->
                       </li>
-                      
-                  <li class="duplicados_report">
-                    <!-- class="duplicados_report" -->
-                    <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>">Admsion HI - Canal</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>">Admision HR - Canal</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>">Reporte de Calificacion Por Alumno</a>
+                      </li>
+                    </ul>
                   </li>
-                  <!--li>
+                  
+
+                  
+                  <li>
+                    <a>
+                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                      </li>
+                      <li class="duplicados_report">
+                        <!-- class="duplicados_report" -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
+                      </li>
+                      <!--li>
                                 <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
                               </li>
                               <li>
@@ -336,133 +365,105 @@ use App\Postulacion;
                               <li>
                                 <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
                               </li-->
-                </ul>
-              </li>
-              
-
-              
-              <li>
-                <a>
-                  <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
-                </a>
-                <ul class="nav child_menu">
-                  <li>
-                    <a href="<?php echo e(url('/cargar-txt-2020-2-E')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                    </ul>
                   </li>
-                  <li>
-                    <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-E')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
-                  </li>
-                  <li class="duplicados_report">
-                    <!-- class="duplicados_report" -->
-                    <a href="<?php echo e(url('/rep-calificacion-2020-2-especial')); ?>">Reporte de Calificación Examen Especial</a>
-                  </li>
-                  <!--li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>" >Admsion HI - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>" >Admision HR - Canal</a>
-                              </li>
-                              <li>
-                                <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>" >Reporte de Calificacion Por Alumno</a>
-                              </li-->
-                </ul>
-              </li>
-              
-
-              <!--li>
-                            <a>
-                            <i></i> Proceso del Examen de CEPRE<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                            <a>
-                            <i></i>1ER Calificación<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt-cepre')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados')); ?>" >Duplicados</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales')); ?>" >Cepre Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI')); ?>" >Cepre HI - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR')); ?>" >Cepre HR - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre')); ?>" >Reporte de Calificacion Por Alumno</a>
-                            </li>
-                            </ul>
-                            </li>
-                            <li>
-                            <a>
-                            <i></i>2DA Calificación<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt-cepre-2')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-II')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados-II')); ?>" >Duplicados</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-II')); ?>" >Cepre Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI-2')); ?>" >Cepre HI - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR-2')); ?>" >Cepre HR - Canal</a>
-                            </li>
-                             <li>
-                              <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre-2')); ?>" >Reporte de Calificacion Por Alumno</a>
-                            </li>
-                            </ul>
-                            </li>                            
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-cepre-final')); ?>" >Reporte de calificacion - Final</a>
-                            </li>
-                            </ul>
-                          </li>
-                          
+                  
+                  <!-- inicio examen ceprep -->
+                  <!-- <li>
+                    <a>
+                      <i></i> Proceso del Examen de CEPRE<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a>
+                          <i></i>1ER Calificación<span class="fa fa-chevron-down"></span>
+                        </a>
+                        <ul class="nav child_menu">
                           <li>
-                            <a>
-                            <i></i> Proceso del Examen de Simulacro<span class="fa fa-chevron-down"></span>
-                            </a>
-                            <ul class="nav child_menu">
-                            <li>
-                              <a href="<?php echo e(url('/cargar-txt-simulacro')); ?>" >Subir Resultados DLM</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-simulacro')); ?>" >Reporte de calificacion</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-simulacro-duplicados')); ?>" >Duplicados</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales')); ?>" >Simulacro Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HI')); ?>" >Simulacro HI - Canal</a>
-                            </li>
-                            <li>
-                              <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HR')); ?>" >Simulacro HR - Canal</a>
-                            </li>
-                            </ul>
-                          </li-->
+                            <a href="<?php echo e(url('/cargar-txt-cepre')); ?>">Subir Resultados DLM</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre')); ?>">Reporte de calificacion</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados')); ?>">Duplicados</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales')); ?>">Cepre Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI')); ?>">Cepre HI - Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR')); ?>">Cepre HR - Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre')); ?>">Reporte de Calificacion Por Alumno</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a>
+                          <i></i>2DA Calificación<span class="fa fa-chevron-down"></span>
+                        </a>
+                        <ul class="nav child_menu">
+                          <li>
+                            <a href="<?php echo e(url('/cargar-txt-cepre-2')); ?>">Subir Resultados DLM</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-II')); ?>">Reporte de calificacion</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-duplicados-II')); ?>">Duplicados</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales-II')); ?>">Cepre Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HI-2')); ?>">Cepre HI - Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-cepre-canales-HR-2')); ?>">Cepre HR - Canal</a>
+                          </li>
+                          <li>
+                            <a href="<?php echo e(url('/rep-calificacion-por-postulante-cepre-2')); ?>">Reporte de Calificacion Por Alumno</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-cepre-final')); ?>">Reporte de calificacion - Final</a>
+                      </li>
+                    </ul>
+                  </li>
 
-              </ul>
+                  <li>
+                    <a>
+                      <i></i> Proceso del Examen de Simulacro<span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="<?php echo e(url('/cargar-txt-simulacro')); ?>">Subir Resultados DLM</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-simulacro')); ?>">Reporte de calificacion</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-simulacro-duplicados')); ?>">Duplicados</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-simulacro-canales')); ?>">Simulacro Canal</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HI')); ?>">Simulacro HI - Canal</a>
+                      </li>
+                      <li>
+                        <a href="<?php echo e(url('/rep-calificacion-simulacro-canales-HR')); ?>">Simulacro HR - Canal</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <!-- fin examen cepre -->
+
+                </ul>
               </li>
 
               </ul>
