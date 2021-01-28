@@ -61,8 +61,6 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-
-
 	Route::post('grabarPago', 'PagosController@grabarPago');
 	Route::get('grabarPago', 'PagosController@grabarPago');
 	//	Route::post('cargar-txt', 'TxtController@cargarInformacionExcel');
