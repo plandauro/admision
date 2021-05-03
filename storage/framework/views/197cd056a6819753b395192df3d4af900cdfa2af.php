@@ -278,23 +278,6 @@ use App\Postulacion;
               <?php endif; ?>
               <?php if( Auth::user()->isCoordinador()): ?>
 
-<<<<<<< HEAD
-              <!-- generacion examen -->
-              <li>
-                        <a>
-                          <i class="fa fa-pencil"></i> Generación de Examen  <span class="fa fa-chevron-down"></span>
-                        </a>
-                        <ul class="nav child_menu">
-                          <li>
-                            <a href="<?php echo e(url('/generarexa/lista')); ?>">Proceso</a>
-                          </li>
-                           <li>
-                            <a>Matenimiento</a>
-                          </li>
-                     	</ul> 
-                      </li>
-                      <!-- fin generacion examen -->
-=======
               <!-- MODULO GENERACION EXAMEN -->
               <!-- <li>
                 <a>
@@ -310,7 +293,6 @@ use App\Postulacion;
                 </ul>
               </li> -->
               <!-- FIN GENERACION EXAMEN -->
->>>>>>> 3aac48b6a5cfb42d77de1547ec4e96726b9bd396
 
               <!-- MODULO DE CALIFICACION -->
               <li>
@@ -351,12 +333,12 @@ use App\Postulacion;
                         <!-- class="duplicados_report" -->
                         <a href="<?php echo e(url('/rep-calificacion-2020-2')); ?>">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="<?php echo e(url('/rep-calificacion-canales-HI-2020-2')); ?>">Admsion HI - Canal</a>
                       </li>
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-canales-HR-2020-2')); ?>">Admision HR - Canal</a>
-                      </li>
+                      </li> -->
                       <li>
                         <a href="<?php echo e(url('/rep-calificacion-por-postulante-2020-2')); ?>">Reporte de Calificacion Por Alumno</a>
                       </li>
