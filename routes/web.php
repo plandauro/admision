@@ -61,8 +61,6 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-
-
 	Route::post('grabarPago', 'PagosController@grabarPago');
 	Route::get('grabarPago', 'PagosController@grabarPago');
 	//	Route::post('cargar-txt', 'TxtController@cargarInformacionExcel');
@@ -234,6 +232,54 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('cargar-txt2-2020-2', 'TxtController@cargarInformacionTXT220202');
 	Route::post('cargar-txt3-2020-2', 'TxtController@cargarInformacionTXT320202');
 
+	/*** INICIO - INGENIERIA AGRONOMA ***/
+		//CARGAR TXT INGENIERIA AGRONOMA
+		Route::get('cargar-txt-2020-2-IA', 'TxtController@cargarInformacion20202IA');
+		Route::post('cargar-txt-2020-2-IA', 'TxtController@cargarInformacionTXT20202IA');
+		Route::post('cargar-txt1-2020-2-IA', 'TxtController@cargarInformacionTXT120202IA');
+		Route::post('cargar-txt2-2020-2-IA', 'TxtController@cargarInformacionTXT220202IA');
+		Route::post('cargar-txt3-2020-2-IA', 'TxtController@cargarInformacionTXT320202IA');
+
+		//AGREGO DUPLICADOS 2020-2-INGENIERIA AGRONOMA
+		Route::get('rep-calificacion-duplicados-2020-2-IA', 'TxtController@postulantesDuplicados20202IA')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-IA', 'TxtController@listPostulatesDuplicados20202IA')->middleware('asistente');
+
+		//ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA AGRONOMA
+		Route::post('actualizarAdmisionDuplicado-2020-2-IA', 'TxtController@actualizarAdmisionDuplicado20202IA');
+		Route::post('actualizarAdmisionCanal-2020-2-IA', 'TxtController@actualizarAdmisionCanal20202IA');
+
+		//CALIFICACION - 2020-2-INGENIERIA AGRONOMA
+		Route::get('rep-calificacion-2020-2-IA', 'TxtController@postulantes20202IA')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-IA', 'TxtController@listPostulates20202IA')->middleware('asistente');
+
+		//LLENAR RESPUESTA - 2020-1-INGENIERIA GRONOMA
+		Route::get('llenar-respuestas-2020-2-IA', 'TxtController@procesoRespuesta20202IA');
+	/*** FIN - INGENIERIA AGRONOMA ***/
+	
+	/*** INICIO - INGENIERIA EN INDUSTRIAS ALIMENTARIAS ***/
+		// CARGAR TXT INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('cargar-txt-2020-2-IIA', 'TxtController@cargarInformacion20202IIA');
+		Route::post('cargar-txt-2020-2-IIA', 'TxtController@cargarInformacionTXT20202IIA');
+		Route::post('cargar-txt1-2020-2-IIA', 'TxtController@cargarInformacionTXT120202IIA');
+		Route::post('cargar-txt2-2020-2-IIA', 'TxtController@cargarInformacionTXT220202IIA');
+		Route::post('cargar-txt3-2020-2-IIA', 'TxtController@cargarInformacionTXT320202IIA');
+
+		// //AGREGO DUPLICADOS 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('rep-calificacion-duplicados-2020-2-IIA', 'TxtController@postulantesDuplicados20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-IIA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado2020IIA');
+		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal2020IIA');
+
+		// //CALIFICACION - 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('rep-calificacion-2020-2-IIA', 'TxtController@postulantes20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-IIA', 'TxtController@listPostulates20202IIA')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('llenar-respuestas-2020-2-IIA', 'TxtController@procesoRespuesta20202IIA');
+	/*** FIN - INGENIERIA AGRONOMA ***/
+
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');
 	Route::post('cargar-txt-2020-2-E', 'TxtController@cargarInformacionTXT20202E');
 	Route::post('cargar-txt1-2020-2-E', 'TxtController@cargarInformacionTXT120202E');
@@ -396,7 +442,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('actualizarAdmisionDuplicado', 'TxtController@actualizarAdmisionDuplicado');
 	Route::post('actualizarAdmisionCanal', 'TxtController@actualizarAdmisionCanal');
 
-	Route::get('hola', 'TxtController@holaErick');
+	Route::get('hola', 'TxtController@holaPedrito');
 
 	//ACTUALIZACION DUPLICADOS 2020_2
 	Route::post('actualizarAdmisionDuplicado-2020-2', 'TxtController@actualizarAdmisionDuplicado2020II');
