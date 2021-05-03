@@ -500,14 +500,14 @@ class TxtController extends Controller
         {
 
             //var_dump($request);
-            $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+            $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2_group1')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
         }
 
         public function actualizarAdmisionCanal20202IA(Request $request)
         {
 
             $hojaidentificacioncepre =
-                DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
+                DB::table('hojaidenticacion_proceso_2020_2_group1')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
         }
 
         /* CALIFICACION - INGENIERIA AGRONOMA */
@@ -629,14 +629,14 @@ class TxtController extends Controller
                     $canal = $data[1];
                     $codigo = $data[2];
                     $codigoProceso = $idProceso;
-                    DB::statement("call P_INS_ADM_HOJA_IDENTIFICACION_ADMISION_2020_2_GROUP1('$litho','$canal','$codigo',$codigoProceso)");
+                    DB::statement("call P_INS_ADM_HOJA_IDENTIFICACION_ADMISION_2020_2_GROUP2('$litho','$canal','$codigo',$codigoProceso)");
                 }
                 fclose($handle);
             }
 
             //CAMBIO 26/03/2019
             //$array=(DB :: select( "SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion"));   
-            $array = (DB::select("SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion_proceso_2020_2_group1"));
+            $array = (DB::select("SELECT COUNT(LITHO) as TOTAL FROM hojaidenticacion_proceso_2020_2_group2"));
 
 
             $total1 = 0;
@@ -750,7 +750,7 @@ class TxtController extends Controller
                             $clavemarcada = $data[$c];
                             $nropregunta = $c - 1;
                             $codigoProceso = $idProceso;
-                            DB::statement("call P_INS_ADM_HOJA_RESPUESTA_ADMISION_2020_2_GROUP1('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
+                            DB::statement("call P_INS_ADM_HOJA_RESPUESTA_ADMISION_2020_2_GROUP2('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
                         }
                     }
                     fclose($handle);
@@ -861,7 +861,7 @@ class TxtController extends Controller
                             $clavemarcada = $data[$c];
                             $nropregunta = $c - 1;
                             $codigoProceso = $idProceso;
-                            DB::statement("call P_INS_ADM_HOJA_CLAVES_ADMISION_2020_2_GROUP1('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
+                            DB::statement("call P_INS_ADM_HOJA_CLAVES_ADMISION_2020_2_GROUP2('$litho','$canal','$nropregunta','$clavemarcada',$codigoProceso)");
                         }
                     }
                     fclose($handle);
@@ -910,7 +910,7 @@ class TxtController extends Controller
         {
             $procesos = Proceso::orderBy('id', 'desc')->get();
 
-            return view('calificacionDuplicados-2020-2-IA')->with("procesos", $procesos);
+            return view('calificacionDuplicados-2020-2-IIA')->with("procesos", $procesos);
         }
 
         public function listPostulatesDuplicados20202IIA(Request $request)
@@ -921,39 +921,39 @@ class TxtController extends Controller
             switch ($request->tipo) {
                 case 2: #Por Escuela                
                     // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
-                    $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2(2,$request->dato)"))); // NUEVO
+                    $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2_group2(2,$request->dato)"))); // NUEVO
                     break;
 
 
                 default:
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
                     // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
-                    $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(1,0)"))); // NUEVO
+                    $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2_group2(1,0)"))); // NUEVO
                     break;
             }
             return response()->json(['postulaciones' => $postulaciones]);
         }
 
         /* ACTUALIZAR DUPLICADOS 2020-II-INGENIERIA EN INDUSTRIAS ALIMENTARIAS*/
-        public function actualizarAdmisionDuplicado2020IIA(Request $request)
+        public function actualizarAdmisionDuplicado20202IIA(Request $request)
         {
 
             //var_dump($request);
-            $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
+            $hojaidentificacioncepre = DB::table('hojaidenticacion_proceso_2020_2_group2')->where('LITHO', $request->codlitho)->update(array('CODIGO' => $request->codpostulante));
         }
 
-        public function actualizarAdmisionCanal2020IIA(Request $request)
+        public function actualizarAdmisionCanal20202IIA(Request $request)
         {
 
             $hojaidentificacioncepre =
-                DB::table('hojaidenticacion_proceso_2020_2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
+                DB::table('hojaidenticacion_proceso_2020_2_group2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
         }
 
         /* CALIFICACION - INGENIERIA EN INDUSTRIAS ALIMENTARIAS */
         public function postulantes20202IIA()
         {
             $procesos = Proceso::orderBy('id', 'desc')->get();
-            return view('calificacion_2020_2-IA')->with("procesos", $procesos);
+            return view('calificacion_2020_2-IIA')->with("procesos", $procesos);
         }
 
         public function listPostulates20202IIA(Request $request)
@@ -997,7 +997,7 @@ class TxtController extends Controller
 
 
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
-                    $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_A()")));
+                    $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_A_group2()")));
 
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
                     break;
@@ -1009,9 +1009,9 @@ class TxtController extends Controller
         public function procesoRespuesta20202IIA()
         {
 
-            DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_A()');
+            DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_A_group2()');
 
-            return redirect('rep-calificacion-2020-2-IA'); //CALIFICACION 2020 - 2
+            return redirect('rep-calificacion-2020-2-IIA'); //CALIFICACION 2020 - 2
 
             // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
 

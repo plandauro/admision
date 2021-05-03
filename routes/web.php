@@ -269,8 +269,8 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::post('rep-constancias-cali-duplicados-2020-2-IIA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
 
 		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
-		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado2020IIA');
-		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal2020IIA');
+		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado20202IIA');
+		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal20202IIA');
 
 		// //CALIFICACION - 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
 		Route::get('rep-calificacion-2020-2-IIA', 'TxtController@postulantes20202IIA')->middleware('asistente');
