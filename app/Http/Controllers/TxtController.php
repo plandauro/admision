@@ -482,14 +482,14 @@ class TxtController extends Controller
             switch ($request->tipo) {
                 case 2: #Por Escuela                
                     // $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado(2,$request->dato)"))); //ANTIGUO
-                    $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2(2,$request->dato)"))); // NUEVO
+                    $postulaciones = (DB::select(DB::raw("call  sp_calificar_admision_duplicado_2020_2_group1(2,$request->dato)"))); // NUEVO
                     break;
 
 
                 default:
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar()")));
                     // $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado(1,0)"))); //ANTIGUO
-                    $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2(1,0)"))); // NUEVO
+                    $postulaciones = (DB::select(DB::raw("call sp_calificar_admision_duplicado_2020_2_group1(1,0)"))); // NUEVO
                     break;
             }
             return response()->json(['postulaciones' => $postulaciones]);
@@ -558,7 +558,7 @@ class TxtController extends Controller
 
 
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_admision()")));
-                    $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_A()")));
+                    $postulaciones = (DB::select(DB::raw("call sp_calificar_proceso_2020_2_canal_A_group1()")));
 
                     //$postulaciones=(DB :: select( DB :: raw ("call sp_calificar_canal()")));
                     break;
@@ -570,7 +570,7 @@ class TxtController extends Controller
         public function procesoRespuesta20202IA()
         {
 
-            DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_A()');
+            DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_A_group1()');
 
             return redirect('rep-calificacion-2020-2-IA'); //CALIFICACION 2020 - 2
 
