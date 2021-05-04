@@ -157,11 +157,11 @@ use App\Postulacion;
 
                 <?php if(Auth::user()->isAsistente() || Auth::user()->isCoordinador()): ?>
                 <?php if(Proceso::abierto()): ?>
-                <li>
+                <!-- <li>
                   <a href="<?php echo e(url('/verificarpostulacion')); ?>">
                     <i class="fa fa-check-square-o"></i> Verificar Postulación
                   </a>
-                </li>
+                </li> -->
                 <?php if( Auth::user()->isCoordinador()): ?>
                 <li>
                   <a href="<?php echo e(url('/cargar-resultados')); ?>">
