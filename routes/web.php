@@ -278,7 +278,31 @@ Route::group(['middleware' => 'auth'], function () {
 
 		// //LLENAR RESPUESTA - 2020-1-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
 		Route::get('llenar-respuestas-2020-2-IIA', 'TxtController@procesoRespuesta20202IIA');
-	/*** FIN - INGENIERIA AGRONOMA ***/
+	/*** FIN - INGENIERIA INGENIERIA EN INDUSTRIAS ALIMENTARIAS ***/
+
+	/*** INICIO - INGENIERIA CIVIL MAÑANA ***/
+		// CARGAR TXT INGENIERIA CIVIL MAÑANA
+		Route::get('cargar-txt-2020-2-ICM', 'TxtController@cargarInformacion20202ICM');
+		Route::post('cargar-txt-2020-2-ICM', 'TxtController@cargarInformacionTXT20202ICM');
+		Route::post('cargar-txt1-2020-2-ICM', 'TxtController@cargarInformacionTXT120202ICM');
+		Route::post('cargar-txt2-2020-2-ICM', 'TxtController@cargarInformacionTXT220202ICM');
+		Route::post('cargar-txt3-2020-2-ICM', 'TxtController@cargarInformacionTXT320202ICM');
+
+		// //AGREGO DUPLICADOS 2020-2-INGENIERIA CIVIL MAÑANA
+		Route::get('rep-calificacion-duplicados-2020-2-IIA', 'TxtController@postulantesDuplicados20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-IIA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA CIVIL MAÑANA
+		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado20202IIA');
+		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal20202IIA');
+
+		// //CALIFICACION - 2020-2-INGENIERIA CIVIL MAÑANA
+		Route::get('rep-calificacion-2020-2-IIA', 'TxtController@postulantes20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-IIA', 'TxtController@listPostulates20202IIA')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-INGENIERIA CIVIL MAÑANA
+		Route::get('llenar-respuestas-2020-2-IIA', 'TxtController@procesoRespuesta20202IIA');
+	/*** FIN - INGENIERIA CIVIL MAÑANA ***/
 
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');
 	Route::post('cargar-txt-2020-2-E', 'TxtController@cargarInformacionTXT20202E');
