@@ -257,27 +257,27 @@ Route::group(['middleware' => 'auth'], function () {
 	/*** FIN - INGENIERIA AGRONOMA ***/
 	
 	/*** INICIO - INGENIERIA EN INDUSTRIAS ALIMENTARIAS ***/
-		//CARGAR TXT INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		// CARGAR TXT INGENIERIA EN INDUSTRIAS ALIMENTARIAS
 		Route::get('cargar-txt-2020-2-IIA', 'TxtController@cargarInformacion20202IIA');
 		Route::post('cargar-txt-2020-2-IIA', 'TxtController@cargarInformacionTXT20202IIA');
 		Route::post('cargar-txt1-2020-2-IIA', 'TxtController@cargarInformacionTXT120202IIA');
 		Route::post('cargar-txt2-2020-2-IIA', 'TxtController@cargarInformacionTXT220202IIA');
 		Route::post('cargar-txt3-2020-2-IIA', 'TxtController@cargarInformacionTXT320202IIA');
 
-		//AGREGO DUPLICADOS 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
-		Route::get('rep-calificacion-duplicados-2020-2-IA', 'TxtController@postulantesDuplicados20202IIA')->middleware('asistente');
-		Route::post('rep-constancias-cali-duplicados-2020-2-IA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
+		// //AGREGO DUPLICADOS 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('rep-calificacion-duplicados-2020-2-IIA', 'TxtController@postulantesDuplicados20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-IIA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
 
-		//ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
-		Route::post('actualizarAdmisionDuplicado-2020-2-IA', 'TxtController@actualizarAdmisionDuplicado2020II');
-		Route::post('actualizarAdmisionCanal-2020-2-IA', 'TxtController@actualizarAdmisionCanal2020II');
+		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado20202IIA');
+		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal20202IIA');
 
-		//CALIFICACION - 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
-		Route::get('rep-calificacion-2020-2-IA', 'TxtController@postulantes20202IA')->middleware('asistente');
-		Route::post('rep-constancias-cali-2020-2-IA', 'TxtController@listPostulates20202IA')->middleware('asistente');
+		// //CALIFICACION - 2020-2-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('rep-calificacion-2020-2-IIA', 'TxtController@postulantes20202IIA')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-IIA', 'TxtController@listPostulates20202IIA')->middleware('asistente');
 
-		//LLENAR RESPUESTA - 2020-1-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
-		Route::get('llenar-respuestas-2020-2-IA', 'TxtController@procesoRespuesta20202IA');
+		// //LLENAR RESPUESTA - 2020-1-INGENIERIA EN INDUSTRIAS ALIMENTARIAS
+		Route::get('llenar-respuestas-2020-2-IIA', 'TxtController@procesoRespuesta20202IIA');
 	/*** FIN - INGENIERIA AGRONOMA ***/
 
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');

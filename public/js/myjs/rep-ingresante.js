@@ -31,6 +31,13 @@ function llenar(response, index, value)
 			         },
               "width": 225
 			       }, 
+
+             
+             {
+            	"title":"N° Doc.",
+            	"data":"dni"
+            },
+            
             {
             	"title":"Escuela Profesional",
             	"data":"escuela"

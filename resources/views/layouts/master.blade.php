@@ -340,14 +340,14 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="{{ url('/cargar-txt-2020-2') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="{{ url('/cargar-txt-2020-2-IIA') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2-IIA') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-IIA') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       {{-- <li class="duplicados_report">
                         <!-- class="duplicados_report" -->

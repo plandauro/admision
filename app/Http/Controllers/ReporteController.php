@@ -449,9 +449,12 @@ class ReporteController extends Controller
     public function listaIngresantes(Request $request)
     {
         $postulacion = null;
+        
         if($request->dato == 0)
             $request->tipo = 0;
+            
         switch ($request->tipo) {
+            
             case 1:
                 $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
                         ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
@@ -465,7 +468,7 @@ class ReporteController extends Controller
                         ->where('postulacion.estado', 2)
                         ->where('ambiente.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
-                        ->where('postulacion.resultado','=','INGRESO')
+                        // ->where('postulacion.resultado','=','INGRESO')
                         ->get();
                 break;
             default:
@@ -482,7 +485,7 @@ class ReporteController extends Controller
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.puntaje','postulacion.resultado','postulacion.codalumno','postulacion.omg','postulacion.ome','postulacion.idPostulante')
                         ->where('postulacion.estado', 2)
                         ->where('postulacion.idproceso', $request->idproceso)
-                        ->where('postulacion.resultado','=','INGRESO')
+                        // ->where('postulacion.resultado','=','INGRESO')
                         ->get();
                 break;
         }
