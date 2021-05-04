@@ -113,5 +113,5 @@
   <script src="{{ asset('js/vfs_fonts.js') }}"></script>
   <script src="{{ asset('js/buttons.html5.min.js') }}"></script>
   <script src="{{ asset('js/buttons.print.min.js') }}"></script>
-  <script src="{{ asset('js/myjs/rep-postulante-calificacion-Duplicados-2020-2-IA.js') }}"></script>
+  <script src="{{ asset('js/myjs/rep-postulante-calificacion-Duplicados-2020-2-IIA.js') }}"></script>
 @endsection
