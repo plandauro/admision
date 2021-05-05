@@ -7,7 +7,7 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="x_panel">
         <div class="x_title">
-          <h2>Reporte de Examen General DErecho y Ciencias Políticas turno mañana</h2>
+          <h2>Reporte de Examen General Derecho y Ciencias Políticas turno mañana</h2>
           <br> <br>
           <div class="col-md-2">
             <button><a href="<?php echo e(url('llenar-respuestas-2020-2-DCM')); ?>">Proceso de Calificación</a></button>

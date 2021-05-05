@@ -329,28 +329,100 @@ Route::group(['middleware' => 'auth'], function () {
 	/*** FIN - INGENIERIA CIVIL TARDE ***/
 
 	/*** INICIO - DERECHO Y CIENCIAS TURNO MAÑANA ***/
-		// CARGAR TXT DERECHO Y CIENCIAS
+		// CARGAR TXT DERECHO Y CIENCIAS MAÑANA
 		Route::get('cargar-txt-2020-2-DCM', 'TxtController@cargarInformacion20202DCM');
 		Route::post('cargar-txt-2020-2-DCM', 'TxtController@cargarInformacionTXT20202DCM');
 		Route::post('cargar-txt1-2020-2-DCM', 'TxtController@cargarInformacionTXT120202DCM');
 		Route::post('cargar-txt2-2020-2-DCM', 'TxtController@cargarInformacionTXT220202DCM');
 		Route::post('cargar-txt3-2020-2-DCM', 'TxtController@cargarInformacionTXT320202DCM');
 
-		// //AGREGO DUPLICADOS 2020-2-INGENIERIA CIVIL TARDE
+		// //AGREGO DUPLICADOS 2020-2-DERECHO Y CIENCIAS TURNO MAÑANA
 		Route::get('rep-calificacion-duplicados-2020-2-DCM', 'TxtController@postulantesDuplicados20202DCM')->middleware('asistente');
 		Route::post('rep-constancias-cali-duplicados-2020-2-DCM', 'TxtController@listPostulatesDuplicados20202DCM')->middleware('asistente');
 
-		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA CIVIL TARDE
+		// //ACTUALIZACION DUPLICADOS 2020_2-DERECHO Y CIENCIAS TURNO MAÑANA
 		Route::post('actualizarAdmisionDuplicado-2020-2-DCM', 'TxtController@actualizarAdmisionDuplicado20202DCM');
 		Route::post('actualizarAdmisionCanal-2020-2-DCM', 'TxtController@actualizarAdmisionCanal20202DCM');
 
-		// //CALIFICACION - 2020-2-INGENIERIA CIVIL TARDE
+		// //CALIFICACION - 2020-2-DERECHO Y CIENCIAS TURNO MAÑANA
 		Route::get('rep-calificacion-2020-2-DCM', 'TxtController@postulantes20202DCM')->middleware('asistente');
 		Route::post('rep-constancias-cali-2020-2-DCM', 'TxtController@listPostulates20202DCM')->middleware('asistente');
 
-		// //LLENAR RESPUESTA - 2020-1-INGENIERIA CIVIL TARDE
+		// //LLENAR RESPUESTA - 2020-1-DERECHO Y CIENCIAS TURNO MAÑANA
 		Route::get('llenar-respuestas-2020-2-DCM', 'TxtController@procesoRespuesta20202DCM');
 	/*** FIN - DERECHO Y CIENCIAS TURNO MAÑANA ***/
+
+	/*** INICIO - DERECHO Y CIENCIAS TURNO TARDE ***/
+		// CARGAR TXT DERECHO Y CIENCIAS TURNO TARDE
+		Route::get('cargar-txt-2020-2-DCT', 'TxtController@cargarInformacion20202DCT');
+		Route::post('cargar-txt-2020-2-DCT', 'TxtController@cargarInformacionTXT20202DCT');
+		Route::post('cargar-txt1-2020-2-DCT', 'TxtController@cargarInformacionTXT120202DCT');
+		Route::post('cargar-txt2-2020-2-DCT', 'TxtController@cargarInformacionTXT220202DCT');
+		Route::post('cargar-txt3-2020-2-DCT', 'TxtController@cargarInformacionTXT320202DCT');
+
+		// //AGREGO DUPLICADOS 2020-2-DERECHO Y CIENCIAS TURNO TARDE
+		Route::get('rep-calificacion-duplicados-2020-2-DCT', 'TxtController@postulantesDuplicados20202DCT')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-DCT', 'TxtController@listPostulatesDuplicados20202DCT')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-DERECHO Y CIENCIAS TURNO TARDE
+		Route::post('actualizarAdmisionDuplicado-2020-2-DCT', 'TxtController@actualizarAdmisionDuplicado20202DCT');
+		Route::post('actualizarAdmisionCanal-2020-2-DCT', 'TxtController@actualizarAdmisionCanal20202DCT');
+
+		// //CALIFICACION - 2020-2-DERECHO Y CIENCIAS TURNO TARDE
+		Route::get('rep-calificacion-2020-2-DCT', 'TxtController@postulantes20202DCT')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-DCT', 'TxtController@listPostulates20202DCT')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-DERECHO Y CIENCIAS TURNO TARDE
+		Route::get('llenar-respuestas-2020-2-DCT', 'TxtController@procesoRespuesta20202DCT');
+	/*** FIN - DERECHO Y CIENCIAS TURNO TARDE ***/
+
+	/*** INICIO - CONTABILIDAD Y FINANZAS TURNO MAÑANA ***/
+		// CARGAR TXT CONTABILIDAD Y FINANZAS MAÑANA
+		Route::get('cargar-txt-2020-2-CFM', 'TxtController@cargarInformacion20202CFM');
+		Route::post('cargar-txt-2020-2-CFM', 'TxtController@cargarInformacionTXT20202CFM');
+		Route::post('cargar-txt1-2020-2-CFM', 'TxtController@cargarInformacionTXT120202CFM');
+		Route::post('cargar-txt2-2020-2-CFM', 'TxtController@cargarInformacionTXT220202CFM');
+		Route::post('cargar-txt3-2020-2-CFM', 'TxtController@cargarInformacionTXT320202CFM');
+
+		// //AGREGO DUPLICADOS 2020-2-CONTABILIDAD Y FINANZAS TURNO MAÑANA
+		Route::get('rep-calificacion-duplicados-2020-2-CFM', 'TxtController@postulantesDuplicados20202CFM')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-CFM', 'TxtController@listPostulatesDuplicados20202CFM')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-CONTABILIDAD Y FINANZAS TURNO MAÑANA
+		Route::post('actualizarAdmisionDuplicado-2020-2-CFM', 'TxtController@actualizarAdmisionDuplicado20202CFM');
+		Route::post('actualizarAdmisionCanal-2020-2-CFM', 'TxtController@actualizarAdmisionCanal20202CFM');
+
+		// //CALIFICACION - 2020-2-CONTABILIDAD Y FINANZAS TURNO MAÑANA
+		Route::get('rep-calificacion-2020-2-CFM', 'TxtController@postulantes20202CFM')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-CFM', 'TxtController@listPostulates20202CFM')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-CONTABILIDAD Y FINANZAS TURNO MAÑANA
+		Route::get('llenar-respuestas-2020-2-CFM', 'TxtController@procesoRespuesta20202CFM');
+	/*** FIN - CONTABILIDAD Y FINANZAS TURNO MAÑANA ***/
+	
+	/*** INICIO - CONTABILIDAD Y FINANZAS TURNO TARDE ***/
+		// CARGAR TXT CONTABILIDAD Y FINANZAS TARDE
+		Route::get('cargar-txt-2020-2-CFT', 'TxtController@cargarInformacion20202CFT');
+		Route::post('cargar-txt-2020-2-CFT', 'TxtController@cargarInformacionTXT20202CFT');
+		Route::post('cargar-txt1-2020-2-CFT', 'TxtController@cargarInformacionTXT120202CFT');
+		Route::post('cargar-txt2-2020-2-CFT', 'TxtController@cargarInformacionTXT220202CFT');
+		Route::post('cargar-txt3-2020-2-CFT', 'TxtController@cargarInformacionTXT320202CFT');
+
+		// //AGREGO DUPLICADOS 2020-2-CONTABILIDAD Y FINANZAS TURNO TARDE
+		Route::get('rep-calificacion-duplicados-2020-2-CFT', 'TxtController@postulantesDuplicados20202CFT')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-CFT', 'TxtController@listPostulatesDuplicados20202CFT')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-CONTABILIDAD Y FINANZAS TURNO TARDE
+		Route::post('actualizarAdmisionDuplicado-2020-2-CFT', 'TxtController@actualizarAdmisionDuplicado20202CFT');
+		Route::post('actualizarAdmisionCanal-2020-2-CFT', 'TxtController@actualizarAdmisionCanal20202CFT');
+
+		// //CALIFICACION - 2020-2-CONTABILIDAD Y FINANZAS TURNO TARDE
+		Route::get('rep-calificacion-2020-2-CFT', 'TxtController@postulantes20202CFT')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-CFT', 'TxtController@listPostulates20202CFT')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-CONTABILIDAD Y FINANZAS TURNO TARDE
+		Route::get('llenar-respuestas-2020-2-CFT', 'TxtController@procesoRespuesta20202CFT');
+	/*** FIN - CONTABILIDAD Y FINANZAS TURNO TARDE ***/	
 
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');
 	Route::post('cargar-txt-2020-2-E', 'TxtController@cargarInformacionTXT20202E');
