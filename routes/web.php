@@ -289,20 +289,68 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::post('cargar-txt3-2020-2-ICM', 'TxtController@cargarInformacionTXT320202ICM');
 
 		// //AGREGO DUPLICADOS 2020-2-INGENIERIA CIVIL MAÑANA
-		Route::get('rep-calificacion-duplicados-2020-2-IIA', 'TxtController@postulantesDuplicados20202IIA')->middleware('asistente');
-		Route::post('rep-constancias-cali-duplicados-2020-2-IIA', 'TxtController@listPostulatesDuplicados20202IIA')->middleware('asistente');
+		Route::get('rep-calificacion-duplicados-2020-2-ICM', 'TxtController@postulantesDuplicados20202ICM')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-ICM', 'TxtController@listPostulatesDuplicados20202ICM')->middleware('asistente');
 
 		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA CIVIL MAÑANA
-		Route::post('actualizarAdmisionDuplicado-2020-2-IIA', 'TxtController@actualizarAdmisionDuplicado20202IIA');
-		Route::post('actualizarAdmisionCanal-2020-2-IIA', 'TxtController@actualizarAdmisionCanal20202IIA');
+		Route::post('actualizarAdmisionDuplicado-2020-2-ICM', 'TxtController@actualizarAdmisionDuplicado20202ICM');
+		Route::post('actualizarAdmisionCanal-2020-2-ICM', 'TxtController@actualizarAdmisionCanal20202ICM');
 
 		// //CALIFICACION - 2020-2-INGENIERIA CIVIL MAÑANA
-		Route::get('rep-calificacion-2020-2-IIA', 'TxtController@postulantes20202IIA')->middleware('asistente');
-		Route::post('rep-constancias-cali-2020-2-IIA', 'TxtController@listPostulates20202IIA')->middleware('asistente');
+		Route::get('rep-calificacion-2020-2-ICM', 'TxtController@postulantes20202ICM')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-ICM', 'TxtController@listPostulates20202ICM')->middleware('asistente');
 
 		// //LLENAR RESPUESTA - 2020-1-INGENIERIA CIVIL MAÑANA
-		Route::get('llenar-respuestas-2020-2-IIA', 'TxtController@procesoRespuesta20202IIA');
+		Route::get('llenar-respuestas-2020-2-ICM', 'TxtController@procesoRespuesta20202ICM');
 	/*** FIN - INGENIERIA CIVIL MAÑANA ***/
+
+	/*** INICIO - INGENIERIA CIVIL TARDE ***/
+		// CARGAR TXT INGENIERIA CIVIL TARDE
+		Route::get('cargar-txt-2020-2-ICT', 'TxtController@cargarInformacion20202ICT');
+		Route::post('cargar-txt-2020-2-ICT', 'TxtController@cargarInformacionTXT20202ICT');
+		Route::post('cargar-txt1-2020-2-ICT', 'TxtController@cargarInformacionTXT120202ICT');
+		Route::post('cargar-txt2-2020-2-ICT', 'TxtController@cargarInformacionTXT220202ICT');
+		Route::post('cargar-txt3-2020-2-ICT', 'TxtController@cargarInformacionTXT320202ICT');
+
+		// //AGREGO DUPLICADOS 2020-2-INGENIERIA CIVIL TARDE
+		Route::get('rep-calificacion-duplicados-2020-2-ICT', 'TxtController@postulantesDuplicados20202ICT')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-ICT', 'TxtController@listPostulatesDuplicados20202ICT')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA CIVIL TARDE
+		Route::post('actualizarAdmisionDuplicado-2020-2-ICT', 'TxtController@actualizarAdmisionDuplicado20202ICT');
+		Route::post('actualizarAdmisionCanal-2020-2-ICT', 'TxtController@actualizarAdmisionCanal20202ICT');
+
+		// //CALIFICACION - 2020-2-INGENIERIA CIVIL TARDE
+		Route::get('rep-calificacion-2020-2-ICT', 'TxtController@postulantes20202ICT')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-ICT', 'TxtController@listPostulates20202ICT')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-INGENIERIA CIVIL TARDE
+		Route::get('llenar-respuestas-2020-2-ICT', 'TxtController@procesoRespuesta20202ICT');
+	/*** FIN - INGENIERIA CIVIL TARDE ***/
+
+	/*** INICIO - DERECHO Y CIENCIAS TURNO MAÑANA ***/
+		// CARGAR TXT DERECHO Y CIENCIAS
+		Route::get('cargar-txt-2020-2-DCM', 'TxtController@cargarInformacion20202DCM');
+		Route::post('cargar-txt-2020-2-DCM', 'TxtController@cargarInformacionTXT20202DCM');
+		Route::post('cargar-txt1-2020-2-DCM', 'TxtController@cargarInformacionTXT120202DCM');
+		Route::post('cargar-txt2-2020-2-DCM', 'TxtController@cargarInformacionTXT220202DCM');
+		Route::post('cargar-txt3-2020-2-DCM', 'TxtController@cargarInformacionTXT320202DCM');
+
+		// //AGREGO DUPLICADOS 2020-2-INGENIERIA CIVIL TARDE
+		Route::get('rep-calificacion-duplicados-2020-2-DCM', 'TxtController@postulantesDuplicados20202DCM')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-DCM', 'TxtController@listPostulatesDuplicados20202DCM')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-INGENIERIA CIVIL TARDE
+		Route::post('actualizarAdmisionDuplicado-2020-2-DCM', 'TxtController@actualizarAdmisionDuplicado20202DCM');
+		Route::post('actualizarAdmisionCanal-2020-2-DCM', 'TxtController@actualizarAdmisionCanal20202DCM');
+
+		// //CALIFICACION - 2020-2-INGENIERIA CIVIL TARDE
+		Route::get('rep-calificacion-2020-2-DCM', 'TxtController@postulantes20202DCM')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-DCM', 'TxtController@listPostulates20202DCM')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-INGENIERIA CIVIL TARDE
+		Route::get('llenar-respuestas-2020-2-DCM', 'TxtController@procesoRespuesta20202DCM');
+	/*** FIN - DERECHO Y CIENCIAS TURNO MAÑANA ***/
 
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');
 	Route::post('cargar-txt-2020-2-E', 'TxtController@cargarInformacionTXT20202E');

@@ -373,18 +373,18 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="{{ url('/cargar-txt-2020-2') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="{{ url('/cargar-txt-2020-2-ICM') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2-ICM') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-ICM') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       {{-- <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-ICM') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li> --}}
                       <!-- <li>
                         <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}">Admsion HI - Canal</a>
@@ -397,7 +397,7 @@ use App\Postulacion;
                       </li> --}}
                     </ul>
                   </li>
-                  {{-- FIN - EXAMEN CIVIL TARDE --}}
+                  {{-- FIN - EXAMEN CIVIL MAÑANA --}}
                   
                   {{-- INICIO - EXAMEN INGENIERIA CIVIL TARDE--}}
                   <li>
@@ -406,18 +406,18 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="{{ url('/cargar-txt-2020-2') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="{{ url('/cargar-txt-2020-2-ICT') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2-ICT') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-ICT') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       {{-- <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-ICT') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li> --}}
                       <!-- <li>
                         <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}">Admsion HI - Canal</a>
@@ -439,18 +439,18 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="{{ url('/cargar-txt-2020-2') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="{{ url('/cargar-txt-2020-2-DCM') }}">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="{{ url('/rep-calificacion-duplicados-2020-2') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-duplicados-2020-2-DCM') }}">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2_canal_A') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-DCM') }}">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       {{-- <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="{{ url('/rep-calificacion-2020-2') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
+                        <a href="{{ url('/rep-calificacion-2020-2-DCM') }}">Reporte de calificacion Total</a> <!-- REPORTE CALIFICACION 2020-2 -->
                       </li> --}}
                       <!-- <li>
                         <a href="{{ url('/rep-calificacion-canales-HI-2020-2') }}">Admsion HI - Canal</a>
