@@ -6648,6 +6648,7 @@ class TxtController extends Controller
     {
 
         DB::statement('call sp_insercion_calificar_proceso_2020_2_canal_B()');
+        // DB::statement('call sp_insercion_calificar_proceso_2020_2_TEST()'); // PRUEBA ALEXIS
 
         return redirect('rep-calificacion-2020-2_canal_B'); //CALIFICACION 2020 - 2
 
