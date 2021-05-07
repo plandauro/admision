@@ -64,7 +64,7 @@
 
             $.ajax({
                 type: "POST",
-                url: 'rep-calificacion-2020-2-especial',
+                url: 'rep-calificacion-2020-2-DCM',
                 success: function(data) {
                   if (data.existe == "") {
 
