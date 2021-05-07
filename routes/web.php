@@ -422,7 +422,55 @@ Route::group(['middleware' => 'auth'], function () {
 
 		// //LLENAR RESPUESTA - 2020-1-CONTABILIDAD Y FINANZAS TURNO TARDE
 		Route::get('llenar-respuestas-2020-2-CFT', 'TxtController@procesoRespuesta20202CFT');
-	/*** FIN - CONTABILIDAD Y FINANZAS TURNO TARDE ***/	
+	/*** FIN - CONTABILIDAD Y FINANZAS TURNO TARDE ***/
+
+	/*** INICIO - ENFERMERIA TURNO MAÑANA ***/
+		// CARGAR TXT ENFERMERIA MAÑANA
+		Route::get('cargar-txt-2020-2-ENFM', 'TxtController@cargarInformacion20202ENFM');
+		Route::post('cargar-txt-2020-2-ENFM', 'TxtController@cargarInformacionTXT20202ENFM');
+		Route::post('cargar-txt1-2020-2-ENFM', 'TxtController@cargarInformacionTXT120202ENFM');
+		Route::post('cargar-txt2-2020-2-ENFM', 'TxtController@cargarInformacionTXT220202ENFM');
+		Route::post('cargar-txt3-2020-2-ENFM', 'TxtController@cargarInformacionTXT320202ENFM');
+
+		// //AGREGO DUPLICADOS 2020-2-ENFERMERIA TURNO MAÑANA
+		Route::get('rep-calificacion-duplicados-2020-2-ENFM', 'TxtController@postulantesDuplicados20202ENFM')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-ENFM', 'TxtController@listPostulatesDuplicados20202ENFM')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-ENFERMERIA TURNO MAÑANA
+		Route::post('actualizarAdmisionDuplicado-2020-2-ENFM', 'TxtController@actualizarAdmisionDuplicado20202ENFM');
+		Route::post('actualizarAdmisionCanal-2020-2-ENFM', 'TxtController@actualizarAdmisionCanal20202ENFM');
+
+		// //CALIFICACION - 2020-2-ENFERMERIA TURNO MAÑANA
+		Route::get('rep-calificacion-2020-2-ENFM', 'TxtController@postulantes20202ENFM')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-ENFM', 'TxtController@listPostulates20202ENFM')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-ENFERMERIA TURNO MAÑANA
+		Route::get('llenar-respuestas-2020-2-ENFM', 'TxtController@procesoRespuesta20202ENFM');
+	/*** FIN - ENFERMERIA TURNO MAÑANA ***/
+
+	/*** INICIO - OBSTETRICIA TURNO TARDE ***/
+		// CARGAR TXT OBSTETRICIA TARDE
+		Route::get('cargar-txt-2020-2-OBST', 'TxtController@cargarInformacion20202OBST');
+		Route::post('cargar-txt-2020-2-OBST', 'TxtController@cargarInformacionTXT20202OBST');
+		Route::post('cargar-txt1-2020-2-OBST', 'TxtController@cargarInformacionTXT120202OBST');
+		Route::post('cargar-txt2-2020-2-OBST', 'TxtController@cargarInformacionTXT220202OBST');
+		Route::post('cargar-txt3-2020-2-OBST', 'TxtController@cargarInformacionTXT320202OBST');
+
+		// //AGREGO DUPLICADOS 2020-2-OBSTETRICIA TURNO TARDE
+		Route::get('rep-calificacion-duplicados-2020-2-OBST', 'TxtController@postulantesDuplicados20202OBST')->middleware('asistente');
+		Route::post('rep-constancias-cali-duplicados-2020-2-OBST', 'TxtController@listPostulatesDuplicados20202OBST')->middleware('asistente');
+
+		// //ACTUALIZACION DUPLICADOS 2020_2-OBSTETRICIA TURNO TARDE
+		Route::post('actualizarAdmisionDuplicado-2020-2-OBST', 'TxtController@actualizarAdmisionDuplicado20202OBST');
+		Route::post('actualizarAdmisionCanal-2020-2-OBST', 'TxtController@actualizarAdmisionCanal20202OBST');
+
+		// //CALIFICACION - 2020-2-OBSTETRICIA TURNO TARDE
+		Route::get('rep-calificacion-2020-2-OBST', 'TxtController@postulantes20202OBST')->middleware('asistente');
+		Route::post('rep-constancias-cali-2020-2-OBST', 'TxtController@listPostulates20202OBST')->middleware('asistente');
+
+		// //LLENAR RESPUESTA - 2020-1-OBSTETRICIA TURNO TARDE
+		Route::get('llenar-respuestas-2020-2-OBST', 'TxtController@procesoRespuesta20202OBST');
+	/*** FIN - OBSTETRICIA TURNO TARDE ***/
 
 	Route::get('cargar-txt-2020-2-E', 'TxtController@cargarInformacion20202E');
 	Route::post('cargar-txt-2020-2-E', 'TxtController@cargarInformacionTXT20202E');

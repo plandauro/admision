@@ -191,7 +191,7 @@ function cargarCombo(){
 
 function consultaProducto(){
     $.ajax({
-      url: 'rep-constancias-cali-2020-2-DCM',
+      url: 'rep-constancias-cali-2020-2-CFM',
       method: 'POST',
       data:{
   			tipo: $tipo.val(),

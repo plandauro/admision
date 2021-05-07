@@ -11,7 +11,7 @@
           <h2>Reporte de Examen General Contabilidad y Finanzas turno mañana</h2>
           <br> <br>
           <div class="col-md-2">
-            <button><a href="{{ url('llenar-respuestas-2020-2-DCM') }}">Proceso de Calificación</a></button>
+            <button><a href="{{ url('llenar-respuestas-2020-2-CFM') }}">Proceso de Calificación</a></button>
           </div>
 
           <ul class="nav navbar-right panel_toolbox">
