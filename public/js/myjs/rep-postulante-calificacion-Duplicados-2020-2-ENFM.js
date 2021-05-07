@@ -179,7 +179,7 @@ function cargarCombo() {
 
 function consultaProducto() {
     $.ajax({
-        url: 'rep-constancias-cali-duplicados-2020-2-ENFM',
+        url: 'rep-constancias-cali-duplicados-2020-2',
         method: 'POST',
         data: {
             tipo: $tipo.val(),
