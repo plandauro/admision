@@ -4085,8 +4085,8 @@ class TxtController extends Controller
         }
     /*** FIN - PROCESO ENFERMERIA TURNO MAÑANA ***/
 
-    /*** INICIO - PROCESO OBSTETRICIA TURNO MAÑANA ***/
-        /* CARGAR TXT OBSTETRICIA TURNO MAÑANAE */
+    /*** INICIO - PROCESO OBSTETRICIA TURNO TARDE ***/
+        /* CARGAR TXT OBSTETRICIA TURNO TARDE */
         public function cargarInformacion20202OBST()
         {
             if (!Proceso::abierto())
@@ -4410,7 +4410,7 @@ class TxtController extends Controller
             return response()->json(['correcto' => $correcto]);
         }
 
-        /* PARA DUPLICADOS 2020 II - OBSTETRICIA TURNO MAÑANA */
+        /* PARA DUPLICADOS 2020 II - OBSTETRICIA TURNO TARDE */
         public function postulantesDuplicados20202OBST()
         {
             $procesos = Proceso::orderBy('id', 'desc')->get();
@@ -4439,7 +4439,7 @@ class TxtController extends Controller
             return response()->json(['postulaciones' => $postulaciones]);
         }
 
-        /* ACTUALIZAR DUPLICADOS 2020-II-OBSTETRICIA TURNO MAÑANA */
+        /* ACTUALIZAR DUPLICADOS 2020-II-OBSTETRICIA TURNO TARDE */
         public function actualizarAdmisionDuplicado20202OBST(Request $request)
         {
 
@@ -4454,7 +4454,7 @@ class TxtController extends Controller
                 DB::table('hojaidenticacion_proceso_2020_2_group2')->where('LITHO', $request->codlitho)->update(array('CANAL' => $request->canallitho));
         }
 
-        /* CALIFICACION - OBSTETRICIA TURNO MAÑANA */
+        /* CALIFICACION - OBSTETRICIA TURNO TARDE */
         public function postulantes20202OBST()
         {
              $procesos = Proceso::orderBy('id', 'desc')->get();
@@ -4510,7 +4510,7 @@ class TxtController extends Controller
              return response()->json(['postulaciones' => $postulaciones]);
         }
  
-        /* PROCESO RESPUESTA - OBSTETRICIA TURNO MAÑANA */
+        /* PROCESO RESPUESTA - OBSTETRICIA TURNO TARDE */
         public function procesoRespuesta20202OBST()
         {
  
@@ -4521,7 +4521,7 @@ class TxtController extends Controller
              // return redirect('rep-calificacion');	//ALIFICACION ANTIGUA
  
         }
-    /*** FIN - PROCESO OBSTETRICIA TURNO MAÑANA ***/
+    /*** FIN - PROCESO OBSTETRICIA TURNO TARDE ***/
 
     public function cargarInformacion20202E()
     {
