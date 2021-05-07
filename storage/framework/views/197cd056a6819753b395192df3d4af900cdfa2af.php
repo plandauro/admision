@@ -531,14 +531,14 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="<?php echo e(url('/cargar-txt-2020-2')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="<?php echo e(url('/cargar-txt-2020-2-ENFM')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-ENFM')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-ENFM')); ?>">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       
                       <!-- <li>
@@ -559,14 +559,14 @@ use App\Postulacion;
                     </a>
                     <ul class="nav child_menu">
                       <li>
-                        <a href="<?php echo e(url('/cargar-txt-2020-2')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
+                        <a href="<?php echo e(url('/cargar-txt-2020-2-OBST')); ?>">Subir Resultados DLM</a> <!-- CARGAR DLM 2020-2 -->
                       </li>
                       <li>
-                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-duplicados-2020-2-OBST')); ?>">Verificar Duplicados</a> <!-- REPORTE DUPLICADOS 2020-2 -->
                       </li>
                       <li class="duplicados_report">
                         <!-- class="duplicados_report" -->
-                        <a href="<?php echo e(url('/rep-calificacion-2020-2_canal_A')); ?>">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
+                        <a href="<?php echo e(url('/rep-calificacion-2020-2-OBST')); ?>">Reporte de calificacion</a> <!-- REPORTE CALIFICACION CANAL A2020-2 -->
                       </li>
                       
                       <!-- <li>
