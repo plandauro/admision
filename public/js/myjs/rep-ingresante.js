@@ -166,7 +166,7 @@ function cargarCombo(){
 }
 function consultaProducto(){
     $.ajax({
-      url: 'rep-ingresante-list',
+      url: 'rep-ingresante-list-2020-2', //ANTIGUO rep-ingresante-list
       method: 'POST',
       data:{
   			tipo: $tipo.val(),

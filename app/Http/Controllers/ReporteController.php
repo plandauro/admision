@@ -446,6 +446,7 @@ class ReporteController extends Controller
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('reporte.listaIngresantes')->with("procesos", $procesos);
     }
+
     public function listaIngresantes(Request $request)
     {
         $postulacion = null;
@@ -465,7 +466,7 @@ class ReporteController extends Controller
                         ->join('area', 'escuela.idarea', '=', 'area.id')
                         ->select('users.id as idpostulante', 'users.nombre', 'users.apepaterno', 'users.apematerno', 'area.nombre as area', 'tarifa.descripcion as tarifa',
                                 'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.puntaje','postulacion.resultado','postulacion.codalumno','postulacion.omg','postulacion.ome','postulacion.idPostulante')
-                        ->where('postulacion.estado', 2)
+                        ->where('postulacion.estado', 2)                        
                         ->where('ambiente.id', $request->dato)
                         ->where('postulacion.idproceso', $request->idproceso)
                         // ->where('postulacion.resultado','=','INGRESO')
@@ -491,12 +492,73 @@ class ReporteController extends Controller
         }
         return response()->json(['postulaciones' => $postulaciones]);
     }
+
+    /*** INICIO - REPORTE DE INGRESANTES EXAMEN 2020-II-MAYO ***/
+        public function ingresantes20202()
+        {
+            $procesos = Proceso::orderBy('id', 'desc')->get();
+            return view('reporte.listaIngresantes')->with("procesos", $procesos);
+        }
+        
+        public function listaIngresantes20202(Request $request)
+        {
+            $postulacion = null;
+            
+            if($request->dato == 0)
+                $request->tipo = 0;
+                
+            switch ($request->tipo) {
+                
+                case 1:
+                    $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                            ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                            ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                            ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                            ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                            ->leftJoin('institucion_educativa', 'users.idinstitucioneducativa', '=', 'institucion_educativa.id')
+                            ->join('area', 'escuela.idarea', '=', 'area.id')
+                            ->select('users.id as idpostulante', 'users.nombre', 'users.apepaterno', 'users.apematerno', 'area.nombre as area', 'tarifa.descripcion as tarifa',
+                                    'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad','postulacion.puntaje','postulacion.resultado','postulacion.codalumno','postulacion.omg','postulacion.ome','postulacion.idPostulante')
+                            ->where('postulacion.estado', 2)
+                            // ->where('postulacion.resultado', 'is not null')
+                            // ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
+                            // ->where('modalidad.id', '!=', 3)
+                            ->where('ambiente.id', $request->dato)
+                            ->where('postulacion.idproceso', $request->idproceso)
+                            // ->where('postulacion.resultado','=','INGRESO')
+                            ->get();
+                    break;
+                default:
+                    $postulaciones = Postulacion::join('users', 'postulacion.idPostulante', '=', 'users.id')
+                            ->join('escuela', 'postulacion.idescuela', '=', 'escuela.id')
+                            ->leftJoin('ambiente', 'postulacion.idambiente', '=', 'ambiente.id')
+                            ->join('tarifa', 'postulacion.idtarifa', '=', 'tarifa.id')
+                            ->join('modalidad', 'tarifa.idmodalidad', '=', 'modalidad.id')
+                            ->leftJoin('institucion_educativa', 'users.idinstitucioneducativa', '=', 'institucion_educativa.id')
+                            ->join('area', 'escuela.idarea', '=', 'area.id')
+                            ->select('users.id as idpostulante', 'users.nombre', 'users.apepaterno', 
+                                    'users.fechanacimiento', 'users.apematerno', 'users.dni',
+                                    'postulacion.id as idpostulacion', 'area.nombre as area','tarifa.descripcion as tarifa',
+                                    'escuela.descripcion as escuela', 'ambiente.descripcion as ambiente', 'modalidad.descripcion as modalidad', 'institucion_educativa.tipo as tipoie','postulacion.puntaje','postulacion.resultado','postulacion.codalumno','postulacion.omg','postulacion.ome','postulacion.idPostulante')
+                            ->where('postulacion.estado', 2)
+                            // ->where('postulacion.resultado', 'is not null')
+                            // ->where('postulacion.idtarifa', '!=', 17) // Cambio que no permite visualizar alumnos modalidad cepre
+                            ->where('postulacion.idproceso', $request->idproceso)
+                            // ->where('postulacion.resultado','=','INGRESO')
+                            ->get();
+                    break;
+            }
+            return response()->json(['postulaciones' => $postulaciones]);
+        }
+    /*** FIN - INGRESANTES 2020-II***/
+
     public function postulantesvalidadonovalidado()
     {
         $procesos = Proceso::orderBy('id', 'desc')->get();
         return view('reporte.postulantevalidadonovalidado')->with('procesos', $procesos);
     }
-   public function listvalnoval(Request $request)
+
+    public function listvalnoval(Request $request)
     {
         $postulacion = null;
         if($request->dato == 0);

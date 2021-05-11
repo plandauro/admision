@@ -529,6 +529,11 @@ Route::group(['middleware' => 'auth'], function () {
 	//Reporte lista ingresantes
 	Route::get('rep-listaIngresantes', 'ReporteController@ingresantes')->middleware('coordinador');
 	Route::post('rep-ingresante-list', 'ReporteController@listaIngresantes')->middleware('coordinador');
+
+	//Reporte lista ingresantes 2020-II-MAYO
+	Route::get('rep-listaIngresantes-2020-2', 'ReporteController@ingresantes20202')->middleware('coordinador');
+	Route::post('rep-ingresante-list-2020-2', 'ReporteController@listaIngresantes20202')->middleware('coordinador');
+
 	//Reporte de postulantes validos y no validos
 	Route::get('rep-postulantesvalidosnovalidos', 'ReporteController@postulantesvalidadonovalidado')->middleware('coordinador');
 	Route::post('rep-postulantesvalidado-list', 'ReporteController@listvalnoval')->middleware('coordinador');
