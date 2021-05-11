@@ -53,7 +53,7 @@ use App\Proceso;
                 <div>
                   <br>
                     <center>
-                        <p>UNAB © 2020 Todos los Derechos Reservados - Desarrollado por UTIC</p>
+                        <p>UNAB © 2021 Todos los Derechos Reservados - Desarrollado por OTI</p>
                     </center>
                 </div>
               </div>

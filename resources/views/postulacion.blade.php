@@ -601,7 +601,7 @@
                             Por lo expuesto, autorizo expresamente la notificación a través del 
                             correo electrónico antes declarado
                           </p>
-                          <input type="checkbox" value="A" wire:model="foo" required="required">    
+                          <input type="checkbox" value="A" wire:model="foo" required>    
                           <label for="">Acepto los términos y condiciones</label>                                                
                         </div>
                       </div>
