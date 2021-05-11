@@ -10,7 +10,7 @@
           <h2>Reporte de Examen General Obstetricia turno mañana</h2>
           <br> <br>
           <div class="col-md-2">
-            <button><a href="<?php echo e(url('llenar-respuestas-2020-2-ENFM')); ?>">Proceso de Calificación</a></button>
+            <button><a href="<?php echo e(url('llenar-respuestas-2020-2-OBST')); ?>">Proceso de Calificación</a></button>
           </div>
 
           <ul class="nav navbar-right panel_toolbox">
