@@ -60,11 +60,11 @@
                 <strong>!Felicitaciones!</strong> 
                 <span style="font-size: 18px" >Has realizado tu postulación.</span>
               </h1>
-              <p style="font-size: 16px;margin-bottom: 15px;">Ahora realiza los siguientes procedimientos:</p>
+              <p style="font-size: 16px;margin-bottom: 15px;">Para terminar con el procedimiento solo da click al botón "Finalizar postulación".</p>
               <br>
             </div>
             
-            <div class="col-xs-12 col-md-12" style="padding: 0px 0px 0px 10px;" >
+            <!-- <div class="col-xs-12 col-md-12" style="padding: 0px 0px 0px 10px;" >
               <p style="margin:0px 0px 10px -15px; font-size: 16px; font-weight: bold"><span >2: </span>Imprime y dirígete a la Oficina de Admisión: </p>
               <p style="font-size: 15px; ">Imprime el/los siguientes formatos, revísalos y coloca tu firma y huella digital en los lugares que lo indique.</p>
 
@@ -87,7 +87,7 @@
               <br>
               <p style="font-size: 15px; ">Ahora dirígete a la oficina de <strong>ADMISIÓN</strong> de la Universidad Nacional de Barranca,  ubicada en el Jr. Gálvez N° 557 - Barranca, llevando los formatos impresos por duplicado, el boucher de pago (original y dos copias) para <strong> VALIDAR </strong>su postulación.</p>
               <p style="margin:0px 0px 10px -15px; font-size: 16px; font-weight: bold"><span >3: </span>Descarga e imprime el Carné de Postulante. </p><p style="font-size: 15px; ">Validada tu inscripción en la Oficina de Admisión podrás descargar e imprimir el Carné de Postulante, el cual presentarás el día del examen.</p>
-              <br>
+              <br> -->
           
     <center>
               <a id="idfinalizar2" style="font-size: 16px; 
