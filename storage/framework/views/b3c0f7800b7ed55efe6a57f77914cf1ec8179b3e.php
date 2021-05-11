@@ -532,70 +532,91 @@
               <div id="step-2">
                 <form class="form-horizontal form-label-left panel">
                 <input type="hidden" name="step_number" value="2">
-                  <div class="panel panel-primary">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">5. Modalidad y Carrera Profesional</h3>
-                    </div>
-                    <div class="panel-body">
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <label for="">Modalidad a la que postula *</label>
-                        <select name="idtarifa" id="idtarifa" class="form-control">
-                          <option value="0">(Seleccionar)</option>
-                          <?php $__currentLoopData = $tarifas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tarifa): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                          <option value="<?php echo e($tarifa->idtarifa); ?>"
-                          <?php if($postulacion): ?>
-                            <?php if($tarifa->idtarifa == $postulacion->idtarifa): ?> selected <?php endif; ?>
-                          <?php endif; ?>
-                          ><?php echo e($tarifa->descripcion); ?></option>
-                          <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-                        </select>
+                  
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">5. Modalidad y Carrera Profesional</h3>
                       </div>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <label for="">Carrera profesional a la que postula *</label>
-                        <select name="idescuela" id="idescuela" class="form-control">
-                          <option value="0">(Seleccionar)</option>
-                          <?php $__currentLoopData = $escuelas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $escuela): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                          <option value="<?php echo e($escuela->idescuela); ?>"
-                          <?php if($escuela->idescuela == $postulacion->idescuela): ?> selected <?php endif; ?>
-                          ><?php echo e($escuela->descripcion); ?></option>
-                          <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-                        </select>
+                      <div class="panel-body">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <label for="">Modalidad a la que postula *</label>
+                          <select name="idtarifa" id="idtarifa" class="form-control">
+                            <option value="0">(Seleccionar)</option>
+                            <?php $__currentLoopData = $tarifas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tarifa): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                            <option value="<?php echo e($tarifa->idtarifa); ?>"
+                            <?php if($postulacion): ?>
+                              <?php if($tarifa->idtarifa == $postulacion->idtarifa): ?> selected <?php endif; ?>
+                            <?php endif; ?>
+                            ><?php echo e($tarifa->descripcion); ?></option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                          </select>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <label for="">Carrera profesional a la que postula *</label>
+                          <select name="idescuela" id="idescuela" class="form-control">
+                            <option value="0">(Seleccionar)</option>
+                            <?php $__currentLoopData = $escuelas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $escuela): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                            <option value="<?php echo e($escuela->idescuela); ?>"
+                            <?php if($escuela->idescuela == $postulacion->idescuela): ?> selected <?php endif; ?>
+                            ><?php echo e($escuela->descripcion); ?></option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="panel panel-primary">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">Encuestas</h3>
-                    </div>
-                    <div class="panel-body">
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <label for="">¿Por qué medio se enteró del proceso de admisión?</label>
-                        <select name="medioseentero" id="medioseentero" class="form-control">
-                          <option value="0">(Seleccionar)</option>
-                          <?php $__currentLoopData = $encuesta1; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rpta): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                          <option value="<?php echo e($rpta->id); ?>"
-                            <?php echo e($postulacion->medioseentero == $rpta->id ? 'selected':''); ?>
+                  
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Encuestas</h3>
+                      </div>
+                      <div class="panel-body">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <label for="">¿Por qué medio se enteró del proceso de admisión?</label>
+                          <select name="medioseentero" id="medioseentero" class="form-control">
+                            <option value="0">(Seleccionar)</option>
+                            <?php $__currentLoopData = $encuesta1; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rpta): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                            <option value="<?php echo e($rpta->id); ?>"
+                              <?php echo e($postulacion->medioseentero == $rpta->id ? 'selected':''); ?>
 
-                          ><?php echo e($rpta->descripcion); ?>
+                            ><?php echo e($rpta->descripcion); ?>
 
-                          </option>
-                          <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-                        </select>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <label for="">¿Dónde se preparó para el examen de admisión?</label>
-                        <select name="dondesepreparo" id="dondesepreparo" class="form-control">
-                          <option value="0">(Seleccionar)</option>
-                          <?php $__currentLoopData = $encuesta2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rpta): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                          <option value="<?php echo e($rpta->id); ?>"
-                            <?php echo e($postulacion->dondesepreparo == $rpta->id ? 'selected':''); ?>
+                            </option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                          </select>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <label for="">¿Dónde se preparó para el examen de admisión?</label>
+                          <select name="dondesepreparo" id="dondesepreparo" class="form-control" required="required">
+                            <option value="0">(Seleccionar)</option>
+                            <?php $__currentLoopData = $encuesta2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $rpta): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                            <option value="<?php echo e($rpta->id); ?>"
+                              <?php echo e($postulacion->dondesepreparo == $rpta->id ? 'selected':''); ?>
 
-                          ><?php echo e($rpta->descripcion); ?></option>
-                          <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
-                        </select>
+                            ><?php echo e($rpta->descripcion); ?></option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Declaracion Jurada</h3>
+                      </div>
+                      <div class="panel-body">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                          <p class="text-sm text-justify">En mi condición de postulante, declaro que la información consignada
+                            en este formato corresponde a la verdad y tiene carácter de declaración jurada;
+                            sujetándome a las acciones administrativas y/o penales que de ello pudieran derivarse, en el marco
+                            de las normas legales y reglamentarias sobre la materia.
+                            Por lo expuesto, autorizo expresamente la notificación a través del 
+                            correo electrónico antes declarado
+                          </p>
+                          <input type="checkbox" value="A" wire:model="foo" required="required">    
+                          <label for="">Acepto los términos y condiciones</label>                                                
+                        </div>
+                      </div>
+                    </div>
                 </form>
               </div>
               <!--<div id="step-3">

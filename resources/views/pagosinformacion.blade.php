@@ -31,14 +31,16 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr id="costocarpetatotalX">
-                    <td>Carpeta del Postulante</td>
-                    <td id="costocarpeta">S/. <input id="costocarpetatotal" style="background: none;border: none; position: absolute;" value=" {{$costocarpeta}}" /></td>
-                  </tr>
-                  <tr id="costoprospectoatotalX">
-                    <td>Prospecto de admisión</td>
-                    <td id="costoprospecto">S/. <input id="costoprospectoatotal" style="background: none;border: none; position: absolute;" value=" {{$costoprospecto}}" /></td>
-                  </tr>
+                  <!-- OCULTO POR CAMBIOS DE PAGOS - 2021 -->
+                    {{-- <tr id="costocarpetatotalX">
+                      <td>Carpeta del Postulante</td>
+                      <td id="costocarpeta">S/. <input id="costocarpetatotal" style="background: none;border: none; position: absolute;" value=" {{$costocarpeta}}" /></td>
+                    </tr>
+                    <tr id="costoprospectoatotalX">
+                      <td>Prospecto de admisión</td>
+                      <td id="costoprospecto">S/. <input id="costoprospectoatotal" style="background: none;border: none; position: absolute;" value=" {{$costoprospecto}}" /></td>
+                    </tr> --}}
+                  <!-- OCULTO POR CAMBIOS DE PAGOS - 2021 -->
                   <tr>
                     <td>
                       <select style="width: 450px" class="form-control" name="tarifa" id="tarifa">
@@ -132,10 +134,14 @@
         console.log(selectedOption.value + ': ' + selectedOption.text);
         document.getElementById("idlabel").innerHTML = selectedOption.value;
 
+        // suma = "";
+        // a = $('#costoprospectoatotal').val();
+        // b = $('#costocarpetatotal').val();
+        // suma = parseFloat(a) + parseFloat(b) + parseFloat(selectedOption.value);
+        // $('#costototalinput').val(' ' + suma + '.00');
+
         suma = "";
-        a = $('#costoprospectoatotal').val();
-        b = $('#costocarpetatotal').val();
-        suma = parseFloat(a) + parseFloat(b) + parseFloat(selectedOption.value);
+        suma = parseFloat(selectedOption.value);
         $('#costototalinput').val(' ' + suma + '.00');
 
         //AGREGADO 07/09/2018
