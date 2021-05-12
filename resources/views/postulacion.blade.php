@@ -287,18 +287,18 @@
                             <option value="5" @if(Auth::user()->via == 5) selected @endif>Otro</option>
                           </select>
                         </div>
-                        <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
                           <label for="">Dirección *</label>
                           <input type="text" name="direccion" id="direccion" value="{{ Auth::user()->direccion }}" class="form-control mayusculas">
                         </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
                           <label for="">Número *</label>
                           <input type="text" name="numero" id="numero" value="{{ Auth::user()->numero }}" class="form-control mayusculas">
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        {{-- <div class="col-md-3 col-sm-3 col-xs-12">
                           <label for="">Teléfono fijo</label>
                           <input type="text" name="telefono" id="telefono" value="{{Auth::user()->telefono}}" class="form-control">
-                        </div>
+                        </div> --}}
                       </div>
                       <div class="form-group row">
                         <div class="col-md-4 col-sm-4 col-xs-12">
@@ -599,7 +599,7 @@
                             sujetándome a las acciones administrativas y/o penales que de ello pudieran derivarse, en el marco
                             de las normas legales y reglamentarias sobre la materia.
                             Por lo expuesto, autorizo expresamente la notificación a través del 
-                            correo electrónico antes declarado
+                            correo electrónico antes declarado.
                           </p>
                           <input type="checkbox" value="A" wire:model="foo" required>    
                           <label for="">Acepto los términos y condiciones</label>                                                
