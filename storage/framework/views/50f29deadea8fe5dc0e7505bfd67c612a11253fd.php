@@ -36,6 +36,7 @@ use App\Proceso;
                     Ingresar
                 </button>
               </div>
+
               <label for="">*Registrate para participar en el proceso de admisión 2021-I</label>
 
               <div class="clearfix"></div>
@@ -44,7 +45,7 @@ use App\Proceso;
                 <?php if(Proceso::abierto()): ?>
                 <p class="change_link">
                   <a style="font-size: 15px;" href="<?php echo e(url('register')); ?> " type="hidden"> Registrarse </a>
-                  <a style="font-size: 15px;" target="blank" href="<?php echo e(url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf')); ?>"> Descargar Instrucciones </a>
+                  <a style="font-size: 15px;" target="blank" href="<?php echo e(url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021-I.pdf')); ?>"> Descargar Instrucciones </a>
                 </p>
                 <?php endif; ?>
 
