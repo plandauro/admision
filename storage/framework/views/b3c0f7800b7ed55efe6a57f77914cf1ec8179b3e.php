@@ -288,7 +288,7 @@
                             <option value="5" <?php if(Auth::user()->via == 5): ?> selected <?php endif; ?>>Otro</option>
                           </select>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-7 col-sm-7 col-xs-12">
                           <label for="">Dirección *</label>
                           <input type="text" name="direccion" id="direccion" value="<?php echo e(Auth::user()->direccion); ?>" class="form-control mayusculas">
                         </div>
@@ -358,11 +358,11 @@
                       </div>
                       <div class="form-group row">
                         <div class="col-md-5 col-sm-5 col-xs-12">
-                          <label for="">Correo electrónico *</label>
+                          <label for="">Correo electrónico *<em>(consignar correctamente)</em></label>
                           <input type="text" name="email" id="email" value="<?php echo e(Auth::user()->email); ?>" class="form-control">
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                          <label for="">Celular *</label>
+                          <label for="">Celular *<em>(consignar correctamente)</em></label>
                           <input type="text" name="celular" id="celular" value="<?php echo e(Auth::user()->celular); ?>" class="form-control">
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -385,13 +385,17 @@
                     </div>
                     <div class="panel-body">
                       <div class="form-group row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-5 col-sm-4 col-xs-12">
                           <label for="">Apellidos y nombres del Padre *</label>
                           <input type="text" name="padre" id="padre" value="<?php echo e(Auth::user()->padre); ?>" class="form-control mayusculas">
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-5 col-sm-4 col-xs-12">
                           <label for="">Apellidos y nombres de la Madre *</label>
                           <input type="text" name="madre" id="madre" value="<?php echo e(Auth::user()->madre); ?>" class="form-control mayusculas">
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                          <label for="">Teléfono de contacto *</label>
+                          <input type="text" name="telefono" id="telefono" value="<?php echo e(Auth::user()->telefono); ?>" class="form-control">
                         </div>
                       </div>
                     </div>

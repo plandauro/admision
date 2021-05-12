@@ -56,7 +56,7 @@
             <div style="margin-bottom: 10px; margin-left: -15px" class="col-md-12">
               <h1 style="margin-top:-20px;font-size: 35px;"">
                 <strong>!Felicitaciones!</strong> 
-                <span style="font-size: 18px" >Has realizado tu postulación.</span>
+                <span style="font-size: 18px" >Haz realizado tu postulación.</span>
               </h1>
               <p style="font-size: 16px;margin-bottom: 15px;">Para terminar con el procedimiento solo da click al botón "Finalizar postulación".</p>
               <br>
