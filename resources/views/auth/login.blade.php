@@ -44,7 +44,7 @@ use App\Proceso;
                 @if(Proceso::abierto())
                 <p class="change_link">
                   <a style="font-size: 15px;" href="{{ url('register') }} " type="hidden"> Registrarse </a>
-                  <a style="font-size: 15px;" target="blank" href="{{ url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021-I.pdf') }}"> Descargar Instrucciones </a>
+                  <a style="font-size: 15px;" target="blank" href="{{ url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021.pdf') }}"> Descargar Instrucciones </a>
                 </p>
                 @endif
 
