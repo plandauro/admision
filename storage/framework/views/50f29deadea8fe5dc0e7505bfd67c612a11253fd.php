@@ -36,6 +36,7 @@ use App\Proceso;
                     Ingresar
                 </button>
               </div>
+              <label for="">*Registrate para participar en el proceso de admisión 2021-I</label>
 
               <div class="clearfix"></div>
 

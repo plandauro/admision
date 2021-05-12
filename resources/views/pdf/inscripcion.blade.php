@@ -174,7 +174,7 @@ $postulante = $data["postulante"];
 			<td class="sub-header" style="width: 80px">VÍA</td>
 			<td class="sub-header" style="width: 200px">NOMBRE DE LA VÍA</td>
 			<td class="sub-header" style="width: 80px">NÚMERO</td>
-			<td class="sub-header" style="width: 150px">TELÉFONO DE DOMICILIO</td>
+			
 		</tr>
 		<tr>
 			<td>
@@ -189,7 +189,7 @@ $postulante = $data["postulante"];
 			</td>
 			<td><strong>{{ strtoupper($postulante->direccion)}}</strong></td>
 			<td><strong>{{ strtoupper($postulante->numero) }}</strong></td>
-			<td><strong>{{ strtoupper($postulante->telefono) }}</strong></td>
+			
 		</tr>
 	</table>
 	<table class="table">
@@ -233,10 +233,12 @@ $postulante = $data["postulante"];
 		<tr>
 			<td class="sub-header">APELLIDOS Y NOMBRES DEL PADRE</td>
 			<td class="sub-header">APELLIDOS Y NOMBRES DE LA MADRE</td>
+			<td class="sub-header">TELÉFONO DE CONTACTO</td>
 		</tr>
 		<tr>
 			<td align="center"><strong>{{ strtoupper($postulante->padre) }}</strong></td>
 			<td align="center"><strong>{{ strtoupper($postulante->madre) }}</strong></td>
+			<td align="center"><strong>{{ strtoupper($postulante->telefono) }}</strong></td>
 		</tr>
 	</table>
 	<div class="sub-title"><h3>4. DATOS DE LA INSTITUCIÓN EDUCATIVA DE PROCEDENCIA</h3></div>
@@ -346,7 +348,7 @@ $postulante = $data["postulante"];
 			</td>
 		</tr>
 		<tr>
-			<td align="center"><br><br> __________________________________ <br>Firma del Postulante</td>
+			<!-- <td align="center"><br><br> __________________________________ <br>Firma del Postulante</td> -->
 		</tr>
 	</table>
 	<p align="center" style="font-size: 15px"><strong> ADMISIÓN {{ $postulacion->proceso }}</strong></p>
