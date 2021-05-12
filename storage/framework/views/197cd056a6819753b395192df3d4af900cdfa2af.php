@@ -142,7 +142,7 @@ use App\Postulacion;
                   </a>
                 </li>
                 <li>
-                  <a target="blank" href="<?php echo e(url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf')); ?>">
+                  <a target="blank" href="<?php echo e(url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021.pdf')); ?>">
                     <i class="fa fa-file-pdf-o"></i> Instrucciones
                   </a>
                 </li>
