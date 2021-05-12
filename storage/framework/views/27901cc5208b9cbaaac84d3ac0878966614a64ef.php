@@ -60,20 +60,21 @@
                 <strong>!Felicitaciones tu postulación ha sido completada!</strong> 
               </h1>
               <p style="font-size: 16px;margin-bottom: 15px;">
-              Ahora imprime tu identificación de postulación y dirigete a rendir tu examen el día y lugar indicado. No olvides llevar tu DNI o documento de identificación:)</p>
+              Anota tu código de inscripción y acude a rendir tu examen en la fecha y hora indicada en la web de la UNAB.
+              </p>
               <table style="margin: 0px 20px 0px 20px;">
                 <tr>
                   <td>
-                    <a href="<?php echo e(url('/pdf/carne_inscripcion')); ?>" target="_blank">
+                    <!-- <a href="<?php echo e(url('/pdf/carne_inscripcion')); ?>" target="_blank">
                     <span class="fa fa-file-pdf-o"></span> 1. Carné de Postulación
-                  </a><br><br>
+                    </a><br><br> -->
                   <a href="<?php echo e(url('/pdf/ficha_inscripcion')); ?>" target="_blank">
-                    <span class="fa fa-file-pdf-o"></span> 2. Ficha de Inscripción
+                    <span class="fa fa-file-pdf-o"></span> 1. Ficha de Inscripción
                   </a><br><br>
                   <?php if($postulante->edad >= 18): ?>
-                  <a href="<?php echo e(url('/pdf/jdantecedentes_inscripcion')); ?>" target="_blank">
+                  <!-- <a href="<?php echo e(url('/pdf/jdantecedentes_inscripcion')); ?>" target="_blank">
                     <span class="fa fa-file-pdf-o"> </span>   3. Declaración Jurada de Antecedentes Penales
-                  </a>
+                  </a> -->
                   <br><br>
                   <?php endif; ?>
                   <!--a href="<?php echo e(url('/pdf/PROSPECTO_2019_II_FINAL.pdf')); ?>" target="_blank">
@@ -90,9 +91,7 @@
               </table>
               <br>
                 <p style="font-size: 16px;margin-bottom: 15px; font-weight: bold;">              
-              (Aviso importante: Para validar el Carnet de postulante, deberá acercarse a la Oficina de Admisión ubicada en Jr. Gálvez N° 557 – Barranca, con sus respectivos
-               			documentos impresos por duplicado (Ficha de inscripción, Declaración jurada de Antecedentes Penales y 2 copias del Boucher del Pago) para
-               			 		posteriormente recibir el sello de conformidad. En caso contrario, el carnet no tendrá ninguna validez.)</p>
+              (Importante: No olvides llevar tu DNI, lápiz, borrador, tajador, doble mascarilla y protector facial.)</p>
             </div>
         
           </div>
