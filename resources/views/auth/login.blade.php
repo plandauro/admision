@@ -36,7 +36,7 @@ use App\Proceso;
                 </button>
               </div>
 
-              <label for="">*Registrate para participar en el proceso de admisión 2021-I</label>
+              <label for="">*para inscribirte en el proceso 2021 haz clic en registrarse</label>
 
               <div class="clearfix"></div>
 
@@ -44,7 +44,7 @@ use App\Proceso;
                 @if(Proceso::abierto())
                 <p class="change_link">
                   <a style="font-size: 15px;" href="{{ url('register') }} " type="hidden"> Registrarse </a>
-                  <a style="font-size: 15px;" target="blank" href="{{ url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021-I.pdf') }}"> Descargar Instrucciones </a>
+                  <a style="font-size: 15px;" target="blank" href="{{ url('/pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021.pdf') }}"> Descargar Instrucciones </a>
                 </p>
                 @endif
 

@@ -333,16 +333,18 @@ $postulante = $data["postulante"];
 		<tr>
 			<td style="width: 400px">
 				<p>
-					Declaro bajo Juramento que la información consignada es verdadera, comprometiendome, en caso de lograr una vacante entregar el certificado de estudios secundarios original a esta dependencia.
+					Declaro bajo Juramento que la información consignada es verdadera, 
+					comprometiendome, en caso de lograr una vacante entregar la documentacion que me solicite la
+					dirección de admisión.
 				</p>
 			</td>
-			<td rowspan="2">
+			{{-- <td rowspan="2">
 				<div class="huella">
 					<p><br><br><br><br><br><br><br> (Índice Derecho)</p>
 				</div>
-			</td>
+			</td> --}}
 			<td rowspan="2">
-				<div class="foto">
+				<div class="foto ">
 					<img src="{{ asset($postulante->foto) }}" alt="">
 				</div>
 			</td>
