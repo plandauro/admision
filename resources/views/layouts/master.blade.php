@@ -146,11 +146,11 @@ use App\Postulacion;
                     <i class="fa fa-file-pdf-o"></i> Instrucciones
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a target="blank" href="{{ url('pdf/flujograma.pdf') }}">
                     <i class="fa fa-file-pdf-o"></i> Flujograma
                   </a>
-                </li>
+                </li> -->
                 @endif
 
                 @if(Auth::user()->isAsistente() || Auth::user()->isCoordinador())
