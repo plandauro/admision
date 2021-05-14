@@ -146,11 +146,11 @@ use App\Postulacion;
                     <i class="fa fa-file-pdf-o"></i> Instrucciones
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a target="blank" href="<?php echo e(url('pdf/flujograma.pdf')); ?>">
                     <i class="fa fa-file-pdf-o"></i> Flujograma
                   </a>
-                </li>
+                </li> -->
                 <?php endif; ?>
 
                 <?php if(Auth::user()->isAsistente() || Auth::user()->isCoordinador()): ?>
