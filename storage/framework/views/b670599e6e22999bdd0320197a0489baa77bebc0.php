@@ -336,7 +336,9 @@ $postulante = $data["postulante"];
 		<tr>
 			<td style="width: 400px">
 				<p>
-					Declaro bajo Juramento que la información consignada es verdadera, comprometiendome, en caso de lograr una vacante entregar el certificado de estudios secundarios original a esta dependencia.
+					Declaro bajo Juramento que la información consignada es verdadera, 
+					comprometiendome, en caso de lograr una vacante entregar la documentacion que me solicite la
+					dirección de admisión.
 				</p>
 			</td>
 			

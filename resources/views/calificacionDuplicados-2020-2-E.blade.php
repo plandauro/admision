@@ -10,7 +10,7 @@
         <div class="x_panel">
           <div class="x_title">
 
-            <h2>Reporte de Calificacion Duplicados │ EXAMEN ESPECIAL 2020-II</h2>
+            <h2>Reporte de Calificacion Duplicados │ EXAMEN ESPECIAL 2021</h2>
                  <ul class="nav navbar-right panel_toolbox">
               <li style="margin-right: 15px">
                 <h4> Filtros de busqueda:</h4>

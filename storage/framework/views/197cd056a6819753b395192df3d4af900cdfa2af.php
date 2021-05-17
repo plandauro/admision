@@ -82,7 +82,7 @@ use App\Postulacion;
                 <?php else: ?>
                 <?php if(Pagos::buscarPago(Auth::user()->id)==null): ?>
                 <li>
-                  <a href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("NO HAY PAGO REGISTRADO                                                                  NOTA: LOS PAGOS SE ACTUALIZAN DESPUES DE 24H DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS LOS DIAS VIERNES, SÁBADO Y DOMINGO SE REGISTRARAN EL LUNES A LAS 11:00 AM.")'>
+                  <a href="<?php echo e(url('/cargar-informacion')); ?>" onclick='alert("NOTA: LOS PAGOS SE ACTUALIZAN DESPUÉS DE CADA HORA DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS EL DÍA SÁBADO SE REGISTRARÁN AUTOMÁTICAMENTE.")'>
                     <i class="fa fa-check-square-o"></i> Postular
                   </a>
                 </li>
@@ -142,15 +142,15 @@ use App\Postulacion;
                   </a>
                 </li>
                 <li>
-                  <a target="blank" href="<?php echo e(url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2020-II.pdf')); ?>">
+                  <a target="blank" href="<?php echo e(url('pdf/MANUAL-DE-USUARIO-UNAB-ADMISION-2021.pdf')); ?>">
                     <i class="fa fa-file-pdf-o"></i> Instrucciones
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a target="blank" href="<?php echo e(url('pdf/flujograma.pdf')); ?>">
                     <i class="fa fa-file-pdf-o"></i> Flujograma
                   </a>
-                </li>
+                </li> -->
                 <?php endif; ?>
 
                 <?php if(Auth::user()->isAsistente() || Auth::user()->isCoordinador()): ?>
