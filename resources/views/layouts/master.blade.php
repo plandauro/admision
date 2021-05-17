@@ -82,7 +82,7 @@ use App\Postulacion;
                 @else
                 @if(Pagos::buscarPago(Auth::user()->id)==null)
                 <li>
-                  <a href="{{ url('/cargar-informacion') }}" onclick='alert("NO HAY PAGO REGISTRADO                                                                  NOTA: LOS PAGOS SE ACTUALIZAN DESPUES DE 24H DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS LOS DIAS VIERNES, SÁBADO Y DOMINGO SE REGISTRARAN EL LUNES A LAS 11:00 AM.")'>
+                  <a href="{{ url('/cargar-informacion') }}" onclick='alert("NOTA: LOS PAGOS SE ACTUALIZAN DESPUÉS DE CADA HORA DE LA TRANSACCIÓN Y LOS PAGOS REALIZADOS EL DÍA SÁBADO SE REGISTRARÁN AUTOMÁTICAMENTE.")'>
                     <i class="fa fa-check-square-o"></i> Postular
                   </a>
                 </li>
@@ -146,11 +146,11 @@ use App\Postulacion;
                     <i class="fa fa-file-pdf-o"></i> Instrucciones
                   </a>
                 </li>
-                <li>
+                <!-- <li>
                   <a target="blank" href="{{ url('pdf/flujograma.pdf') }}">
                     <i class="fa fa-file-pdf-o"></i> Flujograma
                   </a>
-                </li>
+                </li> -->
                 @endif
 
                 @if(Auth::user()->isAsistente() || Auth::user()->isCoordinador())
