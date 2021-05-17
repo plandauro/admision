@@ -67,6 +67,11 @@ $mensaje =  getMessage();
               "visible": false
             },
             {
+                "title": "2DA AREA_DESEMPATE_2DO_NIVEL",
+                "data":"2area_desempate_2nivel",
+                "visible": false
+            },
+            {
             	"title":"OBSERVACION",
              "data":"asistencia" 
             	
@@ -82,7 +87,7 @@ $mensaje =  getMessage();
                 messageTop: $mensaje,
                 footer: true,
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4,5,6,7,8 ]
+                    columns: [ 0, 1, 2,3,4,5,6,7,8,9,10 ]
                 }
             },
             {

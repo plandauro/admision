@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'RESULTADOS DEL EXAMEN ESPECIAL 2020-II')
+@section('title', 'RESULTADOS DEL EXAMEN ESPECIAL')
 @section('content')
 @parent
 
