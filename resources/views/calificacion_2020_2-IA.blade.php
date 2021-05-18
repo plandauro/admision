@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'RESULTADOS DEL EXAMEN DEL GENERAL 2020-II')
+@section('title', 'RESULTADOS DEL EXAMEN DEL GENERAL')
 @section('content')
   @parent
   
@@ -8,7 +8,7 @@
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
-            <h2>Reporte de Calificacion Ingeniería Agrónoma 2020-II</h2>
+            <h2>Reporte de Calificacion Ingeniería Agrónoma</h2>
                         <br>     <br>                   
             <div class="col-md-2">
 			<button><a  href="{{ url('llenar-respuestas-2020-2-IA') }}">Proceso de Calificación</a></button>

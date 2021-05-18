@@ -7,7 +7,7 @@
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Información con DLM │ Examen GENERAL DERECHO Y CIENCIAS POLÍTICAS TURNO MAÑANA 2020-II</h3>
+        <h3>Cargar Información con DLM │ Examen GENERAL DERECHO Y CIENCIAS POLÍTICAS TURNO MAÑANA</h3>
       </div>
 
     </div>
