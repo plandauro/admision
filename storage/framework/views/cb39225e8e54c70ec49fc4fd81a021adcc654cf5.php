@@ -5,7 +5,7 @@
   <div class="">
     <div class="page-title">
       <div class="title_left">
-        <h3>Cargar Información con DLM │ Examen Especial <?php echo e($proceso->descripcion); ?></h3>
+        <h3>Cargar Información con DLM │ Examen Especial 2021</h3>
       </div>
 
     </div>
