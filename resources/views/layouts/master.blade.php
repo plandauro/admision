@@ -679,7 +679,7 @@ use App\Postulacion;
                   {{-- INICIO - EXAMEN ESPECIAL --}}
                   <li>
                     <a>
-                      <i></i> Proceso del Examen Especial 2020-2<span class="fa fa-chevron-down"></span>
+                      <i></i> Proceso del Examen Especial <span class="fa fa-chevron-down"></span>
                     </a>
                     <ul class="nav child_menu">
                       <li>
